@@ -9,6 +9,10 @@
 
 decisions/2026-09-13-engine-defaults.md: 2D Phaser 3、3D はアクション性が高ければ Babylon.js、見せるのが主なら Three.js、作り込みは Godot 4。
 
+## 見直し候補(2026-09-13)
+
+- 調査で公式テンプレと skills が **Phaser 4** 主流と判明。既定を Phaser 3 → 4 に変える提案(research/2026-09-13-borrowable-assets.md)。
+
 ## 検討中の論点
 
 1. 2D = Phaser 3、3D = Three.js で良いか(AI が最も正確に書けるという理由)

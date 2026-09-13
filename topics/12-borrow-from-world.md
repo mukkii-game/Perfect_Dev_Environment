@@ -13,9 +13,17 @@
 
 ## 調べたこと
 
-- (実行部隊の結果待ち)
+- 2026-09-13 調査完了 → research/2026-09-13-borrowable-assets.md(7 分類、約 60 件)。要点:
+  - **skills は自作不要**。Phaser 公式 repo に SKILL.md が 28 本同梱、gamedev-skills に 73 本(Phaser 4 / three.js / Godot)。`npx skills add`(vercel-labs/skills)で Claude Code / Codex / Gemini CLI に同時配布できる。
+  - AGENTS.md 正本 + CLAUDE.md は `@AGENTS.md` は世の中の標準手法と一致。agent-rules-sync で自動同期も可。
+  - テンプレは Phaser 公式 `template-vite-ts`(**Phaser 4**)+ Vite 公式 Pages ワークフロー + `yeslayla/butler-publish-itchio-action` で「push だけで Pages と itch.io 同時公開」。Babylon は michealparks/babylon-template(Havok 物理付き)、Three は pachoclo/vite-threejs-ts-template(Pages 対応済み)。
+  - 素材: Kenney(CC0、ミラー repo を clone してローカル検索)、Poly Haven API、Freesound API(CC0 フィルタ)、ambientCG API、Quaternius / KayKit。
+  - MCP: Playwright MCP を毎ビルドの実プレイ確認とスクショに。Google Sheets 公式 MCP で台帳を自動記帳。Phaser Game Agent MCP は有料クレジット制、要検証。
+  - 日本語の先行事例: Zenn の aya テンプレ(Phaser 4 + 素材生成込み)、machamu の Codex/Claude 比較、乙一の Minimal Rogue(MIT)。
+  - 注意: 一部 URL(zenn / note / kenney / freesound)は実行環境の proxy で未取得。採用前に人間が 1 度開く。
 
 ## 次にやること
 
-- [ ] 調査結果を research/2026-09-13-borrowable-assets.md に保存
-- [ ] 「会議室への提案 5 つ」を評価し、採用するものを decisions に
+- [x] 調査結果を research/ に保存
+- [ ] 提案 5 つの採否をユーザーと決める(会議室の推奨: 1〜4 は採用、5 は台帳部分のみ採用し Phaser Game Agent は保留)
+- [ ] **Phaser 3 → Phaser 4 への既定変更を検討**(公式テンプレも skills も Phaser 4 が主流。decisions/2026-09-13-engine-defaults.md の見直し条件に該当)
