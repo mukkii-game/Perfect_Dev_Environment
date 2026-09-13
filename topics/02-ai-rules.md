@@ -48,5 +48,5 @@ AI_RULES.md に入れる内容(章立て案):
 ## 次にやること
 
 - [ ] ユーザーの別セッション(Claude と Codex の統一相談)の結論を受け取り research/ に保存
-- [x] AGENTS.md 初稿 v0.1 を drafts/AGENTS.md に作成(2026-09-13)
+- [x] AGENTS.md v0.3 を drafts/AGENTS.md に作成(2026-09-14、雛形発注書と整合)
 - [ ] ユーザーレビュー後、雛形 repo に反映

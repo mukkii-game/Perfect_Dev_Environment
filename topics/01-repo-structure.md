@@ -46,6 +46,10 @@ GitHub 上に以下の repo 群を持つ。
 - スモーク残骸: web-app-bootstrap-smoke、web-app-bootstrap-actions-smoke-20260829 → 削除。
 - 二重管理: known-quest-demo と ENG_App 内プロト、marshmallow-build と -demo → 正本を決める。CEDEC-HEAT-DASH-2026 と -fable は別実装なので両方残す。
 
+## 雛形の最終形(2026-09-14)
+
+drafts/TEMPLATE_SPEC.md に発注書として記載。受け入れ条件 6 点つき。
+
 ## 検討中の論点
 
 1. エンジンを作品 repo からどう参照するか。候補: (a) npm 公開、(b) GitHub Packages、(c) CDN(jsDelivr の GitHub 直参照)、(d) テンプレート複製時にコピー。速度重視なら (c) or (d)。バージョン固定と更新のしやすさで (c) を仮推奨。
