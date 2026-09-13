@@ -6,7 +6,7 @@
 
 | # | テーマ | 状態 | 実体化先(予定) |
 |---|---|---|---|
-| 01 | repo 構成・命名 | 🔶 | GitHub テンプレート repo |
+| 01 | repo 構成・命名 | 🔶 主要決定済み | GitHub テンプレート repo |
 | 02 | 全 AI 共通の作法(agent.md 系) | 🔶 | テンプレート内の AI_RULES.md、各 .skill |
 | 03 | 複数 AI の使い分けと切替 | ⬜ | knowledge スプシ + topics 内の判断表 |
 

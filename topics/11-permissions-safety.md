@@ -51,7 +51,7 @@
 
 ## 棚卸しで見つかった要対応(2026-09-13)
 
-- **fb-radio-auto(private)に Facebook のセッション cookie(cookies.json、datr / fr など 6 件)がコミットされている。** private でも履歴に残る。対応: (1) Facebook 側でセッションを無効化(全デバイスからログアウト)、(2) ファイルを削除し `.gitignore` に追加、(3) 履歴からも消すなら repo を作り直すのが最も簡単。会議室からは触らず、ユーザー判断を待つ。
+- **fb-radio-auto(private)に Facebook のセッション cookie(cookies.json、datr / fr など 6 件)がコミットされている。** private でも履歴に残る。対応: (1) Facebook 側でセッションを無効化(全デバイスからログアウト)、(2) ファイルを削除し `.gitignore` に追加、(3) 履歴からも消すなら repo を作り直すのが最も簡単。→ 2026-09-13 ユーザー承認後、ファイル削除と .gitignore を push 済み。残りは Facebook 側の全デバイスログアウト(ユーザー)。
 
 ## 調べたこと
 

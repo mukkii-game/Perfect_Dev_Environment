@@ -25,5 +25,5 @@
 ## 次にやること
 
 - [x] 調査結果を research/ に保存
-- [ ] 提案 5 つの採否をユーザーと決める(会議室の推奨: 1〜4 は採用、5 は台帳部分のみ採用し Phaser Game Agent は保留)
-- [ ] **Phaser 3 → Phaser 4 への既定変更を検討**(公式テンプレも skills も Phaser 4 が主流。decisions/2026-09-13-engine-defaults.md の見直し条件に該当)
+- [x] 提案 5 つ採用(decisions/2026-09-13-adoptions.md)
+- [x] Phaser 4 に既定変更
