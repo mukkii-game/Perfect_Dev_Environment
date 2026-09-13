@@ -22,6 +22,8 @@
 
 ## 調べたこと
 
+- 2026-09-13: Pages と itch.io の自動公開は ai-dev-infra の deploy-pages.yml / publish-itch.yml で実証済み(Yasu)。ユーザー評価「楽だった、踏襲」。上の表の 2 行は「実装済み」。
+
 - (未着手)
 
 ## 次にやること

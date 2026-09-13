@@ -14,9 +14,12 @@
 
 ## 調べたこと
 
+- 2026-09-13: 過去作は全部 GitHub org `mukkii-game` にある(47 repo)。作品 repo の一覧は research/2026-09-13-existing-infra-inventory.md。Unity 系(Unity2D_TD)、GAS 系(gas-plannning-sheet, GAS-Plannning-sheet)、Web 系多数。
+
 - (未着手)候補ライブラリ比較、Godot Web 書き出しの現状
 
 ## 次にやること
 
-- [ ] ユーザーから過去作の所在を聞く
+- [x] 過去作の所在: GitHub org 全部
+- [ ] 作品 repo 約 35 本を子セッションで一括スキャンし「共通化できる部品」「使った外部ライブラリ」「ジャンル」を表にする
 - [ ] 棚卸し用チェックリストを作る(何を見て、何を残すか)

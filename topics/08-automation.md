@@ -14,6 +14,9 @@
 
 ## 調べたこと
 
+- 2026-09-13: 既存の自動化資産。ai-dev-infra(再利用ワークフロー 4 本)、ai-ops(repo 作成スクリプト)、gd-knowledge/scripts(収集 Python 57 本)、gas-plannning-sheet(企画スプシ GAS)。詳細は research/2026-09-13-existing-infra-inventory.md。
+- ai-dev-infra は 2026-09-04 に「1 人 + AI では安全弁が手間」として既に軽量化済み。さらに削る余地: verify-web の playwright e2e をパイロットでは任意にする等(05 と合わせて検討)。
+
 - (未着手)
 
 ## 次にやること

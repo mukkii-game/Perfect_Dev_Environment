@@ -25,6 +25,13 @@ GitHub 上に以下の repo 群を持つ。
 
 命名: すべて小文字ハイフン。作品は `game-` / `app-` 接頭辞で GitHub 上の一覧が自然にソートされる。
 
+## 2026-09-13 追記(既存資産の反映と Q&A)
+
+- 雛形は **既存の `web-app-template` を土台に軽量化**して使う。ゼロから作らない。repo 作成は `ai-ops/bootstrap-web-repo.sh` の経路が実証済みなので、そこを「1 コマンドで新作を生やす」の実体にする。
+- **エンジンの参照方法(Q: CDN / npm とは何か)**: npm 公開 = ライブラリを npm レジストリに登録し `npm install` で入れる方式。手間と版管理が要る。CDN 直参照 = GitHub 上のファイルを jsDelivr 等が配信し、HTML の `<script src>` 1 行で読む方式。手間ゼロだが外部依存。**パイロット速度優先なら第 3 案「雛形に同梱(コピー)」が最も単純**。エンジンが育ってから CDN に移す。→ 推奨を (d) 同梱に変更。
+- **public → private への切替(Q)**: いつでも GitHub の設定 1 つで可能。注意 2 点。(1) GitHub Free では private repo の Pages は使えない(Pro 以上が必要)。製品化で private にした作品は Pages 以外の配信先に移す。(2) Free の private 個人 repo ではルールセットが効かない(ai-ops の記録より)。パイロットは public、製品化で private + 必要なら Pro、という運用で問題ない。
+- **Unity / UE も同 repo 内で良いか(Q)**: Godot は同 repo の `godot/` で問題ない(テキスト中心、軽い)。Unity / UE はバイナリが巨大で Git LFS が必要になり、Web 版の CI と衝突しやすい。**Unity / UE に移す時は別 repo(`game-<slug>-unity`)** を推奨。同 repo は Godot まで。
+
 ## 検討中の論点
 
 1. エンジンを作品 repo からどう参照するか。候補: (a) npm 公開、(b) GitHub Packages、(c) CDN(jsDelivr の GitHub 直参照)、(d) テンプレート複製時にコピー。速度重視なら (c) or (d)。バージョン固定と更新のしやすさで (c) を仮推奨。
