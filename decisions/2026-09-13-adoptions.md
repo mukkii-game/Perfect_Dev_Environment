@@ -15,7 +15,10 @@
 4. 素材は CC0 優先(海外 CC0 → 日本発は索引の規約範囲 → 契約済み有料)。CREDITS.md 必須。
 5. Sheets 台帳の自動記帳。Phaser Game Agent MCP は保留。
 
-## 片付け
+## 片付け(任意、優先度低)
+
+実害はない。理由は一覧の見やすさと、空 repo を AI が誤って使うのを防ぐことだけ。作品 repo の機械判定は接頭辞(game- / app-)で行う設計なので、やらなくても困らない。
+
 - アーカイブ: doroneko, Orejanakya, tetrishooter, GGJ2025, My-project, PanzerTokoron(空 / README のみ)、web-app-bootstrap-smoke, web-app-bootstrap-actions-smoke-20260829(残骸)。
 - 会議室のセッションからは GitHub のアーカイブ操作が API で行えないため、**ユーザーが各 repo の Settings → Archive this repository で実施**(削除ではなく読み取り専用化、戻せる)。
 
