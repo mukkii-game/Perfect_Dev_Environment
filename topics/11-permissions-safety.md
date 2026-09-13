@@ -53,6 +53,10 @@
 
 - **fb-radio-auto(private)に Facebook のセッション cookie(cookies.json、datr / fr など 6 件)がコミットされている。** private でも履歴に残る。対応: (1) Facebook 側でセッションを無効化(全デバイスからログアウト)、(2) ファイルを削除し `.gitignore` に追加、(3) 履歴からも消すなら repo を作り直すのが最も簡単。→ 2026-09-13 ユーザー承認後、ファイル削除と .gitignore を push 済み。残りは Facebook 側の全デバイスログアウト(ユーザー)。
 
+## E ドライブの棚卸し(2026-09-13 追加)
+
+- GitHub に本体が無い過去作がある(doroneko / GGJ2025)。E: 直下の未整理ローカル repo を一覧化し、未 push のものを push する作業を、AI に開くフォルダを決める時に一緒に行う。
+
 ## 調べたこと
 
 - ai-ops/SECURITY.md に AI_OPS_TOKEN の権限一覧がある(Actions 読み、Administration / Contents / Pages / Pull requests 書き、Workflows なし)。
