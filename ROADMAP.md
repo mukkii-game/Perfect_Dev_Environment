@@ -26,6 +26,12 @@
 | 07 | ノウハウ蓄積と定期更新 | ⬜ | knowledge repo or スプシ + Routine |
 | 08 | AI 以外の自動化(GAS / 拡張 / Python / バッチ) | ⬜ | tools repo |
 
+## 横断(全期間)
+
+| # | テーマ | 状態 | 実体化先(予定) |
+|---|---|---|---|
+| 10 | Mukkii の学習マイルストーン(週次レビュー、月次昇級判定) | 🔶 | decisions + 週次 Routine |
+
 ## 後回し(意図的に)
 
 - Steam / App Store / Google Play への出稿効率化
