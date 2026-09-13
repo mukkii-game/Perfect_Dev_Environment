@@ -18,6 +18,7 @@
 | テーマごとの検討内容 | [topics/](topics/) |
 | 決まったことと理由 | [decisions/](decisions/) |
 | 集めた情報の生データ | [research/](research/) |
+| 別 repo に出す前の下書き(AGENTS.md 等) | [drafts/](drafts/) |
 | 日々の記録 | [progress/](progress/) |
 
 ## 会議室の運用ルール

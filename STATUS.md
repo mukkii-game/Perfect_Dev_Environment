@@ -32,4 +32,4 @@
 
 ## 検討中のテーマ
 
-topics/ の 01〜10。進捗は ROADMAP.md。
+topics/ の 01〜11。進捗は ROADMAP.md。
