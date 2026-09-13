@@ -35,7 +35,7 @@ GitHub 上に以下の repo 群を持つ。
 ## 検討中の論点
 
 1. エンジンを作品 repo からどう参照するか。候補: (a) npm 公開、(b) GitHub Packages、(c) CDN(jsDelivr の GitHub 直参照)、(d) テンプレート複製時にコピー。速度重視なら (c) or (d)。バージョン固定と更新のしやすさで (c) を仮推奨。
-2. GitHub 無料枠で足りるか。Actions 分数(private だと月 2,000 分)は、1 日 1 本ビルド+公開なら余裕。作品を public にすれば無制限。**作品 repo は原則 public** を推奨(itch.io 等に出すものは隠す理由が薄い)。
+2. (2026-09-13 決定: パイプラインは最軽量、research/2026-09-13-github-plans-lfs.md 参照)GitHub 無料枠で足りるか。Actions 分数(private だと月 2,000 分)は、1 日 1 本ビルド+公開なら余裕。作品を public にすれば無制限。**作品 repo は原則 public** を推奨(itch.io 等に出すものは隠す理由が薄い)。
 3. 作品の「卒業」(Godot 等で作り込む段階)は同じ repo 内に `godot/` を切るか、別 repo にするか。
 4. Google Drive の役割分担: ビルド成果物の保管、大容量素材、過去作アーカイブ。repo にはリンクと索引のみ。
 
