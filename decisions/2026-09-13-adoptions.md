@@ -26,4 +26,4 @@
 ## fb-radio-auto の cookie
 - 2026-09-13 に会議室が `cookies.json` を repo から削除し `.gitignore` に追加して push 済み。アプリ本体は Render の Secret Files から読む設計なので動作に影響なし。
 - 2026-09-13 ユーザーが Facebook の全デバイスログアウトを実施済み。履歴の cookie は無効化された。
-- 追加決定: fb-radio-auto は作りかけ(投稿未実装)のため **repo と Render サービスを削除**する(ユーザー実施)。
+- 追加決定: fb-radio-auto は作りかけ(投稿未実装)のため repo と Render サービスを削除する。**2026-09-14 Render のプロジェクトを削除済み(ユーザー)。GitHub repo の削除は未確認。**
