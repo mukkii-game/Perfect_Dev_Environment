@@ -26,6 +26,8 @@
 | 作品 | 1 作品 1 repo | 同上 |
 | 環境の実体 | 計画が固まったテーマから別 repo / スキル / スプシに実体化 | 同上 |
 | 作品のパイプライン | main 直 push → ビルド → 公開。PR・自動マージ・ルールセットは使わない | decisions/2026-09-13-lightweight-pipeline.md |
+| AI の権限 | 3 ゾーン(自由 / 確認 / 社外は配達係経由)。遮断ではなく確認で守る | decisions/2026-09-13-permission-zones.md |
+| エンジン既定 | 2D Phaser 3、3D は Babylon.js(アクション)/ Three.js(表現)、作り込み Godot 4 | decisions/2026-09-13-engine-defaults.md |
 | アセット置き場 | Web 作品は Drive 等に置き repo は軽く保つ。LFS は使わない | research/2026-09-13-github-plans-lfs.md |
 
 ## 実体化済みのもの

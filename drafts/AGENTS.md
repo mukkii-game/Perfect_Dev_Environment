@@ -1,4 +1,4 @@
-# AGENTS.md(作品 repo 用 初稿 v0.1)
+# AGENTS.md(作品 repo 用 初稿 v0.2)
 
 > 会議室での下書き。確定後、雛形 repo `web-app-template` の AGENTS.md を置き換える。
 > 方針: 「何を・なぜ」だけ書く。「どうやって」は書かない。長くしない(目安 60 行以内)。
@@ -19,9 +19,9 @@
 
 ## 技術の既定値
 
-- Vite + TypeScript。2D は Phaser 3、3D は Three.js。同梱のエンジン層(`engine/`)を先に使え。
+- Vite + TypeScript。2D は Phaser 3。3D は動きの激しいものは Babylon.js、見せるのが主なら Three.js。SPEC.md に指定があればそれに従え。同梱のエンジン層(`engine/`)を先に使え。
 - 型で止まるな。動く方を優先しろ。
-- ビルド出力は `dist/`。`base` は `./`。Pages と itch.io で同じ成果物を使う。
+- ビルド出力は `dist/`。Vite の `base` は `./`(同じフォルダから読む設定。Pages でも itch.io でも同じ成果物が動く)。
 
 ## 素材
 
@@ -31,7 +31,7 @@
 ## 公開
 
 - `docs/PUBLISH.md` を日本語と英語で埋めてから公開ジョブを呼べ(タイトル、一言、説明、操作方法、スクショ)。
-- 公開先と手順は `mukkii-game/ai-dev-infra` が持つ。この repo の `.github/workflows/` は薄い呼び出しだけ。触るな。
+- 公開は `.github/workflows/build-and-deploy.yml` 1 本(main に push → ビルド → Pages、任意で itch.io)。ここを変える時は `QUESTIONS.md` に理由を書いてから変えろ。
 
 ## 文書と記録
 
@@ -41,8 +41,8 @@
 
 ## 禁止
 
-- テストを消す・スキップする。ライセンス不明の素材。秘密情報のコミット。`.github/**` の変更。
-- 同じ repo で複数の AI エージェントを同時に走らせる。
+- テストを消す・スキップする。ライセンス不明の素材。秘密情報のコミット。
+- 同じ作品 repo に同時に push する経路を 2 つ作る(サブエージェントや他セッションへの質問は自由。push する者は 1 つ)。
 
 ## ローカルコマンド
 
