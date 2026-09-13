@@ -20,6 +20,12 @@
 3. 公開の承認は誰がどこで押すか(GitHub の手動トリガー、スマホから)
 4. 上記 note 記事の内容を研究に取り込む
 
+## 宣伝動画の自動生成(ユーザー要望 2026-09-13)
+
+- できる。流れ: 自動プレイ(既存の cedec-fable `tools/autoplay.mjs` や panzer-tokoron の soak ツールが元)→ Playwright の録画機能で動画取得 → ffmpeg でタイトル・字幕(日英)・BGM(CC0)を合成 → 15 秒 / 60 秒の 2 種類を出力 → itch.io のページ、X、YouTube(API で投稿可)に配る。
+- 必要なもの: 作品側に「自動プレイ用の入力スクリプト or デモモード」を雛形の作法として持つ(AGENTS.md に「`?auto=1` でデモが走る」を既定にする)。
+- 映像生成 AI は使わない(06 の方針)。録画 + 編集の定型処理だけで作る。
+
 ## 調べたこと
 
 - 2026-09-13: Pages と itch.io の自動公開は ai-dev-infra の deploy-pages.yml / publish-itch.yml で実証済み(Yasu)。ユーザー評価「楽だった、踏襲」。上の表の 2 行は「実装済み」。
