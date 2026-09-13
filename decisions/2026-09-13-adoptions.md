@@ -19,7 +19,7 @@
 
 実害はない。理由は一覧の見やすさと、空 repo を AI が誤って使うのを防ぐことだけ。作品 repo の機械判定は接頭辞(game- / app-)で行う設計なので、やらなくても困らない。
 
-- アーカイブ: doroneko, Orejanakya, tetrishooter, GGJ2025, My-project, PanzerTokoron(空 / README のみ)、web-app-bootstrap-smoke, web-app-bootstrap-actions-smoke-20260829(残骸)。
+- アーカイブ: doroneko, Orejanakya, GGJ2025, My-project, PanzerTokoron(空 / README のみ)。**tetrishooter は除外**(GitHub 上は README のみだが、ユーザーが Gemini でローカル作業中。2026-09-13)、web-app-bootstrap-smoke, web-app-bootstrap-actions-smoke-20260829(残骸)。
 - 会議室のセッションからは GitHub のアーカイブ操作が API で行えないため、**ユーザーが各 repo の Settings → Archive this repository で実施**(削除ではなく読み取り専用化、戻せる)。
 
 ## fb-radio-auto の cookie

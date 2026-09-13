@@ -41,7 +41,8 @@ GitHub 上に以下の repo 群を持つ。
 
 ## 棚卸しからの片付け候補(2026-09-13)
 
-- 空 / README のみ: doroneko、Orejanakya、tetrishooter、GGJ2025、My-project、PanzerTokoron → アーカイブ。
+- 空 / README のみ: doroneko、Orejanakya、GGJ2025、My-project、PanzerTokoron → アーカイブ。tetrishooter は Gemini で作業中のため除外。
+- 教訓: GitHub 上の状態だけでは「ローカルで作業中」が見えない。片付け前にユーザーに確認する。作業中の repo はブランチだけでも push しておく運用にする。
 - スモーク残骸: web-app-bootstrap-smoke、web-app-bootstrap-actions-smoke-20260829 → 削除。
 - 二重管理: known-quest-demo と ENG_App 内プロト、marshmallow-build と -demo → 正本を決める。CEDEC-HEAT-DASH-2026 と -fable は別実装なので両方残す。
 
