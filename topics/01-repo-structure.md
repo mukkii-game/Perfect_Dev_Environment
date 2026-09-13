@@ -32,6 +32,13 @@ GitHub 上に以下の repo 群を持つ。
 - **public → private への切替(Q)**: いつでも GitHub の設定 1 つで可能。注意 2 点。(1) GitHub Free では private repo の Pages は使えない(Pro 以上が必要)。製品化で private にした作品は Pages 以外の配信先に移す。(2) Free の private 個人 repo ではルールセットが効かない(ai-ops の記録より)。パイロットは public、製品化で private + 必要なら Pro、という運用で問題ない。
 - **Unity / UE も同 repo 内で良いか(Q)**: Godot は同 repo の `godot/` で問題ない(テキスト中心、軽い)。Unity / UE はバイナリが巨大で Git LFS が必要になり、Web 版の CI と衝突しやすい。**Unity / UE に移す時は別 repo(`game-<slug>-unity`)** を推奨。同 repo は Godot まで。
 
+## repo の見やすさ(ユーザー質問 2026-09-13)
+
+- GitHub にフォルダは無い。使う手段: **Topics(タグ)** + **接頭辞(game- / app- / tool- / infra-)** + アーカイブ。Organization 化は今は不要。
+- Topics は API で付けられるので、雛形から repo を作る時に自動付与する(genre、engine、status など)。
+- 既存 repo への Topics 付けと改名(古い URL は自動転送)は実行部隊の作業として雛形 repo の仕事に同梱する。
+- 人間向けの一覧は GitHub ではなく Sheets 台帳(採用済み)を正とする。
+
 ## 棚卸しからの片付け候補(2026-09-13)
 
 - 空 / README のみ: doroneko、Orejanakya、tetrishooter、GGJ2025、My-project、PanzerTokoron → アーカイブ。
