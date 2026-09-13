@@ -49,6 +49,10 @@
 3. **把握する方法**を仕組みにする。月 1 で「権限の棚卸し表」を Routine が更新し、変更点だけ報告する。
 4. **壊した時の復旧**: Git は履歴で戻せる。Drive は版履歴 30 日。ローカルはバックアップの有無を確認。
 
+## 棚卸しで見つかった要対応(2026-09-13)
+
+- **fb-radio-auto(private)に Facebook のセッション cookie(cookies.json、datr / fr など 6 件)がコミットされている。** private でも履歴に残る。対応: (1) Facebook 側でセッションを無効化(全デバイスからログアウト)、(2) ファイルを削除し `.gitignore` に追加、(3) 履歴からも消すなら repo を作り直すのが最も簡単。会議室からは触らず、ユーザー判断を待つ。
+
 ## 調べたこと
 
 - ai-ops/SECURITY.md に AI_OPS_TOKEN の権限一覧がある(Actions 読み、Administration / Contents / Pages / Pull requests 書き、Workflows なし)。

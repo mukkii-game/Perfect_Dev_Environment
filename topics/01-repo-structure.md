@@ -32,6 +32,12 @@ GitHub 上に以下の repo 群を持つ。
 - **public → private への切替(Q)**: いつでも GitHub の設定 1 つで可能。注意 2 点。(1) GitHub Free では private repo の Pages は使えない(Pro 以上が必要)。製品化で private にした作品は Pages 以外の配信先に移す。(2) Free の private 個人 repo ではルールセットが効かない(ai-ops の記録より)。パイロットは public、製品化で private + 必要なら Pro、という運用で問題ない。
 - **Unity / UE も同 repo 内で良いか(Q)**: Godot は同 repo の `godot/` で問題ない(テキスト中心、軽い)。Unity / UE はバイナリが巨大で Git LFS が必要になり、Web 版の CI と衝突しやすい。**Unity / UE に移す時は別 repo(`game-<slug>-unity`)** を推奨。同 repo は Godot まで。
 
+## 棚卸しからの片付け候補(2026-09-13)
+
+- 空 / README のみ: doroneko、Orejanakya、tetrishooter、GGJ2025、My-project、PanzerTokoron → アーカイブ。
+- スモーク残骸: web-app-bootstrap-smoke、web-app-bootstrap-actions-smoke-20260829 → 削除。
+- 二重管理: known-quest-demo と ENG_App 内プロト、marshmallow-build と -demo → 正本を決める。CEDEC-HEAT-DASH-2026 と -fable は別実装なので両方残す。
+
 ## 検討中の論点
 
 1. エンジンを作品 repo からどう参照するか。候補: (a) npm 公開、(b) GitHub Packages、(c) CDN(jsDelivr の GitHub 直参照)、(d) テンプレート複製時にコピー。速度重視なら (c) or (d)。バージョン固定と更新のしやすさで (c) を仮推奨。

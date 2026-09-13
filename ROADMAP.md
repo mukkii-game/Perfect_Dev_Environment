@@ -14,7 +14,7 @@
 
 | # | テーマ | 状態 | 実体化先(予定) |
 |---|---|---|---|
-| 04 | 自分専用 Web エンジン・過去作の棚卸し | ⬜ | engine repo |
+| 04 | 自分専用 Web エンジン・過去作の棚卸し | 🔶 棚卸し完了 | engine repo |
 | 05 | 公開の自動化(itch.io / BOOTH / DLsite / pixiv / note / X) | ⬜ | publish-tools repo + Actions |
 | 09 | 外出先・スマホ・クラウド開発 | ⬜ | docs + Codespaces/Claude Code Web 設定 |
 
