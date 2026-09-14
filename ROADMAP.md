@@ -6,8 +6,8 @@
 
 | # | テーマ | 状態 | 実体化先(予定) |
 |---|---|---|---|
-| 01 | repo 構成・命名 | 🔶 発注書 drafts/TEMPLATE_SPEC.md 作成済み | GitHub テンプレート repo |
-| 02 | 全 AI 共通の作法(agent.md 系) | 🔶 AGENTS.md v0.3 | テンプレート内の AI_RULES.md、各 .skill |
+| 01 | repo 構成・命名 | 🚀 雛形 v1 をブランチに構築済み(web-app-template: claude/game-template-v1)。main マージ待ち | GitHub テンプレート repo |
+| 02 | 全 AI 共通の作法(agent.md 系) | 🚀 AGENTS.md v0.3 を雛形に搭載 | テンプレート内の AI_RULES.md、各 .skill |
 | 03 | 複数 AI の使い分けと切替 | ⬜ | knowledge スプシ + topics 内の判断表 |
 
 ## 第 2 波:速度(1 日 1 本を回す)

@@ -33,7 +33,11 @@
 
 ## 実体化済みのもの
 
-(まだなし)
+| 実体 | 場所 | 状態 |
+|---|---|---|
+| Phaser 4 ゲーム雛形 v1 | mukkii-game/web-app-template ブランチ `claude/game-template-v1` | ローカル検証済み。main マージと Pages 有効化はユーザー作業 |
+| itch.io 自動公開 | mukkii-game/tetrishoot `publish-itch.yml` | 稼働。main push で mukkii.itch.io/galaxtiris に反映 |
+| 週次レビュー | Routine(月曜 8:00 JST)→ progress/weekly/ | 稼働 |
 
 ## 検討中のテーマ
 
