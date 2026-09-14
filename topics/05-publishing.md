@@ -20,6 +20,18 @@
 3. 公開の承認は誰がどこで押すか(GitHub の手動トリガー、スマホから)
 4. 上記 note 記事の内容を研究に取り込む
 
+## itch.io 公開の実地(2026-09-14、tetrishoot → mukkii.itch.io/galaxtiris)
+
+- 作品 repo に `publish-itch.yml` を 1 本足した(main push と手動実行で butler が dist を html5 チャンネルへ push)。ai-dev-infra 版から認可ゲートを外した最軽量版。雛形にこのまま入れる。
+- 人間の手間の切り分け:
+  | 作業 | 今後 |
+  |---|---|
+  | itch.io の作品ページ新規作成(API なし) | **毎作 1 回、人間**。入力内容は docs/PUBLISH.md から AI が用意し貼るだけ |
+  | Metadata タブの Languages と AI 生成の申告 | 同上(ページ保存後に出る) |
+  | BUTLER_API_KEY を secret に入れる | **不要にする**。アカウントで 1 つ。組織 secret か雛形作成時に自動設定 |
+  | ワークフロー追加 | 不要。雛形に同梱 |
+- itch.io の設定メモ(HTML ゲーム): Embed in page、Viewport はゲームの論理解像度(縦長 540×720 等)、Mobile friendly / Fullscreen / Auto start オン、Draft で保存 → butler push → Public。
+
 ## 宣伝動画の自動生成(ユーザー要望 2026-09-13)
 
 - できる。流れ: 自動プレイ(既存の cedec-fable `tools/autoplay.mjs` や panzer-tokoron の soak ツールが元)→ Playwright の録画機能で動画取得 → ffmpeg でタイトル・字幕(日英)・BGM(CC0)を合成 → 15 秒 / 60 秒の 2 種類を出力 → itch.io のページ、X、YouTube(API で投稿可)に配る。
