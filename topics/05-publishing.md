@@ -32,6 +32,14 @@
   | ワークフロー追加 | 不要。雛形に同梱 |
 - itch.io の設定メモ(HTML ゲーム): Embed in page、Viewport はゲームの論理解像度(縦長 540×720 等)、Mobile friendly / Fullscreen / Auto start オン、Draft で保存 → butler push → Public。
 
+## 同人 Web ゲーム公開場所の広げ方(2026-09-15、要規約再確認)
+
+- 複数投稿は原則可(itch.io / Newgrounds / GameJolt / PLiCy / ふりーむ は非独占)。独占条項はコンテストや一部パブリッシャー系(CrazyGames, Poki 等)のみ。
+- 2 段階運用: **全作品 → Pages + itch.io(自動)**。1 週間の反応を見て **手応えのあるものだけ → Newgrounds(英語圏)+ PLiCy か ふりーむ(日本語圏)**(半自動)。
+- 半自動の形: AI が zip・日英説明・スクショ・タグ・サムネを `docs/PUBLISH.md` と `tools/out/` に揃え、人間はフォームに貼って送信(2〜3 分)。ブラウザ自動操作は規約グレーのため使わない。
+- 場所別: Newgrounds = 自然流入最強、メダル / スコア API あり(組み込み可)。GameJolt = 同系小規模。PLiCy = 日本 HTML5、収益分配。ふりーむ = 審査あり日数要。夢現 = DL 型中心で効果薄。unityroom = Unity WebGL 専用(Godot 不可)。YouTube Playables = 招待制、対象外。
+- dev-tools 候補: `package_for.py <site>` で各サイトの要件(zip 構成、画像サイズ、文字数)に合わせた一式を出力する。
+
 ## 宣伝動画の自動生成(ユーザー要望 2026-09-13)
 
 - できる。流れ: 自動プレイ(既存の cedec-fable `tools/autoplay.mjs` や panzer-tokoron の soak ツールが元)→ Playwright の録画機能で動画取得 → ffmpeg でタイトル・字幕(日英)・BGM(CC0)を合成 → 15 秒 / 60 秒の 2 種類を出力 → itch.io のページ、X、YouTube(API で投稿可)に配る。
