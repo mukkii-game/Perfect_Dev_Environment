@@ -32,6 +32,38 @@
   | ワークフロー追加 | 不要。雛形に同梱 |
 - itch.io の設定メモ(HTML ゲーム): Embed in page、Viewport はゲームの論理解像度(縦長 540×720 等)、Mobile friendly / Fullscreen / Auto start オン、Draft で保存 → butler push → Public。
 
+## ホスティング: Cloudflare Pages の評価(2026-09-15)
+
+結論: **採用する。ただし GitHub Pages を置き換えるのではなく、条件付きで併用する。**
+
+| | GitHub Pages | Cloudflare Pages |
+|---|---|---|
+| private repo から公開サイト | **不可**(Pro が要る) | **可**(無料のまま) |
+| 転送量 | ソフト上限あり | 実質無制限 |
+| ブランチごとのプレビュー URL | なし | **あり**(複数案の比較に効く) |
+| サーバー処理 | 不可 | **Workers**(無料枠 10 万リクエスト/日) |
+| 保存 | なし | KV / D1(SQLite)/ R2(大容量、下り無料) |
+| 設定の手間 | ゼロ(もう動いている) | アカウント + API トークンを 1 回 |
+
+**GitHub Pages を private にすると見れなくなる問題は、Cloudflare Pages で解決する。** repo が private でもサイトは公開できる。
+
+### サーバー処理(Workers)で開く道
+- オンラインランキング、セーブの同期、簡単なマルチプレイの仲介。
+- AI の API キーを隠して呼ぶ中継(ゲーム内で LLM を使う作品が作れる)。
+- アクセス解析、コメント、いいね。
+- R2 は **大きな素材の置き場**として Drive の代わりになる(下り転送が無料なので、ゲームから直接読める)。
+
+### 採用の形(雛形への入れ方)
+- 既定は GitHub Pages のまま(ゼロ設定で既に動いている)。
+- 雛形に `deploy-cloudflare.yml` を **1 本追加**し、secret `CLOUDFLARE_API_TOKEN` が設定されている時だけ動くようにする。無ければ黙って飛ばす。
+- ビルドは GitHub Actions で行い `wrangler pages deploy dist` で送る(Cloudflare 側の管理画面に設定を持たせない = 設定は全部 repo にある)。
+- 使い分け: パイロット = GitHub Pages / **private にしたい作品・製品化・サーバー処理が要る作品 = Cloudflare**。
+- 同種の選択肢として Netlify もある(このセッションに MCP 接続済み)。Workers 相当が要らないなら Netlify でもよいが、**無料枠と R2 の強さで Cloudflare を推す**。
+
+### 参考にしたい記事(未読、要取り込み)
+- https://blog.toripota.com/entry/prepota (個人開発のブラウザゲーム。「アツマールが忘れられない」ほか)
+  - 会議室の実行環境からは egress 制限で読めない。**07 の収集レイヤー(GitHub Actions)からなら読める**ので、そちらで取得して知見カード化する。
+
 ## 同人 Web ゲーム公開場所の広げ方(2026-09-15、要規約再確認)
 
 - 複数投稿は原則可(itch.io / Newgrounds / GameJolt / PLiCy / ふりーむ は非独占)。独占条項はコンテストや一部パブリッシャー系(CrazyGames, Poki 等)のみ。
