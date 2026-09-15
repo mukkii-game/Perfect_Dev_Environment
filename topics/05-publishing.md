@@ -36,9 +36,13 @@
 
 - 複数投稿は原則可(itch.io / Newgrounds / GameJolt / PLiCy / ふりーむ は非独占)。独占条項はコンテストや一部パブリッシャー系(CrazyGames, Poki 等)のみ。
 - 2 段階運用: **全作品 → Pages + itch.io(自動)**。1 週間の反応を見て **手応えのあるものだけ → Newgrounds(英語圏)+ PLiCy か ふりーむ(日本語圏)**(半自動)。
-- 半自動の形: AI が zip・日英説明・スクショ・タグ・サムネを `docs/PUBLISH.md` と `tools/out/` に揃え、人間はフォームに貼って送信(2〜3 分)。ブラウザ自動操作は規約グレーのため使わない。
+- **2026-09-15 ユーザー判断: Newgrounds と PLiCy はブラウザ自動操作で投稿まで自動化する。** 明示的な禁止が見当たらないこと、審査に日数がかかることから、まず入れて問題が出たら考える方針。会議室の留意点(実行前に把握しておく): アカウント停止のリスクはゼロではない、UI 変更で壊れる、実行には PC が要る、ログイン情報の扱い。→ 対策として「投稿用の専用 Chrome プロファイルを人間が一度ログインしておき、スクリプトはそのプロファイルを使う(パスワードをスクリプトに持たせない)」「1 日の投稿数を絞る」「失敗したらリトライせず人間に報告」を設計に入れる。
+- YouTube Playables は招待申し込み中。通ったら対象に追加。
 - 場所別: Newgrounds = 自然流入最強、メダル / スコア API あり(組み込み可)。GameJolt = 同系小規模。PLiCy = 日本 HTML5、収益分配。ふりーむ = 審査あり日数要。夢現 = DL 型中心で効果薄。unityroom = Unity WebGL 専用(Godot 不可)。YouTube Playables = 招待制、対象外。
-- dev-tools 候補: `package_for.py <site>` で各サイトの要件(zip 構成、画像サイズ、文字数)に合わせた一式を出力する。
+- dev-tools 候補:
+  - `package_for.py <site>`: 各サイトの要件(zip 構成、画像サイズ、文字数)に合わせた一式を `tools/out/<site>/` に出力。
+  - `post_newgrounds.mjs` / `post_plicy.mjs`: Playwright の persistent context(専用プロファイル)でフォームを埋めて送信。入力は `docs/PUBLISH.md` と `tools/out/<site>/`。結果 URL を標準出力に返す。失敗時はスクショを残して停止。
+  - 実行場所は自宅 PC(ログイン済みプロファイルが要るため)。GitHub Actions からは動かさない。
 
 ## 宣伝動画の自動生成(ユーザー要望 2026-09-13)
 

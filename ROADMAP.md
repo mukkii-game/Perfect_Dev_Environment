@@ -23,7 +23,7 @@
 | # | テーマ | 状態 | 実体化先(予定) |
 |---|---|---|---|
 | 06 | 外部アセットの方針と索引 | ⬜ | assets スプシ + Drive |
-| 07 | ノウハウ蓄積と定期更新 | ⬜ | knowledge repo or スプシ + Routine |
+| 07 | ノウハウ蓄積と定期更新 | 🔶 3 層方式を設計。dev-knowledge repo へ | knowledge repo or スプシ + Routine |
 | 08 | AI 以外の自動化(GAS / 拡張 / Python / バッチ) | ⬜ | tools repo |
 
 ## 横断(全期間)
