@@ -50,6 +50,17 @@ GitHub 上に以下の repo 群を持つ。
 
 drafts/TEMPLATE_SPEC.md に発注書として記載。受け入れ条件 6 点つき。
 
+## repo 作成の自動化(2026-09-16 完了)
+
+- **Claude から直接 repo は作れない**(GitHub App に Administration 権限が無く 403)。これは安全側の設計で、変える必要はない。
+- 代わりに **ai-ops のワークフローを Claude が起動する**形で自動化する。強い権限は ai-ops の secret だけが持つ。
+- 2026-09-16、ai-ops を軽量パイプラインに合わせて改修・push 済み:
+  - やること: 雛形から生成 → Topics 付与 → Pages を Actions ソースで有効化 → 企画 1 行から SPEC.md を種まき → 最初のデプロイ成功まで待って URL を返す。
+  - やめたこと: ルールセット、検証 PR、Guard、bot マージ待ち(`config/protect-main.json` も削除)。
+  - 入力: repo 名(必須)、説明、Topics(既定 `game,web,phaser`)、企画 1 行。
+  - `--self-test` は gh 不要になり、どこでも走る。
+- **残りの前提**: 雛形ブランチが main にマージされ、Template repository に設定されていること。
+
 ## 検討中の論点
 
 1. エンジンを作品 repo からどう参照するか。候補: (a) npm 公開、(b) GitHub Packages、(c) CDN(jsDelivr の GitHub 直参照)、(d) テンプレート複製時にコピー。速度重視なら (c) or (d)。バージョン固定と更新のしやすさで (c) を仮推奨。
