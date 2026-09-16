@@ -39,6 +39,11 @@
 | itch.io 自動公開 | mukkii-game/tetrishoot `publish-itch.yml` | 稼働。main push で mukkii.itch.io/galaxtiris に反映 |
 | 週次レビュー | Routine(月曜 8:00 JST)→ progress/weekly/ | 稼働 |
 
+## 人間が把握しておくもの
+
+- [knowledge/permissions-ledger.md](knowledge/permissions-ledger.md) — AI と外部サービスに何をどこまで許可しているか
+- [knowledge/env-gotchas.md](knowledge/env-gotchas.md) — 実際に踏んだ落とし穴
+
 ## 検討中のテーマ
 
 topics/ の 01〜12。進捗は ROADMAP.md。
