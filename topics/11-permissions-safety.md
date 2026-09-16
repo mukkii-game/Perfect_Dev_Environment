@@ -35,9 +35,10 @@
 
 実体は `knowledge/permissions-ledger.md`。GitHub / ローカル 3 ゾーン / 外部サービスの 3 表。以後、権限を変えたらここを直す。
 
-2026-09-16 の決定:
-- **Studio-Shimazu の GitHub App は解除**(もう使わない)。
-- mukkii-game は **All repositories** にする(新作 repo を毎回許可し直さないため)。
+2026-09-16 の調査結果:
+- mukkii-game の Claude GitHub App は **すでに All repositories**。新作 repo も自動で対象。変更不要。
+- Studio-Shimazu には **連携が入っていない**。一覧に出るのは 3 本とも public で、「公開リポジトリは読み取り専用で含む」条項によるもの。書き換え不可なので対応不要。
+- 教訓: 「一覧に出る = 書き換えられる」ではない。**読み取り専用で見えているだけ**の場合がある。棚卸しでは読み / 書きを分けて記録する。
 
 ## 検討中の論点
 

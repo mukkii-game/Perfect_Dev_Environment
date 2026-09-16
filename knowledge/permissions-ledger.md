@@ -8,8 +8,8 @@
 
 | 対象 | 許可の範囲 | 置き場 | 状態 |
 |---|---|---|---|
-| Claude Code GitHub App(mukkii-game) | **All repositories** にする予定(現在は個別選択) | GitHub アプリ設定 | 変更予定 |
-| Claude Code GitHub App(Studio-Shimazu) | 個別選択 | 同上 | **解除予定**(2026-09-16 ユーザー判断、もう使わない) |
+| Claude(GitHub App) / mukkii-game | **All repositories**。actions / checks / code / discussions / issues / pull requests / repository hooks / workflows の読み書き + コミット状態の読み取り。公開リポジトリは読み取り専用で含む | GitHub アプリ設定 | **確認済み(2026-09-16)。設定変更は不要** |
+| Studio-Shimazu の repo が一覧に出る件 | **連携は入っていない**。3 本(Iwanna4Udemy / SteamLeaderboard / SoundGameOchiru)がいずれも public のため、上記の「公開リポジトリは読み取り専用」条項で見えているだけ。書き換えは不可 | — | **対応不要(2026-09-16 調査)** |
 | `AI_OPS_TOKEN` | 全 repo の Administration / Contents / Pages / PR 書き込み。**最も強い** | ai-ops の Actions secret | 有効。使う時だけ有効化する運用に変える(topics/11) |
 | `BUTLER_API_KEY` | itch.io へのアップロード | tetrishoot の Actions secret | 有効。将来はアカウント単位に集約 |
 | `CLOUDFLARE_API_TOKEN` | Pages のデプロイ | 未設定 | 未 |
@@ -37,8 +37,8 @@
 | Cloudflare | Pages / Workers / R2 | API トークン | 未 |
 
 ## 直近でやること
-- [ ] Studio-Shimazu の GitHub App を解除
-- [ ] mukkii-game を All repositories に変更
+- [x] mukkii-game は All repositories(確認済み 2026-09-16)
+- [x] Studio-Shimazu は連携なし。対応不要(2026-09-16)
 - [ ] `AI_OPS_TOKEN` を使う時だけ有効化する運用へ
 - [ ] B・C ゾーンの書き込みを止める hook
 - [ ] Chrome を開発専用プロファイルに分ける
