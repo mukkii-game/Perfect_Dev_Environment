@@ -40,6 +40,7 @@
 | 週次レビュー | Routine(月曜 8:00 JST)→ progress/weekly/ | 稼働 |
 | repo 作成の自動化 | mukkii-game/ai-ops `Bootstrap Web Repository` | **稼働**(2026-09-17 通し試験で確認)。企画 1 行 → repo + Topics + Pages + SPEC + 公開まで |
 | 旧ルールセット除去 | mukkii-game/ai-ops `Remove Legacy Ruleset` | 稼働。旧 bootstrap 産の repo を触る前に実行する |
+| 投稿自動化(PLiCy / Newgrounds / ふりーむ / X) | mukkii-game/dev-tools | 第 1 段階(画面構造の調査)まで実装。secret 投入待ち |
 
 ## 人間が把握しておくもの
 
