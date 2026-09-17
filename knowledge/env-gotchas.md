@@ -4,6 +4,7 @@
 
 | 日付 | 現象 | 対処 |
 |---|---|---|
+| 2026-09-17 | AI_OPS_TOKEN で workflow_dispatch が 403 | トークンに Actions 書き込みが無い(意図的)。権限を足さず、**普通の commit で push イベントを起こして**代用する |
 | 2026-09-17 | 旧 bootstrap で作った repo は main に push も PR マージもできない | 旧ルールセット `protect-main` が、もう存在しないチェックを必須にしている。ai-ops の **Remove Legacy Ruleset** を repo 名指定で実行して外す |
 | 2026-09-16 | 覚えのない組織の repo が Claude の一覧に出る | その repo が public なだけ。GitHub App の「公開リポジトリは読み取り専用で含む」条項。書き換えは不可なので実害なし |
 | 2026-09-16 | 新しいクラウドセッションで GitHub 連携を求められる | 同じ仕組みの初回許可。連携画面では **All repositories** を選ぶ(個別だと新作 repo を毎回許可し直すことになる) |

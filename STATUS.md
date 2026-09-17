@@ -35,10 +35,11 @@
 
 | 実体 | 場所 | 状態 |
 |---|---|---|
-| Phaser 4 ゲーム雛形 v1 | mukkii-game/web-app-template | **main にマージ済み(2026-09-17)**。残り: Pages 有効化と Template 設定 |
+| Phaser 4 ゲーム雛形 v1 | mukkii-game/web-app-template | **完成・稼働**(2026-09-17)。Template repository 設定済み |
 | itch.io 自動公開 | mukkii-game/tetrishoot `publish-itch.yml` | 稼働。main push で mukkii.itch.io/galaxtiris に反映 |
 | 週次レビュー | Routine(月曜 8:00 JST)→ progress/weekly/ | 稼働 |
-| repo 作成の自動化 | mukkii-game/ai-ops `Bootstrap Web Repository` | 軽量版に改修済み。雛形のマージ後に使える |
+| repo 作成の自動化 | mukkii-game/ai-ops `Bootstrap Web Repository` | **稼働**(2026-09-17 通し試験で確認)。企画 1 行 → repo + Topics + Pages + SPEC + 公開まで |
+| 旧ルールセット除去 | mukkii-game/ai-ops `Remove Legacy Ruleset` | 稼働。旧 bootstrap 産の repo を触る前に実行する |
 
 ## 人間が把握しておくもの
 

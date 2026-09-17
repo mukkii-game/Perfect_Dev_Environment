@@ -8,7 +8,13 @@
 |---|---|---|---|
 | 01 | repo 構成・命名 | 🚀 雛形 v1 をブランチに構築済み(web-app-template: claude/game-template-v1)。main マージ待ち | GitHub テンプレート repo |
 | 02 | 全 AI 共通の作法(agent.md 系) | 🚀 AGENTS.md v0.3 を雛形に搭載 | テンプレート内の AI_RULES.md、各 .skill |
-| 03 | 複数 AI の使い分けと切替 | ⬜ | knowledge スプシ + topics 内の判断表 |
+| 03 | 複数 AI の使い分けと切替 | ⬜ |
+
+第 1 波の 01・02 は完了(🚀)。 knowledge スプシ + topics 内の判断表 |
+
+### 第 1 波は 2026-09-17 に完了
+
+企画 1 行 → repo 生成 → Topics → Pages 有効化 → SPEC 種まき → ビルド → 自動プレイ確認 → 公開、まで通しで動くことを `game-pipeline-check` で確認した。
 
 ## 第 2 波:速度(1 日 1 本を回す)
 
