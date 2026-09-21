@@ -16,3 +16,4 @@
 | 2026-09-14 | Playwright がブラウザ版不一致で起動しない | `PW_CHROMIUM=/opt/pw-browsers/chromium` のように既存の Chromium を指定する(雛形の tools は対応済み) |
 | 2026-09-15 | 会議室の実行環境から一部の外部サイトが読めない(egress 制限) | `research/_to_fetch.txt` に積み、GitHub Actions 側の収集で取得する |
 | 2026-09-13 | GitHub Free では private repo に Pages とルールセットが効かない | private にしたい作品は Cloudflare Pages で公開する |
+| 2026-09-21 | fine-grained PAT は期限切れで黙って死ぬ | 期限の記録がないと、ai-ops のワークフローが 403 で落ちて初めて気づく。しかも値は secret の中にあり AI からは期限を読めない | 期限を `knowledge/permissions-ledger.md` の「有効期限のあるもの」の表に書き、週次レビューで 2 週間前から警告する(残り 7 日の状態で気づいた) |

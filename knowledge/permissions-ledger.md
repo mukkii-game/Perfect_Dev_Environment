@@ -10,7 +10,7 @@
 |---|---|---|---|
 | Claude(GitHub App) / mukkii-game | **All repositories**。actions / checks / code / discussions / issues / pull requests / repository hooks / workflows の読み書き + コミット状態の読み取り。公開リポジトリは読み取り専用で含む | GitHub アプリ設定 | **確認済み(2026-09-16)。設定変更は不要** |
 | Studio-Shimazu の repo が一覧に出る件 | **連携は入っていない**。3 本(Iwanna4Udemy / SteamLeaderboard / SoundGameOchiru)がいずれも public のため、上記の「公開リポジトリは読み取り専用」条項で見えているだけ。書き換えは不可 | — | **対応不要(2026-09-16 調査)** |
-| `AI_OPS_TOKEN` | 全 repo の Administration / Contents / Pages / PR 書き込み。**最も強い** | ai-ops の Actions secret | 有効。使う時だけ有効化する運用に変える(topics/11) |
+| `AI_OPS_TOKEN` | 全 repo の Administration / Contents / Pages / PR 書き込み。**最も強い** | ai-ops の Actions secret | **有効期限 2026-09-28**(fine-grained PAT)。更新は人間の手作業。使う時だけ有効化する運用に変える(topics/11) |
 | `BUTLER_API_KEY` | itch.io へのアップロード | tetrishoot の Actions secret | 有効。将来はアカウント単位に集約 |
 | `CLOUDFLARE_API_TOKEN` | Pages のデプロイ | 未設定 | 未 |
 
@@ -36,9 +36,22 @@
 | Newgrounds / PLiCy | ゲーム公開(自動投稿予定) | 投稿用の専用 Chrome プロファイル | 未 |
 | Cloudflare | Pages / Workers / R2 | API トークン | 未 |
 
+## 有効期限のあるもの(切れると黙って 403 で落ちる)
+
+| 対象 | 期限 | 警告を出す日 | 切れると止まるもの |
+|---|---|---|---|
+| `AI_OPS_TOKEN` | **2026-09-28** | 2026-09-14(週次レビューで警告) | ai-ops の repo 作成・Pages 設定・Topics 付与 = 新作を立てる導線 |
+
+更新手順: GitHub → <https://github.com/settings/personal-access-tokens> → 当該トークン →
+Regenerate token(**権限は広げない**・期限 90 days)→ 新しい値を ai-ops の Actions secret へ貼る。
+**値をチャットに貼らないこと。** 更新したら、この表の期限と警告日を書き換える。
+
+週次レビューは毎週この表を見て、期限の 2 週間前から警告すること。
+
 ## 直近でやること
 - [x] mukkii-game は All repositories(確認済み 2026-09-16)
 - [x] Studio-Shimazu は連携なし。対応不要(2026-09-16)
+- [ ] **`AI_OPS_TOKEN` を 2026-09-28 までに更新する**(期限切れ間近。2026-09-21 発見)
 - [ ] `AI_OPS_TOKEN` を使う時だけ有効化する運用へ
 - [ ] B・C ゾーンの書き込みを止める hook
 - [ ] Chrome を開発専用プロファイルに分ける
