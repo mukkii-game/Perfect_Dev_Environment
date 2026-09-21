@@ -10,7 +10,8 @@
 |---|---|---|---|
 | Claude(GitHub App) / mukkii-game | **All repositories**。actions / checks / code / discussions / issues / pull requests / repository hooks / workflows の読み書き + コミット状態の読み取り。公開リポジトリは読み取り専用で含む | GitHub アプリ設定 | **確認済み(2026-09-16)。設定変更は不要** |
 | Studio-Shimazu の repo が一覧に出る件 | **連携は入っていない**。3 本(Iwanna4Udemy / SteamLeaderboard / SoundGameOchiru)がいずれも public のため、上記の「公開リポジトリは読み取り専用」条項で見えているだけ。書き換えは不可 | — | **対応不要(2026-09-16 調査)** |
-| `AI_OPS_TOKEN` | 全 repo の Administration / Contents / Pages / PR 書き込み。**最も強い** | ai-ops の Actions secret | **有効期限 2026-09-28**(fine-grained PAT)。更新は人間の手作業。使う時だけ有効化する運用に変える(topics/11) |
+| GitHub App `mukkii-ai-ops`(App ID 5019353) | ai-ops のワークフローが使う。実行時に **1 時間で失効する**トークンを発行 | 秘密鍵が ai-ops の Actions secret(`AI_OPS_APP_ID` / `AI_OPS_APP_PRIVATE_KEY`) | **稼働中(2026-09-21 実証)**。秘密鍵に期限は無い |
+| `AI_OPS_TOKEN` | 旧。全 repo の Administration ほか | — | **役目を終えた。削除する**(2026-09-21) |
 | `BUTLER_API_KEY` | itch.io へのアップロード | tetrishoot の Actions secret | 有効。将来はアカウント単位に集約 |
 | `CLOUDFLARE_API_TOKEN` | Pages のデプロイ | 未設定 | 未 |
 
@@ -40,34 +41,27 @@
 
 | 対象 | 期限 | 警告を出す日 | 切れると止まるもの |
 |---|---|---|---|
-| `AI_OPS_TOKEN` | **2026-09-28** → 更新したら書き換える | 期限の 2 週間前 | ai-ops の repo 作成・Pages 設定・Topics 付与 = 新作を立てる導線 |
+| (いまは無し) | — | — | — |
 
-### GitHub App への移行(2026-09-21 着手・**PC 待ちで中断**)
+`AI_OPS_TOKEN`(期限 2026-09-28)は GitHub App に置き換えて不要になった(2026-09-21)。
+期限のある鍵を新たに作ったら、必ずこの表に足すこと。週次レビューは毎週この表を見て、
+期限の 2 週間前から警告する。
 
-期限そのものを無くすため、App 方式へ移る。App の秘密鍵には期限が無く、実行時に
-発行されるトークンは 1 時間で失効するので、更新作業が消えて安全性も上がる。
+### GitHub App への移行(2026-09-21 完了)
 
-- ai-ops 側は**対応済み**(`scripts/app-token.sh`)。App の secret を入れた瞬間に自動で切り替わる。
-  入るまでは従来どおり `AI_OPS_TOKEN` で動くので、放置しても壊れない。
-- App は作成済み。**App ID 5019353**。インストールと秘密鍵の投入が残り。
-- 2026-09-21: 秘密鍵を**チャットに添付してしまい、破棄**(会話ログに残るため漏洩扱い)。
-  GitHub 側で鍵を削除し、ファイルも消した。App 未インストールのため実害なし。鍵は PC で作り直す。
-- 中断の理由: iPhone だけでは秘密鍵の `.pem` を扱いにくい(ダウンロードは成功していたが見つけられなかった)。
-  **PC の前に座った時に 5 分で片付ける**。鍵は作り直せるので、今ある 2 本は放置でよい。
-- 残り作業: ①App を All repositories にインストール ②鍵を作り直して
-  `AI_OPS_APP_ID` / `AI_OPS_APP_PRIVATE_KEY` を ai-ops の secret へ ③空打ちしてログに
-  `token source: GitHub App installation ...` が出るのを確認 ④`AI_OPS_TOKEN` を削除
+期限そのものを無くすため App 方式へ移行した。秘密鍵に期限は無く、実行時に発行される
+トークンは 1 時間で失効するので、更新作業が消えたうえで安全性も上がった。
 
-更新手順: GitHub → <https://github.com/settings/personal-access-tokens> → 当該トークン →
-Regenerate token(**権限は広げない**・期限 90 days)→ 新しい値を ai-ops の Actions secret へ貼る。
-**値をチャットに貼らないこと。** 更新したら、この表の期限と警告日を書き換える。
-
-週次レビューは毎週この表を見て、期限の 2 週間前から警告すること。
+- 仕組み: `ai-ops/scripts/app-token.sh` が JWT を作って installation token を取る。
+  外部アクションは増やしていない(curl と openssl のみ)。App が未設定なら旧 PAT へ退避する。
+- 実証: 2026-09-21 の Remove Legacy Ruleset 実行で
+  `token source: GitHub App installation 163455635 (expires in 1 hour)` を確認。
+- 事故: 途中で秘密鍵をチャットに添付してしまい、その鍵は破棄して作り直した(未インストールのため実害なし)。
 
 ## 直近でやること
 - [x] mukkii-game は All repositories(確認済み 2026-09-16)
 - [x] Studio-Shimazu は連携なし。対応不要(2026-09-16)
-- [ ] **`AI_OPS_TOKEN` を 2026-09-28 までに更新する**(期限切れ間近。2026-09-21 発見)
-- [ ] `AI_OPS_TOKEN` を使う時だけ有効化する運用へ
+- [x] `AI_OPS_TOKEN` を GitHub App に置き換える(2026-09-21 実証済み)
+- [ ] `AI_OPS_TOKEN` を secret とトークン本体の両方から削除する(ユーザー作業)
 - [ ] B・C ゾーンの書き込みを止める hook
 - [ ] Chrome を開発専用プロファイルに分ける
