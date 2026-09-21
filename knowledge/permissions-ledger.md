@@ -40,7 +40,21 @@
 
 | 対象 | 期限 | 警告を出す日 | 切れると止まるもの |
 |---|---|---|---|
-| `AI_OPS_TOKEN` | **2026-09-28** | 2026-09-14(週次レビューで警告) | ai-ops の repo 作成・Pages 設定・Topics 付与 = 新作を立てる導線 |
+| `AI_OPS_TOKEN` | **2026-09-28** → 更新したら書き換える | 期限の 2 週間前 | ai-ops の repo 作成・Pages 設定・Topics 付与 = 新作を立てる導線 |
+
+### GitHub App への移行(2026-09-21 着手・**PC 待ちで中断**)
+
+期限そのものを無くすため、App 方式へ移る。App の秘密鍵には期限が無く、実行時に
+発行されるトークンは 1 時間で失効するので、更新作業が消えて安全性も上がる。
+
+- ai-ops 側は**対応済み**(`scripts/app-token.sh`)。App の secret を入れた瞬間に自動で切り替わる。
+  入るまでは従来どおり `AI_OPS_TOKEN` で動くので、放置しても壊れない。
+- App は作成済み。**App ID 5019353**。インストールと秘密鍵の投入が残り。
+- 中断の理由: iPhone だけでは秘密鍵の `.pem` を受け取れなかった(Safari のダウンロードに現れない)。
+  **PC の前に座った時に 5 分で片付ける**。鍵は作り直せるので、今ある 2 本は放置でよい。
+- 残り作業: ①App を All repositories にインストール ②鍵を作り直して
+  `AI_OPS_APP_ID` / `AI_OPS_APP_PRIVATE_KEY` を ai-ops の secret へ ③空打ちしてログに
+  `token source: GitHub App installation ...` が出るのを確認 ④`AI_OPS_TOKEN` を削除
 
 更新手順: GitHub → <https://github.com/settings/personal-access-tokens> → 当該トークン →
 Regenerate token(**権限は広げない**・期限 90 days)→ 新しい値を ai-ops の Actions secret へ貼る。
