@@ -8,6 +8,8 @@
 | `catalog-tools.md` | 音・絵・3D・動画の道具や素材を選ぶ時。**用途から引く** |
 | `ai-models.md` | どの AI に投げるか迷った時。自分で使って分かったことの記録 |
 | `engines.md` | 新しい作品のエンジンを決める時。**3D で作り込むなら Godot** の判断基準もここ |
+| `promotion.md` | 公開した後。プレスリリース・SNS の宣伝テクと、うちの仕組みに足す宿題 |
+| `platforms.md` | どこに出すか。Web の今と、**Steam・Switch 2 に出す時の条件(エンジン選びに効く)** |
 | `env-gotchas.md` | 環境で詰まった時。踏んだ地雷の一覧 |
 | `permissions-ledger.md` | 何にどの権限を渡しているか。期限のある鍵の表 |
 
