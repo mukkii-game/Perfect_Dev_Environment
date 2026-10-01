@@ -54,6 +54,7 @@
 
 | 日付 | 分かったこと |
 |---|---|
+| 2026-10-01 | **Opus 5.5 の公式ガイド(2026-09-23)**: 既定の effort が high → medium に変わった(medium の 5.5 ≒ high の 5)。思考を減らしたい時はプロンプトで頼まず effort を下げる。無人実行で早めに止まる癖があるので、未完了を列挙して続けさせる仕組みを外側に置く。出典: [Claude Platform Docs](https://platform.claude.com/docs/ja/build-with-claude/prompt-engineering/prompting-claude-opus-5-5)(毎朝の収集 9/25 号から回収) |
 | 2026-10-01 | **出た機能が自分の契約で使えるとは限らない**。Gemini 4 は Ultra から、Dots は Pro からだった |
 | 2026-09-22 | **新しいモデルほど指示を減らす**。細かい手順書は逆効果。強い禁止文は真に受けて止まる(topics/07) |
 | 2026-09-18 | **重い判断は 1 つの AI に任せない。** GPT と Gemini が独立に同じ結論を出し、会議室の見立て 3 点が覆った |
