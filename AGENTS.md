@@ -6,7 +6,7 @@
   投稿まわりは `dev-tools`)。作品は 1 本ずつ別 repo。ここは計画と記録だけ。
 - 入口は `README.md` → 現状は `STATUS.md` → 予定は `ROADMAP.md`。
 - 決めたことは `decisions/`(書き換えない)。検討中は `topics/`。日々は `progress/`。
-  調べたことは `research/`。踏んだ地雷は `knowledge/env-gotchas.md`。
+  調べたことは `research/`。**引くための資料は `knowledge/`**(道具・AI・エンジンのカタログ、地雷)。
 - **この repo の中は確認不要で書いてよい。** 外の repo を変える時は、何を変えるか言ってからやる。
 - 事実の記録(台帳・gotchas・調査)はいくら増やしてもよい。**AI への指示は増やすな**
   (毎回読まれるので全作品に課税される)。雛形の `AGENTS.md` は 100 行目安。足す前に
