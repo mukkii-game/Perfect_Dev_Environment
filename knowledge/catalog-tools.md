@@ -35,6 +35,7 @@
 | 背景・HDRI・空 | **Poly Haven**(CC0) | HDRI を入れるだけで見栄えが一段変わる |
 | テクスチャ | **ambientCG**(CC0) | |
 | 人型キャラ | VRoid Studio(自作) | VRM。規約は配布元ごとに違う |
+| **AI で 3D モデル生成 + 骨入れ** | **Tripo**(生成)+ **Mixamo**(骨) | **使った実績あり**(ImoteControllDandy の怪鳥トコロス。GLB 約 2000 三角形)。罠: three.js の GLTFLoader は骨名の `:` を落とす(`mixamorig:Hips` → `mixamorigHips`)ので両方の名前で探す。アニメは手続きで付けた |
 
 ## 動画・公開物
 
