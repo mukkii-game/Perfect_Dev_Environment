@@ -3,7 +3,7 @@ AI知見の毎日収集,全自動,Claude定期実行(Routine),毎朝 7:03,Claude
 読む相手の毎日見直し,全自動,Claude定期実行(Routine),毎朝 8:30(木曜休み),会議室セッション,情報源の名簿に試用を足す(1日1人まで),名簿が変わった日だけスマホに報告,—(変化なしの日は無言が正常),会議室のGitHub権限,trig_017FjzQqjTwGAwDdiiFstMEe,稼働(3日無変化か10/17で自動停止),2026-10-03
 AI情報の週1取捨,半自動(番号で返事),Claude定期実行(Routine),木曜 8:05,会議室セッション,1週間分から入れるもの最大5件を選び、名簿を昇格・降格,スマホに報告→人間が番号で返事,木曜朝に報告が来ない,会議室のGitHub権限・ドライブ,trig_01U1KVqNyU9yDjQTfxgTPh4x,稼働,2026-10-03
 週次レビュー,全自動,Claude定期実行(Routine),月曜 8:06,会議室セッション,1週間の振り返り・一覧表の更新(AI表はWeb検索で最新化)・発信の種の下書き,progress/weekly/ と スマホに報告,月曜朝に報告が来ない,会議室のGitHub権限,trig_01Ns5fm6oP4TQypayNsPmVw8,稼働,2026-10-03
-作品の気づき回収,全自動,Claude定期実行(Routine),毎晩 23:52,会議室セッション,作品のHANDOFF.mdから全体に効く気づきを拾い、雛形と表に取り込む,harvest-log.md・新規があればスマホに報告,—(新規なしの日は無言が正常。週次レビューで台帳を見る),全repoの読み・雛形への書き込み,trig_01TkkE97BqwtTuft6fecvzm2,稼働,2026-10-03
+作品の気づき回収,全自動,Claude定期実行(Routine),毎晩 23:52,会議室セッション,作品のHANDOFF.mdの気づきとCREDITS.mdの素材を集め、雛形・表に取り込み、★素材をドライブの素材庫に保存,harvest-log.md・新規があればスマホに報告,—(新規なしの日は無言が正常。週次レビューで台帳を見る),全repoの読み・雛形への書き込み,trig_01TkkE97BqwtTuft6fecvzm2,稼働,2026-10-03
 AIへの指示の月1点検,全自動(提案は人間が判断),Claude定期実行(Routine),毎月1日 9:07,会議室セッション(第三者役のサブエージェント),AGENTS.md・スキルの量と中身を最新の流儀と照らして点検・小さな圧縮,research/ に点検報告・スマホに要約,毎月1日に報告が来ない,会議室・雛形のGitHub権限,trig_01YKtRwgwbXxsfMayxaU9xMQ,稼働,2026-10-03
 作品のビルドと公開,全自動,GitHub Actions,作品repoにpushした時,GitHub,ビルド→リプレイ検証→GitHub Pagesに公開→公開キット作成,GitHub Pages・Actionsの成果物,Actionsが赤(GitHubからメール),GitHub標準,各作品repoの build-and-deploy.yml(雛形由来),稼働,2026-10-03
 itch.ioへの公開,半自動(人間がボタン),GitHub Actions,人間が実行した時,GitHub,ビルドをitch.ioへアップロード,itch.io,Actionsが赤,BUTLER_API_KEY(作品repoのsecret),各作品repoの publish-itch.yml,稼働(tetrishootで実績),2026-10-03
