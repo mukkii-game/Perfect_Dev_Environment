@@ -13,6 +13,7 @@
 | `platforms.md` | どこに出すか。Web の今と、**Steam・Switch 2 に出す時の条件(エンジン選びに効く)** |
 | `process-patterns.md` | **進め方を決める時**。企画の多角審査、人間確認の段階、調査の書式、開発記録の書き方 |
 | `sources.md` | 毎朝の収集が読む相手の名簿。AI が毎週育てる |
+| `harvest-log.md` | 作品セッションの気づきを回収して全作品に配った台帳 |
 | `env-gotchas.md` | 環境で詰まった時。踏んだ地雷の一覧 |
 | `permissions-ledger.md` | 何にどの権限を渡しているか。期限のある鍵の表 |
 
