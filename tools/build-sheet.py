@@ -21,12 +21,12 @@ def width(vals):
 RANK={"S":"C6EFCE","A":"DDEBF7","B":"FFF2CC","C":"F2F2F2","外した":"D9D9D9"}
 BOOKS={
  "knowhow":("説明",["開発ノウハウ一覧(閲覧用)","原本は GitHub の knowledge/tables/*.csv。各タブは自動で読み込んで表示するだけ(初回だけ各タブの A1 で「アクセスを許可」)",
-   "道具: 分野→工程の順。区分: 優先/条件付き/外した。AI操作: ◎AIだけで完結 ○MCP・APIでAIが操作 △人間の手が要る。ランク: S 迷ったらこれ/A 第一候補/B 補助/C ほぼ使わない",
+   "道具: 分野→カテゴリ→工程の順(BGMが欲しい→拾うか作るか、の順で引ける)。区分: 優先/条件付き/外した。AI操作: ◎AIだけで完結 ○MCP・APIでAIが操作 △人間の手が要る。ランク: S 迷ったらこれ/A 第一候補/B 補助/C ほぼ使わない",
    "一番右の「コメント(自由記入)」は自由に書いてよい。毎晩会議室が読んで取り込む(行の並びが変わるとずれるので、取り込まれたら消してよい)",
    "直したい時: 会議室に一言、または GitHub で CSV を編集。表の中身を直接書き換えても次の更新で消えます",
    "どこに何があるか: 「置き場所」タブ"],
   [("置き場所","storage.csv","A",{"GitHub":"DDEBF7","Google":"C6EFCE","Claude":"FFF2CC","手元":"F2F2F2"}),
-   ("心構え","mindset.csv","B","rank"),("AI","ai.csv","C","rank"),("道具","assets.csv","C","rank"),
+   ("心構え","mindset.csv","B","rank"),("AI","ai.csv","C","rank"),("道具","assets.csv","D","rank"),
    ("ジャンル","genres.csv","J",{"◎":"C6EFCE","○":"DDEBF7","△":"FFF2CC","×":"D9D9D9"}),
    ("手続き","procedures.csv","H",{"実績あり":"C6EFCE","要確認":"FFF2CC"}),
    ("使った素材","used-assets.csv","A",{"★":"C6EFCE","✕":"D9D9D9"}),
@@ -54,6 +54,7 @@ def build(key,out):
     cm=L(n+1);s[f"{cm}1"]="コメント(自由記入)";d=s.column_dimensions[cm];d.width=240/7;d.alignment=al
     d.fill=PatternFill("solid",fgColor="FFFDE7")
     for c in range(1,n+2): s.cell(1,c).font=Font(bold=True);s.cell(1,c).alignment=al
+    s.auto_filter.ref=f"A1:{L(n+1)}{last}"   # 1 行目にフィルタ(並べ替え・絞り込み)
     R=f"A2:{L(n)}{last}"
     if mode=="rank":
       for k,v in RANK.items(): s.conditional_formatting.add(R,FormulaRule(formula=[f'${rc}2="{k}"'],fill=PatternFill("solid",fgColor=v)))
