@@ -9,6 +9,6 @@ GPT-6 Luna,OpenAI,C,条件付き,軽い作業,小型,速い・安い,—,要確�
 Gemini(AI Pro内の最新),Google,B,条件付き,量の多い単純作業／セカンドオピニオン,契約内で軽い,量をさばける,最新のGemini 4 ArgonはUltra・限定公開のみ,使える(Google AI),2026-10-03
 Gemini 4 Argon,Google,—,使えない,—,Google新最上位(2026-09-30),ベンチ上位(自己申告),防御者向け限定→Ultraから,使えない,2026-10-03
 Perplexity,Perplexity,A,優先,出典が要る調べもの,必ず出典付きで返す,調査が速い,深い推論は弱め,使える(Pro),2026-10-01
-ChatGPT Dots,OpenAI,—,使えない,—,常駐エージェント,Routineの一部を置き換えうる,Pro以上限定,使えない,2026-09-29
+ChatGPT Dots,OpenAI,—,使えない,—,常駐エージェント(裏でCodexを動かし要約だけ返す),Routineの一部を置き換えうる。細部を読まずに済む,Pro・Business Premium限定。Plusへの提供時期は未発表,使えない(Plus),2026-10-03
 Jev,—,—,保留,毎朝の収集のふるい分け,選択肢を確率付きで返すだけ,速く非常に安い,文章を書けない。API別契約,未契約,2026-09-25
 Grok,xAI,外した,外した,—,—,—,Claude と GPT が上回った,解約済み,2026-10-01
