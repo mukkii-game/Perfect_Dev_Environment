@@ -1,6 +1,6 @@
 # 人間向けの一覧表(原本)
 
-**ここの CSV が原本。** スプレッドシート「[開発ノウハウ一覧](https://docs.google.com/spreadsheets/d/1dGxievZAel7hJ6oF-sQPVIatn2AtWc6_epV8Qo7srDs/edit)」(Drive)はこれを `IMPORTDATA` で読んで表示するだけ(リンク固定・自動で最新。初回だけ「アクセスを許可」が要る)。
+**ここの CSV が原本。** スプレッドシート「[開発ノウハウ一覧](https://docs.google.com/spreadsheets/d/1crI2SIiDKve_a6Ik9JvU_aKuXO6JwqslfUE97rCO45E/edit)」(Drive)はこれを `IMPORTDATA` で読んで表示するだけ(リンク固定・自動で最新。初回だけ「アクセスを許可」が要る)。
 
 | ファイル | 中身 |
 |---|---|
