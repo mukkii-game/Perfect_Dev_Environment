@@ -39,4 +39,4 @@ Unity 専用アセット・古い AI(o1、Claude 3.5 等)・個人の PC 設定�
 - **ファイルと一緒に、その時点の規約ページ(スクショか PDF)を同じフォルダに保存**する。配布元が消えたり規約が変わっても、使った時の条件が残る
 - **公開 repo(会議室・作品)に素材を丸ごと置いて“素材集”にしない**。多くの無料素材は「素材そのものの再配布」を禁じている。作品の中で使うのは可、素材として配るのは不可
 - ★ が付いた素材から優先して保存する(全部は保存しない)
-- 育成プログラム: https://docs.google.com/spreadsheets/d/1Fd51UFT_pETq_1JHVZ6o9FxCxKQOI2W_guPvsrkvnVM/edit
+- 育成プログラム: https://docs.google.com/spreadsheets/d/11Dn_SjUjqVBs8fdtdJk2dHQ0RO7S35ieKWE-T6_n2Sg/edit
