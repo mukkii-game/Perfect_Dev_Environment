@@ -15,3 +15,8 @@
    - trig_01YKtRwgwbXxsfMayxaU9xMQ 指示の月1点検
    - trig_018McVEb8PhNtRwKBG9KMvQA 毎朝の収集(毎回新セッション)は connectors に Google Sheets/Docs を足すだけ
 4. automations.csv の管理場所欄と、knowledge/sheet-style.md の「操作のしかた」を更新
+
+## 結果(同じ日)
+- コネクタは**このセッションの途中で使えるようになった**(新セッション不要)。定期実行の付け替えも不要。
+- 開発ノウハウ一覧に直接: 全タブ 1 行目フィルタ、縦中央・折り返し、道具タブの列幅と色付けの列(C→D)を修正。リンク不変。
+- 残り: 育成プログラム(11Dn…)も同様に確認。毎朝の収集(新セッション型)に Sheets/Docs の権限を足すかは、使う場面が出てから。
