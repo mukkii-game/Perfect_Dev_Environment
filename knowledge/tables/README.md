@@ -1,12 +1,12 @@
 # 人間向けの一覧表(原本)
 
-**ここの CSV が原本。** スプレッドシート「[開発ノウハウ一覧](https://docs.google.com/spreadsheets/d/1CJ-t8ik2q2wrxwuY0WJy-RURz45nj7pQB2s6xoshdWM/edit)」(Drive)はこれを `IMPORTDATA` で読んで表示するだけ(リンク固定・自動で最新。初回だけ「アクセスを許可」が要る)。
+**ここの CSV が原本。** スプレッドシート「[開発ノウハウ一覧](https://docs.google.com/spreadsheets/d/1dGxievZAel7hJ6oF-sQPVIatn2AtWc6_epV8Qo7srDs/edit)」(Drive)はこれを `IMPORTDATA` で読んで表示するだけ(リンク固定・自動で最新。初回だけ「アクセスを許可」が要る)。
 
 | ファイル | 中身 |
 |---|---|
 | `ai.csv` | AI の表(特徴・利点・欠点・ランク・使う場面) |
 | `assets.csv` | **道具の総合表**(素材・制作道具・ライブラリ・公開手続き)。上位の **分野**(絵/音/3D/映像/文字/コード/公開・手続き)と **工程**(入手/作る/加工/組む/確かめる/出す)で並ぶ |
-| `libraries.csv` | (廃止。assets.csv に統合。シートのタブを消せないので空にしてある) |
+| (`libraries.csv` は assets.csv に統合して削除) |
 | `mindset.csv` | **人間の心構え・頼み方・確認のチェックリスト**(AI 駆動開発) |
 | `genres.csv` | **ゲームジャンル別の作法**と、相性の良いエンジン・素材、AI で自動検証しやすいか、1日1本向きか |
 
