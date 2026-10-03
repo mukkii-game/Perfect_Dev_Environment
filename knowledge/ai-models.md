@@ -72,6 +72,12 @@
 **今は入れない理由**: 早期提供で別契約(API 従量課金)が要る。今の収集はサブスクの中で回っているので、
 **利用枠が足りなくなってから**考える。
 
+## 3.5 OpenAI の系列名(2026-10-03 調べ)
+
+Astra(最上位)/ **Sol**(中位・コーディング向け)/ Luna(小型)。GPT-6 Sol・Luna は 2026-09-22、**GPT-6.1 Sol は DevDay 2026 で公開**
+(Astra 級を 1/5 の単価で)。**GPT-6.1 Astra は安全性評価の退行で公開中止**(CNN 2026-09-28)。Plus でどこまで使えるかは要確認。
+出典: [TechCrunch 2026-09-22](https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/) / [OpenAI DevDay 2026](https://openai.com/index/devday-2026-recap/)
+
 ## 4. 使って分かったこと(日付つき。新しい発見は上に足す)
 
 | 日付 | 分かったこと |
