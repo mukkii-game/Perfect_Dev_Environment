@@ -9,5 +9,5 @@
 - PC: `~/.claude/skills/war-room-knowhow/` に置く(PC ごとに1回。下の1行を PC で実行)
 
 ```
-mkdir -p ~/.claude/skills/war-room-knowhow && curl -sfL https://raw.githubusercontent.com/mukkii-game/Perfect_Dev_Environment/main/skills/war-room-knowhow/SKILL.md -o ~/.claude/skills/war-room-knowhow/SKILL.md || true
+(古い1行。global/README.md の1行に置き換え済み。スキルと全体の決まりを両方入れる)
 ```
