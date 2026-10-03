@@ -2,7 +2,7 @@
 
 スプシにする時の決まり(縦中央・折り返し・列幅・コメント欄)は `knowledge/sheet-style.md`。作るのは `tools/build-sheet.py`。
 
-**ここの CSV が原本。** スプレッドシート「[開発ノウハウ一覧](https://docs.google.com/spreadsheets/d/1crI2SIiDKve_a6Ik9JvU_aKuXO6JwqslfUE97rCO45E/edit)」(Drive)はこれを `IMPORTDATA` で読んで表示するだけ(リンク固定・自動で最新。初回だけ「アクセスを許可」が要る)。
+**ここの CSV が原本。** スプレッドシート「[開発ノウハウ一覧](https://docs.google.com/spreadsheets/d/1L3i02WVyMPxC-_wEiy1zSnyVFsCBHfRrrD25sXJVQAg/edit)」(Drive)はこれを `IMPORTDATA` で読んで表示するだけ(リンク固定・自動で最新。初回だけ「アクセスを許可」が要る)。
 
 | ファイル | 中身 |
 |---|---|
@@ -39,3 +39,4 @@ Unity 専用アセット・古い AI(o1、Claude 3.5 等)・個人の PC 設定�
 - **ファイルと一緒に、その時点の規約ページ(スクショか PDF)を同じフォルダに保存**する。配布元が消えたり規約が変わっても、使った時の条件が残る
 - **公開 repo(会議室・作品)に素材を丸ごと置いて“素材集”にしない**。多くの無料素材は「素材そのものの再配布」を禁じている。作品の中で使うのは可、素材として配るのは不可
 - ★ が付いた素材から優先して保存する(全部は保存しない)
+- 育成プログラム: https://docs.google.com/spreadsheets/d/1Fd51UFT_pETq_1JHVZ6o9FxCxKQOI2W_guPvsrkvnVM/edit

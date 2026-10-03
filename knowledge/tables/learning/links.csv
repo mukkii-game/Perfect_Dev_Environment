@@ -1,6 +1,6 @@
 分類,名前,何がある,リンク
 入口,会議室(GitHub),全部の原本,https://github.com/mukkii-game/Perfect_Dev_Environment
-入口,開発ノウハウ一覧(スプシ),道具・AI・手続き・自動化の表,(作成後に記入)
+入口,開発ノウハウ一覧(スプシ),道具・AI・手続き・自動化・置き場所の表,https://docs.google.com/spreadsheets/d/1L3i02WVyMPxC-_wEiy1zSnyVFsCBHfRrrD25sXJVQAg/edit
 育成,学習マイルストーン(Lv1〜7の定義),topics/10,https://github.com/mukkii-game/Perfect_Dev_Environment/blob/main/topics/10-learning-milestones.md
 育成,週次レビュー(今週の課題が出る),progress/weekly,https://github.com/mukkii-game/Perfect_Dev_Environment/tree/main/progress
 資料,AIの使い分け,ai-models.md,https://github.com/mukkii-game/Perfect_Dev_Environment/blob/main/knowledge/ai-models.md

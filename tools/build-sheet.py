@@ -45,17 +45,15 @@ def build(key,out):
   for line in intro: ws.append([line])
   ws["A1"].font=Font(bold=True,size=14);ws.column_dimensions["A"].width=width(intro[1:])
   al=Alignment(vertical="center",wrap_text=True)
-  for row in ws.iter_rows(min_row=1,max_row=len(intro),max_col=1):
-    for c in row: c.alignment=al
+  ws.column_dimensions["A"].alignment=al
   for name,f,rc,mode in tabs:
-    rows=list(csv.reader(open(LOCAL+f,encoding="utf-8")));n=len(rows[0]);last=len(rows)+60
+    rows=list(csv.reader(open(LOCAL+f,encoding="utf-8")));n=len(rows[0]);last=len(rows)+20
     s=wb.create_sheet(name);s["A1"]=f'=IMPORTDATA("{RAW}{f}")';s.freeze_panes="A2"
-    for i in range(n): s.column_dimensions[L(i+1)].width=width([r[i] for r in rows if i<len(r)])
-    cm=L(n+1);s[f"{cm}1"]="コメント(自由記入)";s.column_dimensions[cm].width=240/7
-    for r in range(2,last+1): s[f"{cm}{r}"].fill=PatternFill("solid",fgColor="FFFDE7")
-    for row in s.iter_rows(min_row=1,max_row=last,max_col=n+1):
-      for c in row: c.alignment=al
-    for c in range(1,n+2): s.cell(1,c).font=Font(bold=True)
+    for i in range(n):
+      d=s.column_dimensions[L(i+1)];d.width=width([r[i] for r in rows if i<len(r)]);d.alignment=al   # 列ごとの書式(全行に効く)
+    cm=L(n+1);s[f"{cm}1"]="コメント(自由記入)";d=s.column_dimensions[cm];d.width=240/7;d.alignment=al
+    d.fill=PatternFill("solid",fgColor="FFFDE7")
+    for c in range(1,n+2): s.cell(1,c).font=Font(bold=True);s.cell(1,c).alignment=al
     R=f"A2:{L(n)}{last}"
     if mode=="rank":
       for k,v in RANK.items(): s.conditional_formatting.add(R,FormulaRule(formula=[f'${rc}2="{k}"'],fill=PatternFill("solid",fgColor=v)))
