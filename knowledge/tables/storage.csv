@@ -1,0 +1,21 @@
+置き場,名前,何が入っているか,誰が書く,誰が読む,公開,リンク
+GitHub,Perfect_Dev_Environment(会議室),計画・決定・調査・ノウハウmd・一覧表CSV(このシートの原本)・育成プログラムCSV,会議室のAI(人間もCSV編集可),人間・全AI・定期実行,公開,https://github.com/mukkii-game/Perfect_Dev_Environment
+GitHub,web-app-template(雛形),新作の土台。AGENTS.md・src/core部品・実機ノウハウ(docs/knowledge)・公開の自動処理,会議室のAI・毎晩の気づき回収,作品を作るAI(コピーされて各作品へ),公開,https://github.com/mukkii-game/web-app-template
+GitHub,ai-ops,運用スクリプト(新作repoの初期設定・GitHub Appの鍵の使い方),会議室のAI,GitHub Actions,非公開,https://github.com/mukkii-game/ai-ops
+GitHub,dev-tools,投稿先サイトの下調べ用ツール,会議室のAI,GitHub Actions,非公開,https://github.com/mukkii-game/dev-tools
+GitHub,my-rss,公開ページのRSS化(毎時),AI・自動,RSSリーダー,公開,https://github.com/mukkii-game/my-rss
+GitHub,gd-knowledge,ゲームデザインの知識(企画の判断材料),人間・AI,AI,非公開,(非公開)
+GitHub,作品repo(公開)約30本,1作品1repo。SPEC・HANDOFF(引き継ぎと気づき)・CREDITS(素材と規約)・コード,作品セッションのAI,人間・毎晩の回収,公開,https://github.com/orgs/mukkii-game/repositories
+GitHub,作品・企画repo(非公開)十数本,非公開の作品・企画(名前はここに書かない),作品セッションのAI,人間・毎晩の回収(公開側には一般化して書く),非公開,(非公開)
+GitHub Pages,各作品の公開ページ,遊べる最新版(pushで自動更新),GitHub Actions,プレイヤー,公開,https://mukkii-game.github.io/
+Googleドライブ,AI知見(フォルダ),毎朝の情報収集の日報(AI知見 YYYY-MM-DD),毎朝の収集,人間・週1取捨・週次レビュー,非公開,https://drive.google.com/drive/folders/199f1wPF5NWyb0Wcmer2vTgpiivBD1JDN
+Googleドライブ,素材庫(フォルダ),★の付いた素材ファイルと、その時点の規約の写し,毎晩の気づき回収,人間・作品のAI,非公開,https://drive.google.com/drive/folders/1OZ7xNZnWZYF-rwGX2QAQdhZt3O2ZOg3d
+Googleドライブ,開発ノウハウ一覧(スプシ),このシート。会議室のCSVを表示するだけ,(自動表示),人間,非公開(リンク共有なし),(このファイル)
+Googleドライブ,Mukkii育成プログラム(スプシ),あなたのカリキュラム・進捗・テスト・修了チェック,(自動表示),人間,非公開,(作成後に記入)
+Googleドライブ,ゲームのノウハウ(旧メモ),昔のメモ。使えるものは移植済み(2026-10-03),人間,—,非公開,https://docs.google.com/spreadsheets/d/1iBZAVylaGes3whL8rnCJnPFMmvWqbxDgoweUqZFBLSQ/edit
+Claude(クラウド),定期実行(Routine)6本,毎朝の収集・毎日の名簿見直し・週1取捨・週次レビュー・毎晩の回収・月1点検。指示文はClaude側に保存,会議室のAI,—,非公開,自動化タブを参照
+Claude(クラウド),会議室セッション,この会話。定期実行の多くはここに届く,—,人間,非公開,https://claude.ai/code
+GitHub secret,鍵(BUTLER_API_KEY・AI_OPS_APP_PRIVATE_KEY など),外部サービスの鍵。中身は誰にも見えない,人間(直接入力),GitHub Actions,非公開,knowledge/permissions-ledger.md
+手元PC,E:\ (ゾーンA),ゲーム・個人開発の作業場所。AIが確認なしで読み書きしてよい,人間・手元のAI,—,—,decisions/2026-09-13-permission-zones.md
+手元PC,G:\ (Googleドライブ),ドライブの同期。個人開発フォルダはA、仕事データはB(書く前に確認),人間,—,—,decisions/2026-09-13-permission-zones.md
+手元PC(デスクトップ4080S),ComfyUI・ローカルLLM(予定),手元で動かす画像・動画・LLM。生成物は作品repoかドライブへ,人間・手元のClaude Code,—,—,knowledge/local-ai.md

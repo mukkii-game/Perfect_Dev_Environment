@@ -1,0 +1,11 @@
+分類,名前,何がある,リンク
+入口,会議室(GitHub),全部の原本,https://github.com/mukkii-game/Perfect_Dev_Environment
+入口,開発ノウハウ一覧(スプシ),道具・AI・手続き・自動化の表,(作成後に記入)
+育成,学習マイルストーン(Lv1〜7の定義),topics/10,https://github.com/mukkii-game/Perfect_Dev_Environment/blob/main/topics/10-learning-milestones.md
+育成,週次レビュー(今週の課題が出る),progress/weekly,https://github.com/mukkii-game/Perfect_Dev_Environment/tree/main/progress
+資料,AIの使い分け,ai-models.md,https://github.com/mukkii-game/Perfect_Dev_Environment/blob/main/knowledge/ai-models.md
+資料,進め方の型,process-patterns.md,https://github.com/mukkii-game/Perfect_Dev_Environment/blob/main/knowledge/process-patterns.md
+資料,ゲーム作りの実機ノウハウ,雛形 docs/knowledge,https://github.com/mukkii-game/web-app-template/blob/main/docs/knowledge/web-game-rules.md
+資料,公開先と条件,platforms.md,https://github.com/mukkii-game/Perfect_Dev_Environment/blob/main/knowledge/platforms.md
+資料,手元PCのAI,local-ai.md,https://github.com/mukkii-game/Perfect_Dev_Environment/blob/main/knowledge/local-ai.md
+情報,毎朝のAI知見(ドライブ),日報,https://drive.google.com/drive/folders/199f1wPF5NWyb0Wcmer2vTgpiivBD1JDN
