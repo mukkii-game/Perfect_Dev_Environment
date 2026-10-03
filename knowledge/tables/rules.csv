@@ -1,0 +1,11 @@
+ファイル・仕組み,場所,読まれ方,行数,要点(何が書いてあるか),見直し
+AGENTS.md(作品用),雛形 web-app-template → 各作品にコピー,作品のAIが毎回必ず読む,64,止まらず作り切る／迷ったら仮決めしてQUESTIONS.mdへ／HANDOFF.md更新と気づきの共有／入力・キャッシュ・スマホ診断の3つの罠／技術の既定値(Phaser・src/core・seed乱数・リプレイ)／素材は速さ優先・CREDITS必須／公開手順,月1点検。100行目安
+CLAUDE.md,作品・会議室,Claudeが毎回読む,1,「@AGENTS.md」の1行だけ(中身はAGENTS.mdに一本化),—
+AGENTS.md(会議室用),Perfect_Dev_Environment,会議室のAIが毎回必ず読む,14,ここは作戦会議室・コードを置かない／どこに何を書くか／会議室の中は確認不要で書く・外のrepoは言ってから／AIへの指示は増やすな,月1点検
+web-game-trouble スキル,雛形 .claude/skills,症状が合った時だけ自動で呼ばれる,13,ゲームで詰まった時の入口。docs/knowledge のどこを読むか案内するだけ,月1点検
+phaser4 スキル,雛形 .claude/skills,Phaserを使う時だけ,15,Phaser 4 の公式資料(docs/phaser/reference/)を題目ごとに引く入口,月1点検
+docs/knowledge/*.md,雛形,スキル経由で必要な時だけ検索して読む,1642,実機ノウハウ本体(入力・起動・診断・キャッシュ・性能・逆引き表・他作品からの回収・再現性),毎晩の気づき回収で育つ
+SPEC.md / QUESTIONS.md / HANDOFF.md,各作品,作品のAIが読む・書く,—,企画／仮決めした質問／引き継ぎと「全体に共有したい気づき」,作品ごと
+定期実行の指示文(Routine),Claudeのクラウド,その時刻に1回読まれる,—,自動化表(automations)の各行。中身は会議室で管理,月1点検
+会議室 knowledge/*.md,Perfect_Dev_Environment,必要な時だけ検索して読む,—,道具・AI・エンジン・宣伝・公開先・進め方・地雷・権限・ローカルAIの判断理由と出典,週次レビュー
+会議室 knowledge/tables/*.csv,Perfect_Dev_Environment,人間がスプレッドシートで見る・AIも選ぶ時に引く,—,この一覧表の原本,週次レビュー
