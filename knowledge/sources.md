@@ -57,9 +57,17 @@
 | qiita.com/Takuya__ | 新モデルの実測 | 9/26 | 2 本同日、数字付き |
 | qiita.com/nogataka | サブエージェント設定 | 9/26 | 設定ファイル単位 |
 | IsaoWorksAI(X) | AI でゲーム開発の備忘録 | 10/2 | X 検索で発見。未評価 |
+| qiita.com/roripika | Godot × AI 分業の個人開発記録 | 10/4 | 失敗 24 件の分類あり。2 回目が出たら試用 |
+| note.com/ukyousan(うきょう) | AI で作ったゲームの調整の型 | 10/4 | 業界 26 年。続きは有料 |
+| zenn.dev/yorusuzu | Claude Code サブエージェント設計 | 10/4 | ファイル受け渡しの実例 |
+| qiita.com/devex12 | Routine の無人運用・権限設計 | 10/4 | AI Professionals 経由 |
 
 ### 外した
 | アカウント | 外した日 | 理由 |
 |---|---|---|
 | so_ainsight | 10/2 | 投稿が読めない(消えたか非公開) |
 | MacopeninSUTABA | 10/2 | プロフィールが別人に。中身ほぼなし |
+
+## 毎日見直しの記録
+
+- 10/4: 試用の昇格なし(新顔 4 人は初出のため候補へ)。名簿の変化なし(1 日目)
