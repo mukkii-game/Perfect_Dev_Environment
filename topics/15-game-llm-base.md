@@ -41,3 +41,9 @@
 
 ## 未確認
 - Groq の規約で、ゲームの公開サービスとして無料枠を使ってよいか。
+
+## 実装(2026-10-04)
+- `mukkii-game/game-llm` を作成・push。Groq → Gemini(無料枠)→ Workers AI → 502(ゲーム側でルール会話)。テスト 6 本通過、wrangler の dry-run 通過。
+- 公開は secret 4 つが入ってから(Actions → deploy → Run workflow)。
+- Emmichy の移行は Codex 側に依頼(会議室は使い方と games/emmichy.js を用意済み)。
+- 雛形への `core/chat.ts` 組み込みは、Emmichy で実際に動いてから。
