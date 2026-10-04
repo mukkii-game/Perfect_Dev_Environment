@@ -13,6 +13,9 @@
 | デスクトップ | RTX 4080 SUPER | 16GB | **主力**。画像・動画・3D・LoRA 学習・ローカル LLM(〜27B 量子化) |
 | ノート | RTX 3080 Laptop | **8GB か 16GB(要確認)** | サブ。画像(SDXL・FLUX.2 klein 4B)、TTS、小さい LLM |
 
+**入れた道具**(置き場所は `global/pc-setup.md`):
+- VOICEVOX エンジン: `G:\マイドライブ\ai\tools\voicevox\`(2026-10-04、ナスの地上絵の作業中に導入。2 台共有)
+
 ノートの VRAM の確かめ方: タスクマネージャー → パフォーマンス → GPU →「専用 GPU メモリ」、または `nvidia-smi`。
 確かめたらこの表を直す。
 

@@ -28,5 +28,11 @@
 |---|---|---|---|
 | Claude が PC の Codex CLI に `codex exec "<この差分をレビューして>"` で聞き、答えを読む | **自動** | PC | Plus の範囲 |
 | Claude が PR を作り、コメントに `@codex review` と書く → Codex がレビューを返す → Claude が読んで直す | **自動**(最初に ChatGPT 側で GitHub 連携だけ人) | クラウド・PC | Plus の範囲 |
-| 逆向き(Codex から Claude に聞く) | 難しい(Claude を呼ぶには API か GitHub の Claude 連携が要る) | — | — |
+| 逆向き: Codex が PC の Claude Code に `claude -p "<質問>"` で聞く | **自動**(Codex はコマンドを打てる) | PC | Claude の定額の範囲 |
+| 議論させる: Claude が `codex exec` で意見を取り、反論を返す…を 2〜3 往復して、両論と結論をユーザーに出す | **自動** | PC | 両方の定額 |
 - 使い所: 大きな設計判断、詰まった不具合、公開前の点検。毎回やると遅くなるので、迷った時だけ。
+
+## 頼み方(人間)
+- 「GPT にも聞いて」「セカンドオピニオン取って」→ PC なら `codex exec`、クラウドなら PR に `@codex review`。
+- 「GPT と議論させて」→ PC で 2〜3 往復。結果は「一致した点・割れた点・おすすめ」で返す。
+- Notion を仲介にする方法もあるが、GitHub の issue / PR か PC のコマンドで足りる(記録が repo に残る)。
