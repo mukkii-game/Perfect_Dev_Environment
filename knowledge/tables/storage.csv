@@ -21,3 +21,6 @@ GitHub secret,鍵(BUTLER_API_KEY・AI_OPS_APP_PRIVATE_KEY など),外部サー�
 手元PC(デスクトップ4080S),ComfyUI・ローカルLLM(予定),手元で動かす画像・動画・LLM。生成物は作品repoかドライブへ,人間・手元のClaude Code,—,—,knowledge/local-ai.md
 クラウド環境の設定,セットアップ用スクリプト,起動のたびに動く入れ方の手順(会議室のスキルと全体の決まり)。軽い道具だけ。重い道具(VOICEVOX 等)は使う作品のセッションでその都度取る,人間(設定画面に貼る),クラウドの全セッション,非公開,クラウド環境のメニュー → Edit → Setup script
 各PCのSSD,大きなAIモデル(ComfyUI・ローカルLLM),数GBのモデル本体。Drive の同期フォルダには置かない(同期が詰まる)。入れたものの記録は knowledge/local-ai.md,人間・PCのAI,そのPCのセッション,非公開,—
+Claudeの中,Routine・コネクタ・環境の設定(セットアップ用スクリプト・ネットワーク許可・secret),定期実行の指示、Drive/Sheets 等との接続、APIキー等の secret。原本は置かない(会話とメモリは消える・引き継げない),会議室のAI・人間(設定画面),Claude の各セッション,非公開,claude.ai の設定 / 環境のメニュー
+ChatGPTの中,Codex の GitHub 連携・画像を作る会話,作業場所だけ。作った画像は保存して作品 repo か Drive の素材庫へ移す。原本は置かない,人間・Codex,ChatGPT / Codex,非公開,chatgpt.com
+E: / D:(Drive と無関係),作品 repo の作業コピー・道具の本体・キャッシュ,`E:\dev\`(ノートは `D:\dev\`)、ComfyUI・VOICEVOX 本体、キャッシュ。唯一の原本は置かない(必ず GitHub か Drive にも),PCのAI・人間,そのPC,非公開,—
