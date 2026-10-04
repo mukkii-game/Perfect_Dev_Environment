@@ -19,3 +19,5 @@ GitHub secret,鍵(BUTLER_API_KEY・AI_OPS_APP_PRIVATE_KEY など),外部サー�
 手元PC,E:\ (ゾーンA),ゲーム・個人開発の作業場所。AIが確認なしで読み書きしてよい,人間・手元のAI,—,—,decisions/2026-09-13-permission-zones.md
 手元PC,G:\ (Googleドライブ),ドライブの同期。個人開発フォルダはA、仕事データはB(書く前に確認),人間,—,—,decisions/2026-09-13-permission-zones.md
 手元PC(デスクトップ4080S),ComfyUI・ローカルLLM(予定),手元で動かす画像・動画・LLM。生成物は作品repoかドライブへ,人間・手元のClaude Code,—,—,knowledge/local-ai.md
+クラウド環境の設定,セットアップ用スクリプト,起動のたびに動く入れ方の手順(会議室のスキルと全体の決まり)。軽い道具だけ。重い道具(VOICEVOX 等)は使う作品のセッションでその都度取る,人間(設定画面に貼る),クラウドの全セッション,非公開,クラウド環境のメニュー → Edit → Setup script
+各PCのSSD,大きなAIモデル(ComfyUI・ローカルLLM),数GBのモデル本体。Drive の同期フォルダには置かない(同期が詰まる)。入れたものの記録は knowledge/local-ai.md,人間・PCのAI,そのPCのセッション,非公開,—
