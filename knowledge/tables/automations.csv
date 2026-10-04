@@ -17,3 +17,4 @@ my-rss(ページのRSS化),全自動,GitHub Actions,毎時17分,my-rss repo,公�
 (枠) Windows Copilot / タスクスケジューラ,—,手元PC,—,—,(作ったらここに1行),—,—,—,—,未,—
 (枠) Jev(判断専用AI),—,API,—,—,毎朝の収集のふるい分けに使う案(保留中),—,—,API別契約,ai-models.md,保留,2026-09-25
 (枠) ComfyUI / ローカルLLM,半自動,手元PC(4080S),必要な時,デスクトップ,画像・動画・3Dの大量生成など,作品repoかドライブ,—,ネットに直接公開しない,local-ai.md,未導入,2026-10-03
+game-llm の自動公開,全自動,GitHub Actions,game-llm の main に push した時,GitHub(→ Cloudflare Workers),テスト後に AI 会話の中継を公開(鍵を Cloudflare の secret に入れる),https://game-llm.mucky-totoro.workers.dev,失敗すると GitHub からメール,GitHub secret 4 つ(Groq・Gemini・Cloudflare トークンと ID),mukkii-game/game-llm,稼働(10/4 開始。Codex も push している),2026-10-05
