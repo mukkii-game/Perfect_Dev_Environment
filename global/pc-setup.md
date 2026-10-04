@@ -16,16 +16,17 @@ AI への注意: winget の ID は入れる前に `winget search <名前>` で�
 - **C: は容量が乏しい。大きいものは全部データ用ドライブ(E: / D:)に入れる。** C: に入れてよいのは小さい道具(Git・Node・Python 本体)だけ。
 - Google ドライブ(5TB)は**ストリーミング**(必要な時だけ読む)で、手元のキャッシュは既に E: / D: にある。この設定は変えない。
 - AI モデルもまずは**ストリーミングのまま**使う(初回に読んだ分は E: / D: のキャッシュに残る)。**よく使うモデルが毎回読み込みに時間がかかる・途中で止まる**時だけ、そのファイル(かフォルダ)を右クリック →「オフラインで使用可能」にする。理由: キャッシュは容量に応じて消されることがあり、消えると数GBを取り直す。また ComfyUI などはモデルを一部ずつ読む読み方をするので、取ってくる途中だと遅い。マイドライブ全体はミラーにしない。
+- **自分で作るフォルダ名は半角英数字にする**(`ai\tools`・`ai\models`)。日本語や空白を含むパスで動かない道具がある。`マイドライブ` の部分は Drive が決めるので変えられない。もしそこで道具が動かなければ、その道具だけ E: / D: に置く。
 - 道具からは **G: のパスで指す**(2 台とも同じ G: なので設定を使い回せる)。
 - **C: に勝手に置かれやすいもの(必ず E: / D: に向ける)**:
-  - Ollama のモデル → 環境変数 `OLLAMA_MODELS` を `G:\マイドライブ\AIモデル\ollama`(または `E:\ai\ollama`)に
+  - Ollama のモデル → 環境変数 `OLLAMA_MODELS` を `G:\マイドライブ\ai\models\ollama`(または `E:\ai\ollama`)に
   - ComfyUI Desktop → インストール時の場所を `E:\ai\ComfyUI`(ノートは `D:\ai\ComfyUI`)に。モデルは `extra_model_paths.yaml` で G: を読む
-  - VOICEVOX → 公式 GitHub の解凍して動く版(エンジン)を `G:\マイドライブ\AI道具\VOICEVOX\engine` に置き、そのフォルダを「オフラインで使用可能」に(2 台で共有。同時に起動しない)
+  - VOICEVOX → 公式 GitHub の解凍して動く版(エンジン)を `G:\マイドライブ\ai\tools\voicevox` に置き、そのフォルダを「オフラインで使用可能」に(2 台で共有。同時に起動しない)
   - pip / npm のキャッシュ、Hugging Face のキャッシュ(`HF_HOME`)→ 大きくなるので `E:\cache` / `D:\cache` に
 - 入れ終わったら C: の空きを確認し、増え方が大きければ何が置かれたかを調べて報告する。
 
 ## 1. 道具
-- **解凍してそのまま動き、中身が書き換わらない道具**(VOICEVOX エンジン等)は G: の `AI道具/` に置いて 2 台で共有してよい(フォルダはオフライン指定)。
+- **解凍してそのまま動き、中身が書き換わらない道具**(VOICEVOX エンジン等)は G: の `ai\tools\` に置いて 2 台で共有してよい(フォルダはオフライン指定)。
 - **インストーラで入れる道具・Python 環境を抱える道具**(ComfyUI 等)は各 PC の E: / D: に入れる。
 
 | 道具 | 入れ方の目安 | 確かめ方 |
@@ -35,11 +36,11 @@ AI への注意: winget の ID は入れる前に `winget search <名前>` で�
 | Python 3 | `winget install Python.Python.3.12` | `python --version` |
 | Codex CLI(画像生成・枠切れ時) | `npm i -g @openai/codex` → `codex` を起動し ChatGPT アカウントでログイン(**ログインは人間**) | `codex --version`、画像生成を 1 枚試す |
 | Ollama(ローカル LLM) | `winget install Ollama.Ollama` | `ollama --version` |
-| VOICEVOX エンジン(声) | 公式 GitHub の解凍版を `G:\マイドライブ\AI道具\VOICEVOX\engine` に(1 台目だけ。2 台目は同期を待つ) | エンジンを起動し、`http://localhost:50021/version` が返る |
+| VOICEVOX エンジン(声) | 公式 GitHub の解凍版を `G:\マイドライブ\ai\tools\voicevox` に(1 台目だけ。2 台目は同期を待つ) | エンジンを起動し、`http://localhost:50021/version` が返る |
 | ComfyUI Desktop(画像) | 公式サイトのインストーラ | 起動して既定のワークフローで 1 枚出す |
 
 ## 2. 大きな AI モデルの置き場(2 台で共有する)
-- モデル(.safetensors 等)は**書き換えない大きなファイル**なので、Google ドライブの `AIモデル/` に置いて 2 台で共有する(0 の設定どおり)。
+- モデル(.safetensors 等)は**書き換えない大きなファイル**なので、Google ドライブの `ai\models\` に置いて 2 台で共有する(0 の設定どおり)。
 - **Drive に置かないもの**: ComfyUI 本体・Python の仮想環境・node_modules・git の repo(小さいファイルが大量に書き換わり、同期で壊れる)。
 
 ## 3. 会議室のスキルと全体の決まり
