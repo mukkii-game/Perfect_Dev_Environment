@@ -61,6 +61,7 @@
 | note.com/ukyousan(うきょう) | AI で作ったゲームの調整の型 | 10/4 | 業界 26 年。続きは有料 |
 | zenn.dev/yorusuzu | Claude Code サブエージェント設計 | 10/4 | ファイル受け渡しの実例 |
 | qiita.com/devex12 | Routine の無人運用・権限設計 | 10/4 | AI Professionals 経由 |
+| zenn.dev/dsgarage(つかさんさん) | Unity × MCP・Claude Code | 10/4 | ユーザー持ち込み。投稿は月 0〜数本(4〜9 月は空白)、自作 MCP の宣伝を含む。Unity を使い始めたら試用 |
 
 ### 外した
 | アカウント | 外した日 | 理由 |
