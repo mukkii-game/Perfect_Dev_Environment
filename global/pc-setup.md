@@ -20,11 +20,14 @@ AI への注意: winget の ID は入れる前に `winget search <名前>` で�
 - **C: に勝手に置かれやすいもの(必ず E: / D: に向ける)**:
   - Ollama のモデル → 環境変数 `OLLAMA_MODELS` を `G:\マイドライブ\AIモデル\ollama`(または `E:\ai\ollama`)に
   - ComfyUI Desktop → インストール時の場所を `E:\ai\ComfyUI`(ノートは `D:\ai\ComfyUI`)に。モデルは `extra_model_paths.yaml` で G: を読む
-  - VOICEVOX → インストール先を `E:\ai\VOICEVOX` / `D:\ai\VOICEVOX` に
+  - VOICEVOX → 公式 GitHub の解凍して動く版(エンジン)を `G:\マイドライブ\AI道具\VOICEVOX\engine` に置き、そのフォルダを「オフラインで使用可能」に(2 台で共有。同時に起動しない)
   - pip / npm のキャッシュ、Hugging Face のキャッシュ(`HF_HOME`)→ 大きくなるので `E:\cache` / `D:\cache` に
 - 入れ終わったら C: の空きを確認し、増え方が大きければ何が置かれたかを調べて報告する。
 
-## 1. 道具(各 PC に入れる。Drive には置かない)
+## 1. 道具
+- **解凍してそのまま動き、中身が書き換わらない道具**(VOICEVOX エンジン等)は G: の `AI道具/` に置いて 2 台で共有してよい(フォルダはオフライン指定)。
+- **インストーラで入れる道具・Python 環境を抱える道具**(ComfyUI 等)は各 PC の E: / D: に入れる。
+
 | 道具 | 入れ方の目安 | 確かめ方 |
 |---|---|---|
 | Git | `winget install Git.Git` | `git --version` |
@@ -32,7 +35,7 @@ AI への注意: winget の ID は入れる前に `winget search <名前>` で�
 | Python 3 | `winget install Python.Python.3.12` | `python --version` |
 | Codex CLI(画像生成・枠切れ時) | `npm i -g @openai/codex` → `codex` を起動し ChatGPT アカウントでログイン(**ログインは人間**) | `codex --version`、画像生成を 1 枚試す |
 | Ollama(ローカル LLM) | `winget install Ollama.Ollama` | `ollama --version` |
-| VOICEVOX(声) | 公式サイトのインストーラ(winget にあればそれ) | アプリを起動し、`http://localhost:50021/version` が返る |
+| VOICEVOX エンジン(声) | 公式 GitHub の解凍版を `G:\マイドライブ\AI道具\VOICEVOX\engine` に(1 台目だけ。2 台目は同期を待つ) | エンジンを起動し、`http://localhost:50021/version` が返る |
 | ComfyUI Desktop(画像) | 公式サイトのインストーラ | 起動して既定のワークフローで 1 枚出す |
 
 ## 2. 大きな AI モデルの置き場(2 台で共有する)
