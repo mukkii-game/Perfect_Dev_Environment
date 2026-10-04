@@ -37,11 +37,11 @@ AI への注意: winget の ID は入れる前に `winget search <名前>` で�
 |---|---|---|
 | Git | `winget install Git.Git` | `git --version` |
 | Node.js LTS | `winget install OpenJS.NodeJS.LTS` | `node -v` |
-| Python 3 | `winget install Python.Python.3.12` | `python --version` |
+| Python 3(3.12 以上。3.14 で動作確認) | `winget install Python.Python.3.12` | `python --version` |
 | Codex CLI(枠切れ時・セカンドオピニオン) | `npm i -g @openai/codex` → `codex` を起動し ChatGPT アカウントでログイン(**ログインは人間**)。`~/.codex/AGENTS.md` に `global/constitution.md` の 3 行を写す | `codex --version`。画像生成を 1 枚試し、**従量課金(API キー・支払い)を求められたら中止**して結果を報告 |
 | Ollama(ローカル LLM) | `winget install Ollama.Ollama` | `ollama --version` |
 | VOICEVOX エンジン(声) | 公式 GitHub の解凍版を `G:\マイドライブ\ai\tools\voicevox` に(1 台目だけ。2 台目は同期を待つ) | エンジンを起動し、`http://localhost:50021/version` が返る |
-| ComfyUI Desktop(画像) | 公式サイトのインストーラ | 起動して既定のワークフローで 1 枚出す |
+| ComfyUI Desktop(画像) | `winget install Comfy.ComfyUI-Desktop`(ID 確認済み 10/4)。インストール先は E:\ai\ComfyUI / D:\ai\ComfyUI | 起動して既定のワークフローで 1 枚出す |
 
 ## 2. 大きな AI モデルの置き場(2 台で共有する)
 - モデル(.safetensors 等)は**書き換えない大きなファイル**なので、Google ドライブの `ai\models\` に置いて 2 台で共有する(0 の設定どおり)。
