@@ -38,7 +38,7 @@ AI への注意: winget の ID は入れる前に `winget search <名前>` で�
 | Git | `winget install Git.Git` | `git --version` |
 | Node.js LTS | `winget install OpenJS.NodeJS.LTS` | `node -v` |
 | Python 3 | `winget install Python.Python.3.12` | `python --version` |
-| Codex CLI(画像生成・枠切れ時) | `npm i -g @openai/codex` → `codex` を起動し ChatGPT アカウントでログイン(**ログインは人間**) | `codex --version`、画像生成を 1 枚試す |
+| Codex CLI(枠切れ時・セカンドオピニオン) | `npm i -g @openai/codex` → `codex` を起動し ChatGPT アカウントでログイン(**ログインは人間**)。`~/.codex/AGENTS.md` に `global/constitution.md` の 3 行を写す | `codex --version`。画像生成を 1 枚試し、**従量課金(API キー・支払い)を求められたら中止**して結果を報告 |
 | Ollama(ローカル LLM) | `winget install Ollama.Ollama` | `ollama --version` |
 | VOICEVOX エンジン(声) | 公式 GitHub の解凍版を `G:\マイドライブ\ai\tools\voicevox` に(1 台目だけ。2 台目は同期を待つ) | エンジンを起動し、`http://localhost:50021/version` が返る |
 | ComfyUI Desktop(画像) | 公式サイトのインストーラ | 起動して既定のワークフローで 1 枚出す |
