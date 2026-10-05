@@ -10,6 +10,10 @@
 | 2026-10-03 | metopon | 使った素材: Twemoji / 魔王魂 / VOICEVOX:春日部つむぎ(評価なし) | `tables/used-assets.csv` |
 | 2026-10-03 | metopon | iPhone 消音で無音 → 無音 audio を最初のタップで鳴らす | 既に §9-1 にあり、取り込みなし |
 | 2026-10-03 | (スプシのコメント欄) | 2 シートとも記入なし | — |
+| 2026-10-05 | metopon | VOICEVOX を Windows で動かす手順(vvpp を展開して run.exe、Docker 不要) | `global/pc-setup.md` |
+| 2026-10-05 | metopon | Kenney Pixel Shmup は題材が限られる(砂漠なし) | `tables/assets.csv` Kenney 行 |
+| 2026-10-05 | metopon(格上げ) | 作品が Esc を一時停止に使う → 雛形の調整パネルの Esc と衝突 | 雛形 `src/core/tuning.ts` を F2 に変更 |
+| 2026-10-05 | (スプシのコメント欄) | 未確認(回収を簡略化) | — |
 
 ## 会議室の資料の使われ方
 
