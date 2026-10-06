@@ -1,0 +1,9 @@
+日付,分類,TIPS,なぜ効く・どう使う,出典,わかった
+2026-10-06,Claude運用,Claude Code とチャットは上限を共有,上限が来たらチャットも止まる。続きは Codex に HANDOFF.md で引き継ぐ,https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan,
+2026-10-06,Claude運用,フォークで案Aと案Bを分ける,会話をその時点で 2 つに分けて両方試せる。…メニューの Fork,https://zenn.dev/acntechjp/articles/943c47ea8743de,
+2026-10-06,Claude運用,クラウドの権限モードは「自動」が最上位,確認を全部飛ばすモードはローカル専用。新しいセッションは最初に「自動」を選ぶ,https://code.claude.com/docs/en/overview,
+2026-10-06,Claude運用,アーカイブは画面から戻しにくい,戻す機能は AI 側にある。迷ったらアーカイブして、戻す時は AI に頼む,https://claudeissues.com/issue/38234-bug-claude-code-in-desktop-app-doesnt-have-a-way-to-unarchive-a-session,
+2026-10-06,AIに任せる,AI は「面白いか」を確かめない,動くか・壊れていないかしか見ない。核の気持ちよさは早めに人間が触る,progress/2026-10-06-postmortem-obake-chochin.md,
+2026-10-06,AIに任せる,元ネタは床、ひねりが本体,似た作品や公開コードは骨組みだけ借り、時間はひねりに使う,knowledge/start-from-reference.md,
+2026-10-06,公開,リンクに絵を出すには og:image,Facebook などは og:image(絶対URL)が無いと絵を出さない。直したら Sharing Debugger で再取得,knowledge/promotion.md,
+2026-10-06,AIの言うこと,本の ISBN やリンクは必ず確かめる,AI が推測で書いた ISBN は 2 冊とも別の本だった,topics/10-learning-milestones.md,

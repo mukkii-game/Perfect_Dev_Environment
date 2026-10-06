@@ -31,7 +31,8 @@ BOOKS={
    ("手続き","procedures.csv","H",{"実績あり":"C6EFCE","要確認":"FFF2CC"}),
    ("使った素材","used-assets.csv","A",{"★":"C6EFCE","✕":"D9D9D9"}),
    ("自動化","automations.csv","B",{"全自動":"C6EFCE","半自動":"DDEBF7","—":"F2F2F2"}),
-   ("AIへの指示","rules.csv","C",{})]),
+   ("AIへの指示","rules.csv","C",{}),
+   ("TIPS","tips.csv","B",{})]),
  "learning":("はじめに",["Mukkii 育成プログラム","目標: AI駆動で毎日ゲームを作り、プラットフォーム化する世界的プロ(Lv1〜7。定義は topics/10)",
    "進め方: 毎週月曜の週次レビューで「今週の課題」が1つ出る → 作品で実践 → 会議室に「テストして <単元ID>」→ 合格で日付が入る",
    "タブ: カリキュラム(単元一覧) / 進捗(毎回の記録) / テスト(出題と結果) / 修了チェック(Lvごとの昇級条件) / 関連リンク",
@@ -54,6 +55,8 @@ def build(key,out):
     cm=L(n+1);s[f"{cm}1"]="コメント(自由記入)";d=s.column_dimensions[cm];d.width=240/7;d.alignment=al
     d.fill=PatternFill("solid",fgColor="FFFDE7")
     for c in range(1,n+2): s.cell(1,c).font=Font(bold=True);s.cell(1,c).alignment=al
+    if rows[0][-1]=="わかった":   # 理解チェック: 右端に ☑ 欄。毎晩会議室が CSV の「わかった」へ写して消す
+      ck=L(n+2);s[f"{ck}1"]="わかった(☑)";s.column_dimensions[ck].width=12
     s.auto_filter.ref=f"A1:{L(n+1)}{last}"   # 1 行目にフィルタ(並べ替え・絞り込み)
     R=f"A2:{L(n)}{last}"
     if mode=="rank":
