@@ -65,3 +65,5 @@
 - 進め方: Emmichy(Codex 側)で試す → 効いたら雛形に PLAYTEST.md を足し、文通所は任意の作法として資料に書く(AGENTS.md の必須手順にはしない。毎回 Issue を読む手間は全作品にかかるため)。
 - 10/6 GPT も同意。Emmichy で試す形が決まった: root の SPEC / DECISIONS / HANDOFF / QUESTIONS + 新しく PLAYTEST.md、Issue「AI文通所 / Emmichy」1 本(投稿の頭に [Chat Director] [Codex] [Claude Code] [Work])。
 - 昇格の判断(週次レビューで見る): PLAYTEST.md に失敗例が実際に溜まり、それを読んだ AI が同じ事故を避けた例が 1 つでも出たら、雛形に PLAYTEST.md を足す。文通所は「使われた回数」で判断し、AGENTS.md の必須にはしない。
+- 10/6 開始: Issue mukkii-game/emmichy#2「AI文通所 / Emmichy」。ChatGPT は Issue へ直接投稿できている。Claude Code 側の作法は emmichy の CLAUDE.md に置いた(Claude だけが読むファイル。全作品には入れない)。
+- 評価(週次レビュー): Issue #2 の投稿数と、投稿者ごとの数、人間のコピペが減ったか、Issue の決定が SPEC/DECISIONS/HANDOFF に移されているか。PLAYTEST.md の失敗例の数と、それで避けられた事故の例。
