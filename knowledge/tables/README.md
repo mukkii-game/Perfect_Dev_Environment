@@ -51,5 +51,5 @@ Unity 専用アセット・古い AI(o1、Claude 3.5 等)・個人の PC 設定�
 **同期の手順**(毎晩の回収が、CSV を変えた日と ☑ が増えた日に行う):
 1. スプシの 4 タブを get_values で読み、☑ が TRUE の行を 1 列目(TIPS は「TIPS」列)で CSV の行と突き合わせ、CSV の「わかった」が空なら「✓ 今日の日付」を書く。☑ を外した行は CSV の ✓ を消す。
 2. CSV を commit・push する。
-3. タブを batch_clear_values で消し、CSV から書き直す(update_formulas。わかった列は CSV に ✓ があれば TRUE、無ければ FALSE。コメント列は 1 で読んだ内容を同じ行に戻す)。
-4. 書き直したらチェックボックスの入力規則と、1 行目のフィルタ(setBasicFilter)を付け直す。
+3. **毎晩は足すだけ**: 新しい行は append_values で末尾に足す(☑ は FALSE)。全体の書き直しはしない(行数が増えるほどトークンを食うため)。読むのも ☑ 列と 1 列目だけにする。
+4. **全体の書き直しは週 1**(週次レビューの整理で行を統合・削除した時だけ): batch_clear_values で消し、CSV から update_formulas で書き直す(わかった列は CSV の ✓ で TRUE/FALSE、コメントは元の行に戻す)。書き直したらチェックボックスの入力規則と、1 行目のフィルタ(setBasicFilter)を付け直す。
