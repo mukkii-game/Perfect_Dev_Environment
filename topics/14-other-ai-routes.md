@@ -57,3 +57,9 @@
 - 利用上限(10/6 調べた): Claude Code・Claude のチャット・デスクトップ版は**同じ上限を共有**している(5 時間ごと＋週ごと)。Claude Code の上限が来たらチャットも止まるので、チャットは逃げ道にならない。
   - 続ける手段は 2 つ。(1) 有料の追加枠(usage credits。前払いで API 料金。support.claude.com/en/articles/12429409) (2) **Codex / ChatGPT に同じ repo で続きを頼む**(別会社なので上限も別)。費用ゼロなのは (2)。
   - (2) のために、HANDOFF.md を常に最新にしておく(雛形の作法にすでにある)。
+
+## 2026-10-06 追記: GPT 側から「AI 文通所」の提案(Emmichy)
+- 提案: repo に /AI/VISION・DECISIONS・HANDOFF・PLAYTEST.md を置き、Issue 1 本を AI 同士の文通所にする。
+- 判断: 方向は会議室と同じ(GitHub が正本、AI 同士は会話させずファイルで渡す)。ただし**雛形にはもう同じ役のファイルが root にある**(SPEC=VISION、DECISIONS、HANDOFF、QUESTIONS)。/AI に別名で作ると二重になるので、雛形の名前に合わせる。
+- 新しく価値があるのは 2 つ: **PLAYTEST.md**(遊んだ記録と評価。おばけ提灯で欠けていた「面白いかの確認」の置き場)と、**文通所 Issue**(子セッションから親へ返信できない問題の回避策にもなる)。
+- 進め方: Emmichy(Codex 側)で試す → 効いたら雛形に PLAYTEST.md を足し、文通所は任意の作法として資料に書く(AGENTS.md の必須手順にはしない。毎回 Issue を読む手間は全作品にかかるため)。
