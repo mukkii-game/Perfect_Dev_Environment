@@ -14,6 +14,12 @@
 | 2026-10-05 | metopon | Kenney Pixel Shmup は題材が限られる(砂漠なし) | `tables/assets.csv` Kenney 行 |
 | 2026-10-05 | metopon(格上げ) | 作品が Esc を一時停止に使う → 雛形の調整パネルの Esc と衝突 | 雛形 `src/core/tuning.ts` を F2 に変更 |
 | 2026-10-05 | (スプシのコメント欄) | 未確認(回収を簡略化) | — |
+| 2026-10-06 | obake-chochin | 記録→再生がずれる(丸め・bot の乱数を分ける)+ bot に lag を付けて反射神経依存を測る | 雛形 `web-game-rules.md` §9-6・§8 |
+| 2026-10-06 | obake-chochin | Phaser 4 Graphics の arc が直線でつながる → lineBetween で区切る | 雛形 `web-game-rules.md` §9-7・§8 |
+| 2026-10-06 | obake-chochin | 元ネタの芯を 3〜5 個の仕組みに分ける。説明のサインを足しすぎない。タイマーは物の距離で見せる | `start-from-reference.md` 地雷・`tables/mindset.csv` |
+| 2026-10-06 | obake-chochin | viewport 固定・Chromium 予備 | 雛形 07a110a で対応済み |
+| 2026-10-06 | (他の repo) | emmichy・game-llm・私有 repo 3 つ・my-rss に全体向けの気づきなし。素材は自作のみ | — |
+| 2026-10-06 | (スプシ) | コメント欄・☑ ともに記入なし。AI知見 10-07 はまだ無く TIPS 0 件 | — |
 
 ## 会議室の資料の使われ方
 
@@ -21,3 +27,4 @@
 
 | 日付 | 作品 | 読んだファイル | 評価 |
 |---|---|---|---|
+| 2026-10-06 | obake-chochin | knowledge/start-from-reference.md, tables/genres.csv | 役立った(元ネタは骨組みだけ借りる判断の根拠) |
