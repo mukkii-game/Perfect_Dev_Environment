@@ -52,5 +52,6 @@
 - Cloudflare の Clef(判定専用。状態と「質問と選択肢」を渡すと、選択肢ごとの確率を 1 回で返す。文章は作らない)。Workers AI で動き、重みは Apache 2.0。Jev(有料 API)より速く精度も高いという報告(MiaAI_lab 10/2、二次情報)。
 - game-llm に `POST /api/decide/<game>` を足せば、全作品で使える: NPC・敵の行動選択、bot プレイテストの戦術選択、会話の意図の分類(Emmichy の話し方の選択など)、ルール会話の前の振り分け。
 - 費用: game-llm と同じ Workers AI の無料枠(1 日 10,000 Neurons)を分け合う。超えたらルールに落ちる。
-- 未確認: Workers AI 上の正確なモデル名、1 回あたりの Neurons、日本語の判定精度。→ 作る時に 1 回試してから。
+- 実装済み(10/6): `POST /api/decide/<作品>/<名前>`、モデル `@cf/cloudflare/clef-flash`(公式ドキュメントで確認)。Emmichy に `talk`(発言の意図・熱量)。テスト 12 本通過・公開済み。
+- 未確認: 実際の判定結果と日本語の精度、1 回あたりの Neurons(ブラウザから 1 回試す)。
 - Jev は入れない(有料で、Clef で代わりになる)。
