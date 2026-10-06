@@ -43,6 +43,13 @@ Unity 専用アセット・古い AI(o1、Claude 3.5 等)・個人の PC 設定�
 - ★ が付いた素材から優先して保存する(全部は保存しない)
 - 育成プログラム: https://docs.google.com/spreadsheets/d/11Dn_SjUjqVBs8fdtdJk2dHQ0RO7S35ieKWE-T6_n2Sg/edit
 
-## わかったチェック
-- ai.csv・mindset.csv・tips.csv・glossary.csv の最後の列「わかった」は Mukkii の理解チェック。スプシの右端「わかった(☑)」に付けると、毎晩の回収が CSV に ✓ と日付を写し、☑ を消す(行の並びが変わってもずれない)。
-- 週次レビューは ✓ の付いた行から、育成プログラムのテストを出す。
+## わかったチェックと「値で書くタブ」(2026-10-06)
+スプシの **AI・心構え・TIPS・用語集** の 4 タブは IMPORTDATA ではなく**値で書いてある**(並べ替え・絞り込みができ、☑ が行と一緒に動くように)。原本は今までどおり CSV。
+- 各タブの「わかった(☑)」は Mukkii が付ける。CSV 側は最後の列「わかった」に「✓ YYYY-MM-DD」で記録する。
+- 出典・詳細の URL は CSV に生で持ち、スプシでは `=HYPERLINK(url,"リンク")` で見せる(相対パスは会議室の GitHub URL を前につける)。
+
+**同期の手順**(毎晩の回収が、CSV を変えた日と ☑ が増えた日に行う):
+1. スプシの 4 タブを get_values で読み、☑ が TRUE の行を 1 列目(TIPS は「TIPS」列)で CSV の行と突き合わせ、CSV の「わかった」が空なら「✓ 今日の日付」を書く。☑ を外した行は CSV の ✓ を消す。
+2. CSV を commit・push する。
+3. タブを batch_clear_values で消し、CSV から書き直す(update_formulas。わかった列は CSV に ✓ があれば TRUE、無ければ FALSE。コメント列は 1 で読んだ内容を同じ行に戻す)。
+4. 書き直したらチェックボックスの入力規則と、1 行目のフィルタ(setBasicFilter)を付け直す。
