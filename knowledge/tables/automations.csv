@@ -18,3 +18,4 @@ my-rss(ページのRSS化),全自動,GitHub Actions,毎時17分,my-rss repo,公�
 (枠) Jev(判断専用AI),—,API,—,—,毎朝の収集のふるい分けに使う案(保留中),—,—,API別契約,ai-models.md,保留,2026-09-25
 (枠) ComfyUI / ローカルLLM,半自動,手元PC(4080S),必要な時,デスクトップ,画像・動画・3Dの大量生成など,作品repoかドライブ,—,ネットに直接公開しない,local-ai.md,未導入,2026-10-03
 game-llm の自動公開,全自動,GitHub Actions,game-llm の main に push した時,GitHub(→ Cloudflare Workers),テスト後に AI 会話の中継を公開(鍵を Cloudflare の secret に入れる),https://game-llm.mucky-totoro.workers.dev,失敗すると GitHub からメール,GitHub secret 4 つ(Groq・Gemini・Cloudflare トークンと ID),mukkii-game/game-llm,稼働(10/4 開始。Codex も push している),2026-10-05
+追いかける係(判断だけ届ける),全自動,Claude定期実行(Routine),毎朝 7:41,会議室のセッション,動いている作品の未回答の質問・止まった作品・赤いActions・切れそうな鍵を見張る,スマホに「今日決めること(最大5)」。0件なら送らない,朝の通知が来ない日が続く(0件の日もあるので chase-log で確認),GitHub(gh api),trig_018d1WnrZsnUNrWdREXgS9ve,稼働,2026-10-07
