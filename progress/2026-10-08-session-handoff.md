@@ -54,3 +54,4 @@
 
 ## 2 代目の最初の宿題
 - 定期実行「読む相手の毎日見直し」(trig_01GdhugaDfhCaW43MFbKLtpe)の指示文に、週 1 取捨の**古い ID**(trig_01U1KVqNyU9yDjQTfxgTPh4x)が 1 か所残っている。新しい ID は trig_01KMFiFHFvZ9WiRqL3zjeZrw。指示文の書き換えは、そのセッション(2 代目)からしかできないので、2 代目が update_trigger で直す(他の部分は 1 文字も変えない)。
+- **済(10/8 2 代目)**: update_trigger で ID だけ差し替えた。他の 5 つの指示文と repo 内に古い ID が残っていないことも確認。
