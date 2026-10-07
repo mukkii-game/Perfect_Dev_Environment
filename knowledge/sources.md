@@ -46,7 +46,7 @@
 - 有料記事・セミナー・LINE 登録への誘導が多い
 - 数字や手順がなく、断言だけ
 
-## 名簿(2026-10-03 時点)
+## 名簿(2026-10-08 時点)
 
 ### 常設
 | アカウント | 分野 | 入った理由 |
@@ -72,10 +72,34 @@
 | qiita.com/Takuya__ | 新モデルの実測 | 9/26 | 2 本同日、数字付き |
 | qiita.com/nogataka | サブエージェント設定 | 9/26 | 設定ファイル単位 |
 | IsaoWorksAI(X) | AI でゲーム開発の備忘録 | 10/2 | X 検索で発見。未評価 |
-| qiita.com/roripika | Godot × AI 分業の個人開発記録 | 10/4 | 失敗 24 件の分類あり。2 回目が出たら試用 |
+| qiita.com/roripika | Godot × AI 分業の個人開発記録 | 10/4、10/6、10/8 | 失敗 24 件の分類あり。挙がるのは毎回 9/29 の同じ記事。新しい記事が出たら試用 |
 | zenn.dev/yorusuzu | Claude Code サブエージェント設計 | 10/4 | ファイル受け渡しの実例 |
 | qiita.com/devex12 | Routine の無人運用・権限設計 | 10/4 | AI Professionals 経由 |
 | zenn.dev/dsgarage(つかさんさん) | Unity × MCP・Claude Code | 10/4 | ユーザー持ち込み。投稿は月 0〜数本(4〜9 月は空白)、自作 MCP の宣伝を含む。Unity を使い始めたら試用 |
+| giginet(はてな「5.1さらうどん」/ X) | AI にゲームを遊ばせるハーネス設計 | 10/8 | トルネコを AI に 134 回遊ばせた記録(407 ブックマーク)。1 回目 |
+| note.com/npaka | 最新モデルのゲーム制作能力の整理 | 10/4、10/8 | 2 回とも見出しだけ。本文を読んでから判断 |
+| qiita.com/dev_cat222(でぶねこ) | ゆるいネタ系 Web ゲーム・調整の考え方 | 10/8 | 手応えと難しさを分ける。1 回目 |
+| zenn.dev/shunchobi | ゲームデザイン × データ(ソリティア世界旅行) | 10/8 | 継続率の数字つき。1 回目 |
+| kokushing(黒神、X) | Godot 3D MMORPG をフル AI 分業 | 10/6、10/8 | 2 回とも 10/4 の同じ投稿。道具の一覧だけ |
+| rewind02(X、英語) | UE × Claude Code の講座 | 10/8 | 英語圏の一次情報。1 回目 |
+| zenn.dev/mizchi | 評価指標を作って AI を自走させる | 10/6、10/8 | 同じ記事(10/5)。コーディング全般 |
+| miya00907380(X) | 自作ゲームの自動プレイ(Codex + Playwright + Jev) | 10/6 | 続報予告あり |
+| qiita.com/orca-forge | AI ショート動画の読み上げ・維持率 | 10/6 | 動画の一次情報(別の輪の入口) |
+| qiita.com/610birth | Codex × MCP で画像編集アプリを操作 | 10/6 | 再現できる手順つき |
+| gyakuse(逆瀬川、X / nyosegawa.com) | 音声対話アシスタント制作 | 10/6 | 音声の入口。本文未読 |
+| zenn.dev/yamato_snow、zenn.dev/i_ichi | Claude Code / Codex 運用の実測 | 10/8 | 見出しのみ |
+| nozomiishii(GitHub) | Claude Code / Codex の更新まとめ(AI Coding Daily) | 10/4 | 変更履歴を追う手間が省ける |
+| mhwangbo(GitHub) | playtest-lab 作者 | 10/4 | bot のプレイテスト設計 |
+| htdt(GitHub) | godogen 作者(Godot 自律開発) | 10/4 | 中身未読 |
+| GOROman(X) | Claude Code でファミコン、Codex でゲームボーイ | 10/4 | 手順未確認 |
+| nuigurusho(青木セイコ、X) | 手描きキャラが動くゲーム | 10/4 | 手順未確認 |
+| korinVR(X) | Claude Code で C++ ゲームエンジン | 10/4 | 手順未確認 |
+| note.com/ai_0049(おーら) | オープンソース画像生成で漫画の検証 | 10/2 | 漫画の入口 |
+| media.deskrex.ai(冨田到) | AI 漫画 120 ページの実務 | 10/2 | 漫画の入口。コストと枚数が具体的 |
+| zenn.dev/greenmameta(まめ太) | ソロ開発の AI 分業 | 10/2 | 記事は 4 月 |
+| studio_yebisu(StudioYebisu、X) | AI ニュースの解説・元ゲーム会社ディレクター | 10/8 | **仲間の輪で 2 本**(erukiti と miyatti がリポスト)。直近 15 件はニュースの解説と感想が中心で、自分で試した話が少ない。昇格見送り |
+| studiomasakaki(賢木イオ、X) | AI イラスト・漫画 | 10/8 | 仲間の輪で 1 本(fladdict が引用)。漫画の入口 |
+| AshizawaKamome(葦沢かもめ、X) | AI で小説を書く | 10/8 | 仲間の輪で 1 本(erukiti がリポスト)。物語づくりの入口 |
 
 ### 外した
 | アカウント | 外した日 | 理由 |
@@ -89,3 +113,9 @@
 - 10/5: 今朝の収集は「AI知見 2026-10-04」の名前で保存されていた(日付ずれ)。Mucky Reader 不可で X は未収集。新候補 nozomiishii・mhwangbo・htdt は初出なので候補止まり。名簿の変化なし(2 日目)
 - 10/6: + 試用 うきょう(別の日・別経路で 2 回)。roripika も条件を満たすが 1 日 1 人のため明日以降。名簿の変化あり
 - 10/7: 変化なし。今朝の収集は Mucky Reader 不可で中身 0 件。X は常設・試用を直接読んだが、erukiti と ukyoP_san は「投稿なし」で読めず。仲間の輪は 2 人以上から繋がる人なし。roripika は直近の記事を確かめられず(qiita.com に接続不可)昇格見送り
+- 10/8(週 1 取捨): 名簿の変化なし。新しい候補 24 件を足した(7 日分の情報源メモと仲間の輪から)。
+  - 試用への昇格なし。2 回挙がった人(npaka・kokushing・mizchi・roripika)は、どれも見出しだけか同じ記事の再掲。
+  - 仲間の輪で 2 人から繋がったのは studio_yebisu だけ。直近 15 件がニュースの解説中心のため、迷って上げず。
+  - 試用の降格判定はまだ(ukyoP_san は 10/20、miyatti は 10/17 で 2 週)。miyatti は毎朝の収集の①に名前が無く、読まれていなかった。①に足した。
+  - read_x_user は 10/8 時点で snapwith・erukiti・fladdict・Sokichi_Hoshino・ukyoP_san・miyatti の全員が読めた(fladdict は 1 回目だけ「投稿なし」)。1 回 20 件まで。
+  - 輪の様子: erukiti → fladdict(リポスト)で常設どうしの輪を確認。Sokichi_Hoshino の輪は asahi_ai_x など宣伝型の AI 発信者で、他の常設とは繋がっていない。ukyoP_san の輪はゲーム会社・インディー(松竹ゲームズ、電猫遊戯)で、AI の話とは別。
