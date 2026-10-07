@@ -44,3 +44,10 @@
 - 作品台帳: 機械(Actions)+ 判断(Claude)。needs.md が「なし」の日は Claude は短く済ませる。数日見て、役に立てば続ける。
 - 雛形に入れる候補: 合格条件に「気持ちいい瞬間」1 行 / 検査を Hooks で自動に / 「完成」の 6 項目判定 / 状態を文字で返す関数(research/2026-10-07-ai-game-factories.md)
 - おばけ提灯: 試運転のポストモーテムは progress/2026-10-06-postmortem-obake-chochin.md(面白さを誰も確かめなかった、が最大の教訓)
+
+## 先輩に聞く(1 代目のセッションは残してある)
+- 1 代目: session_01Rjcrs5wXfyBHne4YNLSenp「個人開発環境の整備」(9/13〜10/8)。消さない・アーカイブしない。2 代目: session_01DsPopicw11cBJMpc4PSd8Z。
+- **聞く時**: 記録(decisions/ topics/ progress/ knowledge/)に答えが無い時だけ。まず記録を探す。
+- **聞き方**: Mukkii に「1 代目に聞いてください: <質問>」と頼むか、使えるならセッション間のメッセージで 1 代目へ送る。
+- **答えの受け取り方**: 1 代目は答えを会話ではなく **progress/senpai-answers.md に追記して push** する(セッション間で返信が届かないことがあるため。ファイルなら確実に残る)。2 代目はそこを読む。
+- 答えが大事な判断なら、2 代目が decisions/ か topics/ に書き移す(先輩のセッションにしか無い知識を減らしていく)。
