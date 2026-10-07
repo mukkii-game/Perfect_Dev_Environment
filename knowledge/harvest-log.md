@@ -20,6 +20,10 @@
 | 2026-10-06 | obake-chochin | viewport 固定・Chromium 予備 | 雛形 07a110a で対応済み |
 | 2026-10-06 | (他の repo) | emmichy・game-llm・私有 repo 3 つ・my-rss に全体向けの気づきなし。素材は自作のみ | — |
 | 2026-10-06 | (スプシ) | コメント欄・☑ ともに記入なし。AI知見 10-07 はまだ無く TIPS 0 件 | — |
+| 2026-10-07 | obake-chochin | 「◯◯みたいな」の芯を移す手順(動詞→仕組み→ひねりは 1 ルールに合体→情報は絵の中の出来事→bot で芯を測る) | `start-from-reference.md` 手順 2・`tables/mindset.csv` 出典 |
+| 2026-10-07 | obake-chochin | genres.csv にミサイルコマンド系が無かった(使用記録「無かった」) | `tables/genres.csv` に 1 行 |
+| 2026-10-07 | (他の repo) | emmichy は記録済み。my-rss は自動更新のみ。私有 repo 2 つに全体向けの気づきなし。素材の追加なし | — |
+| 2026-10-07 | (スプシ・格上げ) | 値の 4 タブはコメント・☑ ともに記入なし。AI知見 10-07 は収集失敗で 0 件、TIPS・用語 0 件。格上げ 0 件 | — |
 
 ## 会議室の資料の使われ方
 
@@ -28,3 +32,4 @@
 | 日付 | 作品 | 読んだファイル | 評価 |
 |---|---|---|---|
 | 2026-10-06 | obake-chochin | knowledge/start-from-reference.md, tables/genres.csv | 役立った(元ネタは骨組みだけ借りる判断の根拠) |
+| 2026-10-07 | obake-chochin | tables/genres.csv | 無かった(ミサイルコマンド系の行。足した) |
