@@ -9,15 +9,15 @@
 | 名前 | いつ | どこで動く | ID / 場所 |
 |---|---|---|---|
 | AI知見の毎日収集 | 毎朝 7:03 | 毎回新しいセッション(Sonnet) | trig_018McVEb8PhNtRwKBG9KMvQA |
-| 読む相手の毎日見直し | 毎朝 8:30(木曜休み)、10/17 か 3 日変化なしで自分を止める | 会議室セッション | trig_017FjzQqjTwGAwDdiiFstMEe |
+| 読む相手の毎日見直し | 毎朝 8:30(木曜休み)、10/17 か 3 日変化なしで自分を止める | 会議室セッション | trig_01GdhugaDfhCaW43MFbKLtpe |
 | 作品台帳(機械) | 毎朝 6:50 | GitHub Actions(利用枠を使わない) | ai-ops `works-ledger.yml` → `ledger/works.json` `ledger/needs.md` |
-| 追いかける係(秘書) | 毎朝 7:41 | 会議室セッション | trig_018d1WnrZsnUNrWdREXgS9ve |
-| AI 情報の週 1 取捨 | 木曜 8:00 | 会議室セッション | trig_01U1KVqNyU9yDjQTfxgTPh4x |
-| 週次レビュー | 月曜 8:00 | 会議室セッション | trig_01Ns5fm6oP4TQypayNsPmVw8 |
-| 作品の気づき回収 | 毎晩 23:52 | 会議室セッション | trig_01TkkE97BqwtTuft6fecvzm2 |
-| AIへの指示の月 1 点検 | 毎月 1 日 | 会議室セッション | trig_01YKtRwgwbXxsfMayxaU9xMQ |
+| 追いかける係(秘書) | 毎朝 7:41 | 会議室セッション | trig_01WGXEztbs5bBFgoiDjHKWVk |
+| AI 情報の週 1 取捨 | 木曜 8:00 | 会議室セッション | trig_01KMFiFHFvZ9WiRqL3zjeZrw |
+| 週次レビュー | 月曜 8:00 | 会議室セッション | trig_01CmG3KkyfJXfeC4nGspSRPV |
+| 作品の気づき回収 | 毎晩 23:52 | 会議室セッション | trig_01YPF6LcmAswnpmrHS1HkCfT |
+| AIへの指示の月 1 点検 | 毎月 1 日 | 会議室セッション | trig_01EbtNVm61qgavXWVVX5QgNF |
 
-**セッションを移す時**: 「会議室セッション」で動く 6 つは persistent_session_id が古いセッションに縛られている。新しいセッションで create_trigger(同じ prompt・cron、persistent_session_id = 新しいセッション)を作り直し、古いものを delete_trigger する。prompt は get_trigger で取る。
+**10/8 に 2 代目(session_01DsPopicw11cBJMpc4PSd8Z)へ付け替え済み**(上の ID は新しいもの)。次にまた移す時: 「会議室セッション」で動く 6 つは persistent_session_id が古いセッションに縛られている。新しいセッションで create_trigger(同じ prompt・cron、persistent_session_id = 新しいセッション)を作り直し、古いものを delete_trigger する。prompt は get_trigger で取る。
 
 ## 置き場所
 - スプシ「開発ノウハウ一覧」1L3i02WVyMPxC-_wEiy1zSnyVFsCBHfRrrD25sXJVQAg: **作品**(台帳・Drive なので私有作品も載せてよい)/ AI・心構え・TIPS・用語集(値で書いたタブ。手順は knowledge/tables/README.md)/ 他は IMPORTDATA
