@@ -270,3 +270,8 @@ Galaxtris(tetrishoot)で実際に動かした。
 
 次の展開: `web-app-template` に同じ 3 点(`publish.json` / `tools/build-kit.mjs` /
 `kit/assets/`)を入れ、新規ゲームは最初から `/kit/` を持つ状態にする。
+
+## 2026-10-07 実測: 3 つの置き場の使い分け
+- **GitHub(Pages・Actions)**: 作品の原本と静的な公開。新作は全部ここ(雛形の既定)。
+- **Cloudflare(Workers・Workers AI)**: サーバーの処理が要るもの。game-llm(ゲームの会話・判定)、tonikaku-mijikaku。新しくサーバーが要る時はここ。
+- **Netlify**: Mucky Reader(X・Web を読む道具)と、昔の作品の公開先(metopon、soukoban-action など)。**新しくは使わない**。Mucky Reader は動いているので移さない。
