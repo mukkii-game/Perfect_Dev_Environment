@@ -76,13 +76,13 @@
 | zenn.dev/yorusuzu | Claude Code サブエージェント設計 | 10/4 | ファイル受け渡しの実例 |
 | qiita.com/devex12 | Routine の無人運用・権限設計 | 10/4 | AI Professionals 経由 |
 | zenn.dev/dsgarage(つかさんさん) | Unity × MCP・Claude Code | 10/4 | ユーザー持ち込み。投稿は月 0〜数本(4〜9 月は空白)、自作 MCP の宣伝を含む。Unity を使い始めたら試用 |
-| giginet(はてな「5.1さらうどん」/ X) | AI にゲームを遊ばせるハーネス設計 | 10/8 | トルネコを AI に 134 回遊ばせた記録(407 ブックマーク)。1 回目 |
+| giginet(はてな「5.1さらうどん」/ X) | AI にゲームを遊ばせるハーネス設計 | 10/8、10/9 | トルネコを AI に 134 回遊ばせた記録(415 ブックマーク)。2 回とも同じ記事・同じ経路(はてな検索)なので昇格の条件は未達。別の記事か別の経路で出たら試用 |
 | note.com/npaka | 最新モデルのゲーム制作能力の整理 | 10/4、10/8 | 2 回とも見出しだけ。本文を読んでから判断 |
-| qiita.com/dev_cat222(でぶねこ) | ゆるいネタ系 Web ゲーム・調整の考え方 | 10/8 | 手応えと難しさを分ける。1 回目 |
+| qiita.com/dev_cat222(でぶねこ) | ゆるいネタ系 Web ゲーム・調整の考え方 | 10/8、10/9 | 手応えと難しさを分ける。10/8 に別記事(ゲーム調整の考え方)もあり。経路はどちらも技術記事検索 |
 | zenn.dev/shunchobi | ゲームデザイン × データ(ソリティア世界旅行) | 10/8 | 継続率の数字つき。1 回目 |
-| kokushing(黒神、X) | Godot 3D MMORPG をフル AI 分業 | 10/6、10/8 | 2 回とも 10/4 の同じ投稿。道具の一覧だけ |
+| kokushing(黒神、X) | Godot 3D MMORPG をフル AI 分業 | 10/6、10/8、10/9 | 3 回とも 10/4 の同じ投稿。10/9 は erukiti がショート動画の仕組みをリポスト(動画の入口) |
 | rewind02(X、英語) | UE × Claude Code の講座 | 10/8 | 英語圏の一次情報。1 回目 |
-| zenn.dev/mizchi | 評価指標を作って AI を自走させる | 10/6、10/8 | 同じ記事(10/5)。コーディング全般 |
+| zenn.dev/mizchi | 評価指標を作って AI を自走させる | 10/6、10/8、10/9 | 同じ記事(10/5)。コーディング全般 |
 | miya00907380(X) | 自作ゲームの自動プレイ(Codex + Playwright + Jev) | 10/6 | 続報予告あり |
 | qiita.com/orca-forge | AI ショート動画の読み上げ・維持率 | 10/6 | 動画の一次情報(別の輪の入口) |
 | qiita.com/610birth | Codex × MCP で画像編集アプリを操作 | 10/6 | 再現できる手順つき |
@@ -100,6 +100,13 @@
 | studio_yebisu(StudioYebisu、X) | AI ニュースの解説・元ゲーム会社ディレクター | 10/8 | **仲間の輪で 2 本**(erukiti と miyatti がリポスト)。直近 15 件はニュースの解説と感想が中心で、自分で試した話が少ない。昇格見送り |
 | studiomasakaki(賢木イオ、X) | AI イラスト・漫画 | 10/8 | 仲間の輪で 1 本(fladdict が引用)。漫画の入口 |
 | AshizawaKamome(葦沢かもめ、X) | AI で小説を書く | 10/8 | 仲間の輪で 1 本(erukiti がリポスト)。物語づくりの入口 |
+| fugudaro(河豚だろう、X / note「kathoc」) | ゲームボーイ風アクション・ローグライクを AI で | 10/9 | 固定の登り方の bot で難易度の穴を見つけた。左右並べのスロー動画で比較。初回 |
+| zenn.dev/okkun0524(GENDA) | Haiku 5.5 でサブエージェントの役割を見直す | 10/9 | 報告の型(DID NOT RUN を失敗と分ける)。初回 |
+| qiita.com/skyis | Godot 製ゲームで CLAUDE.md を診断 | 10/9 | 本文未読。初回 |
+| yugiriworks(UKIUKI、X) | Codex・Claude で個人ゲーム(Godot・three.js) | 10/9 | 投稿は 7〜8 月。直近未確認。初回 |
+| zenn.dev/zaki383 | 子どもと遊ぶゲームを Godot × Codex で | 10/9 | 見出しのみ |
+| u1(Yuichi Uemura、X) | dots・Codex・Claude の運用の一次の感想 | 10/9 | **仲間の輪で 2 本**(miyatti と erukiti がリポスト)。直近 15 件は dots の実使用(VM のブラウザ・権限の不具合)と企業 IT・セキュリティの雑談が半々。ゲームの話なし。宣伝ではないが分野が外れるため昇格見送り |
+| tapehead_Lab(X) | AI で作った MV(Suno・Seedance・Opus 5.5 で VFX) | 10/9 | 仲間の輪で 1 本(erukiti がリポスト)。動画の入口 |
 
 ### 外した
 | アカウント | 外した日 | 理由 |
@@ -119,3 +126,7 @@
   - 試用の降格判定はまだ(ukyoP_san は 10/20、miyatti は 10/17 で 2 週)。miyatti は毎朝の収集の①に名前が無く、読まれていなかった。①に足した。
   - read_x_user は 10/8 時点で snapwith・erukiti・fladdict・Sokichi_Hoshino・ukyoP_san・miyatti の全員が読めた(fladdict は 1 回目だけ「投稿なし」)。1 回 20 件まで。
   - 輪の様子: erukiti → fladdict(リポスト)で常設どうしの輪を確認。Sokichi_Hoshino の輪は asahi_ai_x など宣伝型の AI 発信者で、他の常設とは繋がっていない。ukyoP_san の輪はゲーム会社・インディー(松竹ゲームズ、電猫遊戯)で、AI の話とは別。
+- 10/9: 名簿の変化なし(3 日続けて変化なし → 毎日見直しを止め、週 1(木曜)に戻した)。新候補 7 件。
+  - 仲間の輪で 2 本: u1(miyatti・erukiti)と unity_japan(会社の公式なので数えない)。u1 は分野が外れるため見送り。giginet・でぶねこは 2 回目だが同じ経路なので見送り。
+  - 毎朝の収集が「Sokichi_Hoshino が別人(えーたん / @ai_jitan)では」と注意を出したが、**取り違え**だった。`read_x_user` の profile 欄は、直近の投稿がリポストだとリポスト元の人のプロフィールが入る(miyatti・erukiti でも同じ)。本人の投稿の表示名は「星野創吉｜CoreGen」。人物の確認は profile 欄でなく、本人の投稿の author で見る。
+  - read_x_user は 1 回目「投稿なし」→ 再試行で読める人が多い(snapwith・fladdict・erukiti)。ukyoP_san は 2 回とも読めず(search_x の from: で代替できる)。1 回 20 件まで。
