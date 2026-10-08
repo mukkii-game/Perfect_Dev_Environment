@@ -77,11 +77,23 @@
 2. 索引の列: 名前、URL、種類、ライセンス、クレジット要否、商用可否、使った作品、保管場所(Drive)
 3. AI が索引を自動検索できる形(→ 02 の「機械検索は ◯◯.py」)
 4. ライセンスの記録を作品 repo の `ASSETS.md` に強制する仕組み
+5. **(2026-10-08 くつずれから)絵・BGM・SE を人の仲介なしで専門 AI に生成させる経路**。下の「調べたこと」に実測、「次にやること」に手順。憲法に入れるのは**鍵の経路を 1 本確かめてから**(未検証の経路を全作品の決まりにしない)
 
 ## 調べたこと
 
 - (未着手)候補サイト一覧
+- **2026-10-08 クラウド環境の実測**(くつずれセッションの報告 + 会議室で再確認):
+  - API キーは環境に 1 本も無い(OpenAI / Gemini / ElevenLabs 等)
+  - 通る: generativelanguage.googleapis.com(Gemini API。画像 Nano Banana / Imagen、音楽 Lyria。鍵が無いので未検証)、huggingface.co、raw.githubusercontent.com、kenney.nl、opengameart.org、maou.audio、dova-s.jp
+  - 弾かれる: api.openai.com、api.elevenlabs.io(会議室でも再現)、api.stability.ai、api.replicate.com、fal.run、freesound.org、otologic.jp、soundeffect-lab.info、itch.io、archive.org、pixabay.com、cdn.jsdelivr.net
+  - gcloud の既存の認証を流用して Vertex を探る道は、auto mode が「Credential Exploration」で止めた。**明示的に入れた鍵**という正規の経路が要る
+  - 結果、くつずれは Mukkii が ChatGPT / Suno に依頼文を手で貼る仲介になった(`mukkii-game/kutsuzure` の `docs/asset-requests.md`)。Mukkii の評価: コードで描いた絵・WebAudio の合成曲はレベルが低い
 
 ## 次にやること
 
 - [ ] 索引の列を決めてスプシの雛形を作る
+- [ ] **(Mukkii)** クラウド環境の設定(セッションの題名の環境メニュー → Edit)で、Network secrets(無ければ環境変数)に `GEMINI_API_KEY` を入れる。新しいセッションから効く
+- [ ] (会議室)鍵が入ったら、画像(Gemini Flash Image / Imagen)と音楽(Lyria)が今の通信制限のまま叩けるか確かめ、結果と商用規約を knowledge/tables/assets.csv に書く
+- [ ] (会議室)通ったら雛形に `tools/gen-image.mjs` / `tools/gen-audio.mjs`: スタイルバイブルのファイル → 1 枚ずつ生成 → `assets/gen/` → CREDITS.md に AI 名とプロンプトを自動追記。鍵が無い環境では依頼文一式を `docs/asset-requests.md` に出す(くつずれの形)
+- [ ] (会議室)その後に憲法へ 1 行案: 「絵・音楽・SE はコード描画・合成で済ませない。まず鍵の設定済みの生成 AI か CC0 素材。コード描画・合成は仮置きか、作風として意図した時だけ」
+- [ ] (保留)GPT Image(api.openai.com を許可 + `OPENAI_API_KEY`)、ElevenLabs Music / SFX(api.elevenlabs.io + 鍵)は、Gemini で足りなければ
