@@ -9,7 +9,7 @@
 | 名前 | いつ | どこで動く | ID / 場所 |
 |---|---|---|---|
 | AI知見の毎日収集 | 毎朝 7:03 | 毎回新しいセッション(Sonnet) | trig_018McVEb8PhNtRwKBG9KMvQA |
-| 読む相手の毎日見直し | 毎朝 8:30(木曜休み)、10/17 か 3 日変化なしで自分を止める | 会議室セッション | trig_01GdhugaDfhCaW43MFbKLtpe |
+| 読む相手の毎日見直し | **10/9 に停止**(3 日変化なし。週 1 取捨に戻した) | 会議室セッション | trig_01GdhugaDfhCaW43MFbKLtpe |
 | 作品台帳(機械) | 毎朝 6:50 | GitHub Actions(利用枠を使わない) | ai-ops `works-ledger.yml` → `ledger/works.json` `ledger/needs.md` |
 | 追いかける係(秘書) | 毎朝 7:41 | 会議室セッション | trig_01WGXEztbs5bBFgoiDjHKWVk |
 | AI 情報の週 1 取捨 | 木曜 8:00 | 会議室セッション | trig_01KMFiFHFvZ9WiRqL3zjeZrw |
