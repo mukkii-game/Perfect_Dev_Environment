@@ -36,7 +36,7 @@
 1. 作品台帳の「状態を直す」列(特に 休止?完成? 23 本)
 2. 今朝の判断 3 件(おばけ提灯の続行・終わりの作り方、Emmichy の PR #3)
 3. パクる候補(research/2026-10-07-ai-game-factories.md 上位 3 つを雛形へ)と資料 5 つ(knowhow-curators)を入れるか
-4. 週 1 取捨の 5 件(10/8)を番号で
+4. ~~週 1 取捨の 5 件(10/8)を番号で~~ → **済**: 10/8「全部」。process-patterns.md 5〜7・新設 game-design.md に入れた(多くなったら後で削る、と Mukkii)
 5. itch.io 自動公開のための BUTLER_API_KEY
 6. X の鍵の確認(Mucky Reader の一覧読みが 10/5〜10/7 止まった。10/8 は復活)。Mucky Reader のソースの置き場所(見つかっていない)
 
