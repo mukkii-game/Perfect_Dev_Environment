@@ -31,3 +31,9 @@
 - 親から子へは send_message で送れる。子から親へ直接返信する仕組みは無い(仕様)。
 - 回避策: 子は `create_trigger`(persistent_session_id=親の session id、run_once_at=数分後)を使えば、親のセッションにメッセージを1回届けられる。未検証。
 - いちばん確実なのは repo の HANDOFF.md に書いてもらい、親が読みに行くこと。
+
+## クラウドのセッションから届かない・壊れるもの(2026-10-08 obake-chochin / kutsuzure)
+- 公開した Pages(github.io)をクラウドから開けないことがある。「ちゃんと動く?」には、CI の公開の成否と公開された版(コミット)を API で確かめ、同じ版を手元でビルドして遊ばせて答える。返事に書く URL は 1 文字ずつ確かめる(打ち間違えたリンクを渡した例あり)。
+- URL の直後に日本語や括弧を続けない(「公開済みです(https://…/)。」は「)。」まで URL と読まれて壊れる)。URL は単独の行に置くか `<URL>` で囲む。
+- 素材サイト: 効果音ラボ・OtoLogic・freesound・itch.io・pixabay・archive.org は通らない。魔王魂・DOVA・Kenney・OpenGameArt・GitHub(VSCO-2-CE 等)は通る。生成 AI の API は鍵が無い(topics/06 の 2026-10-08)。
+- GitHub の検索 API は 403。SVG → PNG は ImageMagick に rsvg が無いので、Playwright の Chromium に executablePath を渡して描く。

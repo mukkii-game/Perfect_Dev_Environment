@@ -15,3 +15,4 @@ Grok,xAI,外した,外した,—,—,—,Claude と GPT が上回った,解約�
 Grok Bot,xAI(SpaceXAI),—,外した,—,常駐エージェント(専用クラウドPCで外部サービスにログインして作業),放っておいても動く,月 120 ドル/席。外部サービスに自分のログインで入る作り。会議室では xAI は外している,外した,2026-10-06,
 Meta Muse,Meta,—,使えない,—,常駐エージェント(専用クラウド VM・Mac で画面操作),無料,米国のみ・Mac のみ(2026-10 時点),使えない(日本・Windows),2026-10-06,
 Clef / Clef-flash,Cloudflare,A,優先,ゲームの判断(NPC の行動・bot の戦術・会話の分類)、毎朝の収集のふるい分け,文章を作らず、選択肢ごとの確率を 1 回で返す判定専用モデル(Qwen 27B / 9B + 判定ヘッド),速い・安い・重みは Apache 2.0。game-llm と同じ Workers AI で無料枠内,文章は作れない(会話は別モデル)。Workers AI 上のモデル名は要確認,使える(Workers AI 無料枠 / ローカルも可),2026-10-06,
+Gemini 画像・音楽(Flash Image / Imagen / Lyria),Google,未評価,候補,クラウドの作品セッションから絵・BGM を直接作る,generativelanguage.googleapis.com はクラウドの通信制限を通る(2026-10-08 実測),人の仲介なしで生成できる見込み,鍵がまだ無く未検証。商用規約は要確認,GEMINI_API_KEY を環境に入れれば試せる(topics/06),2026-10-08,
