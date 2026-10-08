@@ -56,6 +56,6 @@
 - 定期実行「読む相手の毎日見直し」(trig_01GdhugaDfhCaW43MFbKLtpe)の指示文に、週 1 取捨の**古い ID**(trig_01U1KVqNyU9yDjQTfxgTPh4x)が 1 か所残っている。新しい ID は trig_01KMFiFHFvZ9WiRqL3zjeZrw。指示文の書き換えは、そのセッション(2 代目)からしかできないので、2 代目が update_trigger で直す(他の部分は 1 文字も変えない)。
 - **済(10/8 2 代目)**: update_trigger で ID だけ差し替えた。他の 5 つの指示文と repo 内に古い ID が残っていないことも確認。
 
-## 雛形への反映待ち(10/8 2 代目)
-- `core/probe.ts`(AI の目と手: 状態を JSON で返す・意味単位の操作・禁止はコードで拒否)+ サンプル配線 + check.mjs の確認 + スキル早見表の同期。
-- build / check / test:replay は通った。**push だけ未了**(このセッションに web-app-template の書き込み権限が無い)。パッチは `drafts/web-app-template/` にある。権限が付いたら `git am` して main へ push。
+## 雛形への反映(10/8 2 代目)— 済
+- web-app-template d21a713: `core/probe.ts`(AI の目と手: 状態を JSON で返す・意味単位の操作・禁止はコードで拒否)+ サンプル配線 + check.mjs の確認 + スキル早見表の同期。build / check / test:replay 通過。
+- 2 代目のセッションに web-app-template を書き込み可で追加済み(Mukkii 許可 10/8)。
