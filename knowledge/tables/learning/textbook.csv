@@ -2,9 +2,12 @@
 AI運用,AI-1,任せ方,SPEC 1 枚で走らせる,ゴール・完了の形・仮決めの置き場を書けば、AI は止まらずに走る,https://github.com/mukkii-game/web-app-template/blob/main/SPEC.md,Claude Code 公式ベストプラクティス https://www.anthropic.com/engineering/claude-code-best-practices,,,,
 AI運用,AI-1,任せ方,元ネタは床、ひねりが本体,参考は骨組みだけ借りる。時間はひねりに使う,https://github.com/mukkii-game/Perfect_Dev_Environment/blob/main/knowledge/start-from-reference.md,,,,,
 AI運用,AI-1,任せ方,面白さは誰も確かめない,AI は「動くか」しか確かめない。面白いかは人間が早めに触る(おばけ提灯の教訓),https://github.com/mukkii-game/Perfect_Dev_Environment/blob/main/progress/2026-10-06-postmortem-obake-chochin.md,,,,,
+AI運用,AI-1,任せ方,作る前に HTML で「今 → こうしたい」と計画を出させる,課題とゴールは自分で書き、どう作るかは AI に HTML で説明させて何度か直してから実装。打ち合わせの代わり,https://x.com/OKtamajun/status/2108405761554710720,おすすめ skills 5 つ(玉置絢: 仕様の不明点を質問させる・図解・文章を削る・自然な日本語) https://x.com/OKtamajun/status/2108408726441078972,,,,2026-10-09
+AI運用,AI-1,任せ方,「出来上がっていく楽しさ」と「ゲームの楽しさ」を分ける,機能が足されていく楽しさは作る本人だけのもの。他の人も楽しいかは別に確かめる,https://x.com/OKtamajun/status/2108376643597373654,,,,,2026-10-09
 AI運用,AI-2,止める,止めるサイン,同じ修正の繰り返し・頼んでいない機能・文書の肥大化が出たら止める,https://github.com/mukkii-game/Perfect_Dev_Environment/blob/main/knowledge/process-patterns.md,,,,,
 AI運用,AI-3,文脈,AI への指示は増やさない,AGENTS.md は毎回読まれる。事実は資料に、指示は最小に,https://github.com/mukkii-game/Perfect_Dev_Environment/blob/main/AGENTS.md,文脈設計の記事 https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents,,,,
 AI運用,AI-3,文脈,HANDOFF で引き継ぐ,上限が来たら Codex へ。HANDOFF.md が最新なら誰でも続きができる,https://github.com/mukkii-game/Perfect_Dev_Environment/blob/main/decisions/2026-10-06-claude-limit-handoff.md,,,,,
+AI運用,AI-3,文脈,最初に覚えるのはモデルの切り替えと文脈の大きさ,「文脈を圧縮」が続く前にセッションを切る・サブエージェントに分ける。応用より先に,https://x.com/OKtamajun/status/2108409624907129282,,,,,2026-10-09
 AI運用,AI-4,並列,質問は溜める,QUESTIONS.md に仮決めを並べ、後でまとめて答える,https://github.com/mukkii-game/web-app-template/blob/main/AGENTS.md,,,,,
 AI運用,AI-6,モデル,AI の使い分け,会話・画像・判定でどの AI を使うか,https://github.com/mukkii-game/Perfect_Dev_Environment/blob/main/knowledge/ai-models.md,,,,,
 AI運用,AI-6,モデル,ゲームに AI を入れる,会話 LLM・判定 Clef・ルールの選び方,https://github.com/mukkii-game/Perfect_Dev_Environment/blob/main/knowledge/ai-in-games.md,,,,,
