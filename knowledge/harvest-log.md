@@ -36,6 +36,12 @@
 | 2026-10-08 | (他の repo) | emmichy・game-llm・my-rss に HANDOFF の気づき欄なし。非公開の知識 repo は自動収集のみ。ai-ops は台帳の自動更新 | — |
 | 2026-10-08 | (スプシ) | 値の 4 タブはコメント・☑ ともに記入なし。TIPS 3 件(AI知見 10-08)・AI タブに Gemini 画像・音楽の行を追記。用語 0 件(新しい名前は未確認のものだけ) | `tables/tips.csv`・`tables/ai.csv` |
 | 2026-10-08 | kutsuzure | 絵・BGM を専門 AI に直接頼めない(鍵が無い) | 憲法候補として受領済み → `topics/06-assets.md`(Mukkii に GEMINI_API_KEY を依頼中) |
+| 2026-10-09 | obake-chochin | Canvas の切り抜き(destination-out)は切る形を不透明に | 雛形 `web-game-rules.md` §9-12・§8 |
+| 2026-10-09 | obake-chochin(格上げ) | Facebook でリンクに絵が出ない(ほかの作品でも)。og:image:width/height が無い・古い結果を覚える | 雛形 `index.html` に width/height/type/secure_url/alt と twitter:image、AGENTS.md の「公開」の行を直す(行数は同じ)、§9-13。0a36c34 |
+| 2026-10-09 | obake-chochin | 難しさは指の遅れる bot で測る(0.6 秒遅れで 7 割 → 3 割) | `knowledge/game-design.md` 6 |
+| 2026-10-09 | obake-chochin | platforms.md の itch.io「全自動」が誤解を生んだ(使用記録「食い違い」) | `knowledge/platforms.md` を「更新は全自動、初回のページ作成と secret は人間」に |
+| 2026-10-09 | (他の repo) | kutsuzure・metopon・emmichy・game-llm・my-rss に新しい気づきなし。非公開 3 つは自動更新・企画書のみ。素材の追加なし | — |
+| 2026-10-09 | (スプシ) | 値の 4 タブはコメント・☑ ともに記入なし。TIPS 3 件・用語 1 件(Claude Haiku 5.5)をスプシにも追記 | `tables/tips.csv`・`tables/glossary.csv` |
 
 ## 会議室の資料の使われ方
 
@@ -50,6 +56,8 @@
 | 2026-10-08 | kutsuzure | knowledge/process-patterns.md | 役立った(企画の多角審査をそのまま Workflow に。16 案 → 5 審査 → 3 案で 25 分) |
 | 2026-10-08 | kutsuzure | tables/assets.csv | 役立った(Kenney・OGA を先に当たれた)。古かった: 効果音ラボ等はクラウドから通らない → assets.csv・env-gotchas に注記 |
 
+| 2026-10-09 | obake-chochin | knowledge/platforms.md, tables/procedures.csv | 食い違い(itch.io の「全自動」。platforms.md を直した) |
+
 ## 格上げの保留
 
 週の見直しが判断する。
@@ -59,3 +67,5 @@
 | 2026-10-08 | obake-chochin | CI からブラウザ確認を外し(約 76 秒 → 30 秒)、手元の確認を「毎回 tsc・build・bot / 描画を変えた時だけブラウザ / 文書だけは build」に分ける。雛形の build-and-deploy.yml と AGENTS.md へ | 1 作品の実測のみ。人が直接 push した時にブラウザ確認が抜ける |
 | 2026-10-08 | obake-chochin | 雛形に絵の差し替えの道(キー → 画像の manifest + ComfyUI 一括 + 背景抜き、作品の tools/art/) | 鍵の経路(topics/06)と合わせて決める |
 | 2026-10-08 | obake-chochin | 雛形の tools/sim.mjs に「面ごと・やり方ごと」の bot 比較 | 雛形に sim.mjs がまだ無い。probe.ts の上に作るか要検討 |
+| 2026-10-09 | obake-chochin | 雛形 AGENTS.md の「終わったら HANDOFF を更新」を「push のたびに HANDOFF の現状を 1 行直す(該当行だけ)」に。十数回分ずれた実例あり | 指示の文の変更。今日の格上げ枠は OGP に使った。週の見直しで判断 |
+| 2026-10-09 | obake-chochin | 雛形の sim に「指の遅れる bot」を既定で並べる(10/8 の「面ごと・やり方ごとの比較」と同じ道具の話) | 雛形に sim.mjs がまだ無い。probe.ts の上に作る時に合わせて |
