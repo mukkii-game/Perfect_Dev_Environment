@@ -68,3 +68,10 @@
 - 10/6 開始: Issue mukkii-game/emmichy#2「AI文通所 / Emmichy」。ChatGPT は Issue へ直接投稿できている。Claude Code 側の作法は emmichy の CLAUDE.md に置いた(Claude だけが読むファイル。全作品には入れない)。
 - 評価(週次レビュー): Issue #2 の投稿数と、投稿者ごとの数、人間のコピペが減ったか、Issue の決定が SPEC/DECISIONS/HANDOFF に移されているか。PLAYTEST.md の失敗例の数と、それで避けられた事故の例。
 - 10/7 **実験終了**。ChatGPT 側の結論は「AI 同士の自動往復は複雑すぎる。Cloud Work 1 本に集約」。知見は knowledge/multi-ai-relay.md にまとめた。文通所・PLAYTEST.md の雛形への昇格は見送り、週次レビューの評価項目も終わり。emmichy の CLAUDE.md の文通所の手順は外した。
+
+## 2026-10-10 追記: Codex の公式プラグイン「Game Studio」
+- OpenAI 公式(curated)のブラウザゲーム用プラグイン(2026-05 公開、v0.1.0)。入れ方: `codex plugin add game-studio@openai-curated`、または Codex アプリの `/plugins`。
+- 中身: 入口の `game-studio` が依頼を振り分け、`web-game-foundations`(中身・描画・UI・入力を分ける)/ `phaser-2d-game` / `three-webgl-game` / `react-three-fiber-game` / `game-ui-frontend` / `sprite-pipeline` / `web-3d-asset-pipeline` / `game-playtest` に進む。2D の既定は Phaser + TypeScript + Vite で、**うちの雛形とほぼ同じ方針**。
+- 判断: **Claude の上限が来て Codex に引き継ぐ時(decisions/2026-10-06-claude-limit-handoff)は入れておく**。ぶつかる所(HUD を DOM で作る・フォルダ構成)は作品 repo の AGENTS.md を優先させる。
+- うちに取り込めそうなもの: `sprite-pipeline`(承認済みの 1 枚を起点に、アニメ全体を 1 回で生成して正規化 → 絵のズレが減る。画像生成の鍵が入ったら雛形の gen-image に)、`game-playtest` の確認項目(主操作が分かるか・HUD が遊ぶ場所を塞いでいないか・失敗とリトライ・画面サイズの変化)。
+- 出典: npaka「Codex の Game Studio プラグイン の概要」https://note.com/npaka/n/ne31af6df7392 (2026-05-25、確認 2026-10-10)。OpenAI の公式文書は未確認。
