@@ -53,3 +53,13 @@
 ## 5. 初回にやること(人間)
 1. デスクトップに ComfyUI Desktop を入れる → 2. Comfy MCP を Claude Code に登録 → 3. FLUX.2 klein 4B で 1 枚出す
 → 4. ここに「動いた設定」と 1 枚あたりの秒数を書く(実測が入るまで表のランクは仮)
+
+## 6. 手元の GPU で足りない時: Google AI Pro 特典の Colab(A100)(2026-10-10 追記)
+- Google AI Pro(Mukkii は契約済み)に Colab の上位特典が付き、**A100 40GB / 80GB** が使えるようになった(Google Gemma 公式の告知 https://x.com/googlegemma/status/2108652628590944540 、StudioYebisu の実演 https://x.com/studio_yebisu/status/2108808702577009033 、ともに 2026-10-10)。
+- 月 200 CU の配布で、A100 40GB なら約 37 時間、ハイメモリなら約 26 時間(StudioYebisu の概算。未確認)。
+- 手元(4080S 16GB / 3080 Laptop)との差: 16GB では量子化しないと動かない動画・画像の生成モデル(Wan2.2・LTX-Video・HunyuanVideo 等)を高い精度で回せる。30B〜70B の LLM、LoRA の学習も回せる。
+- うちでの使いどころ(毎日の 1 本には要らない。**まとめて作る時だけ**):
+  - キャラを揃えるための LoRA 学習(漫画・作品の主役)
+  - 宣伝動画の生成
+  - ゲームに入れる LLM(game-llm)の大きめのモデルの試験
+- 注意: 生成物の商用利用はモデルごとのライセンス次第(§4 と同じ)。Colab はブラウザで人が開くもので、クラウドのセッションから直接は動かせない(未確認)。使う日は Mukkii の手元から。
