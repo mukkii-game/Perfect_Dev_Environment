@@ -16,6 +16,7 @@ AI運用,AI-7,道具,他の AI に意見を聞く,GPT/Codex の使いどころ�
 プログラム,PRG-1,読む,JavaScript の基礎,変数・関数・イベント。AI のコードが読めれば十分,https://jsprimer.net/,JavaScript Primer(無料のウェブ版。書籍版もある) https://jsprimer.net/,,,,
 プログラム,PRG-1,読む,TypeScript,型が付いた JavaScript。雛形はこれ,https://www.typescriptlang.org/docs/handbook/intro.html,,,,,
 プログラム,PRG-2,構造,中身と見た目を分ける,ロジックを描画から切り離すと、bot テストや再生ができる,https://github.com/mukkii-game/web-app-template/blob/main/AGENTS.md,Game Programming Patterns(無料のウェブ版) https://gameprogrammingpatterns.com/,,,,
+プログラム,PRG-2,構造,共通化しすぎない(変わらない所と調整する所を分ける),「この技だけ」「このキャラだけ」が終盤に増える。半年後に別々に直したくなる処理はまとめず、補正を段に分けて足せる形に,https://note.com/itchie_tatsumi/n/n3efe31def204,,,,,2026-10-10
 プログラム,PRG-3,デバッグ,3 大罠,キャッシュ・入力・スマホ。直らない時はキャッシュを疑う,https://github.com/mukkii-game/web-app-template/blob/main/docs/knowledge/web-game-rules.md,,,,,
 プログラム,PRG-3,エンジン,Phaser 4,雛形のゲームエンジン,https://docs.phaser.io/,,,,,
 ゲームデザイン,GD-1,核,面白さの核,1 つの遊びを 30 秒で伝える。ジャンルの作法,https://github.com/mukkii-game/Perfect_Dev_Environment/blob/main/knowledge/tables/genres.csv,桜井政博のゲーム作るには(YouTube) https://www.youtube.com/@sora_sakurai_jp,,,,
