@@ -72,6 +72,6 @@
 ## 2026-10-10 追記: Codex の公式プラグイン「Game Studio」
 - OpenAI 公式(curated)のブラウザゲーム用プラグイン(2026-05 公開、v0.1.0)。入れ方: `codex plugin add game-studio@openai-curated`、または Codex アプリの `/plugins`。
 - 中身: 入口の `game-studio` が依頼を振り分け、`web-game-foundations`(中身・描画・UI・入力を分ける)/ `phaser-2d-game` / `three-webgl-game` / `react-three-fiber-game` / `game-ui-frontend` / `sprite-pipeline` / `web-3d-asset-pipeline` / `game-playtest` に進む。2D の既定は Phaser + TypeScript + Vite で、**うちの雛形とほぼ同じ方針**。
-- 判断: **Claude の上限が来て Codex に引き継ぐ時(decisions/2026-10-06-claude-limit-handoff)は入れておく**。ぶつかる所(HUD を DOM で作る・フォルダ構成)は作品 repo の AGENTS.md を優先させる。
+- 判断: **Claude の上限が来て Codex に引き継ぐ時(decisions/2026-10-06-claude-limit-handoff)は入れておく**。貼る文に「まだなら入れて」を入れたので、Mukkii が先に入れる必要はない(knowledge/codex-handoff.md)。ぶつかる所(HUD を DOM で作る・フォルダ構成)は作品 repo の AGENTS.md を優先させる。
 - うちに取り込めそうなもの: `sprite-pipeline`(承認済みの 1 枚を起点に、アニメ全体を 1 回で生成して正規化 → 絵のズレが減る。画像生成の鍵が入ったら雛形の gen-image に)、`game-playtest` の確認項目(主操作が分かるか・HUD が遊ぶ場所を塞いでいないか・失敗とリトライ・画面サイズの変化)。
 - 出典: npaka「Codex の Game Studio プラグイン の概要」https://note.com/npaka/n/ne31af6df7392 (2026-05-25、確認 2026-10-10)。OpenAI の公式文書は未確認。
