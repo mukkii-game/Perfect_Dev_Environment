@@ -40,3 +40,4 @@ Godot,ゲームエンジン,無料のゲームエンジン。物理・UI・ア�
 GDScript,ゲームエンジン,Godot 専用の書きやすい言語,Godot で AI に書かせる時(トークンが少ない),Godot とセット,https://github.com/mukkii-game/Perfect_Dev_Environment/blob/main/knowledge/engines.md,
 Phaser,ゲームエンジン,ブラウザ用 2D ゲームの道具,1日1本の Web ゲーム,雛形の標準(Phaser 4),https://github.com/mukkii-game/Perfect_Dev_Environment/blob/main/knowledge/engines.md,
 Claude Haiku 5.5,AIモデル,Haiku の新世代。Haiku 4.5 の約 1/10 の単価,結果を決まった形に写すだけの作業(テスト実行・ログ要約),サブエージェントの検証役の候補(実装役は Sonnet / Opus のまま),https://zenn.dev/genda_jp/articles/haiku-5-5-subagent-roles,
+Claude Motion,Claude機能,資料やアイデアを短いアニメの説明動画にする(β),宣伝動画・説明動画の下書き,未使用(β公開 2026-10-09)。ゲームの紹介動画に使えるか試す候補,https://news.mynavi.jp/techplus/article/20261009-5099252/,

@@ -42,6 +42,11 @@
 | 2026-10-09 | obake-chochin | platforms.md の itch.io「全自動」が誤解を生んだ(使用記録「食い違い」) | `knowledge/platforms.md` を「更新は全自動、初回のページ作成と secret は人間」に |
 | 2026-10-09 | (他の repo) | kutsuzure・metopon・emmichy・game-llm・my-rss に新しい気づきなし。非公開 3 つは自動更新・企画書のみ。素材の追加なし | — |
 | 2026-10-09 | (スプシ) | 値の 4 タブはコメント・☑ ともに記入なし。TIPS 3 件・用語 1 件(Claude Haiku 5.5)をスプシにも追記 | `tables/tips.csv`・`tables/glossary.csv` |
+| 2026-10-10 | (非公開の作品) | 自動テストで曲の時計を差し替えるのは開始処理の後 | 雛形 `web-game-rules.md` §9-14・§8 |
+| 2026-10-10 | (非公開の作品) | 物理合体の連鎖が隙間で切れる → 生まれる位置を寄せる | `knowledge/game-design.md` 7 |
+| 2026-10-10 | (非公開の作品) | 考えて置く bot と適当に押す bot を同時に測る(3 本目の作品で同じ結論) | `knowledge/game-design.md` 6 を直した。格上げの保留「雛形に bot 比較の道具」を後押し |
+| 2026-10-10 | (他の repo) | 公開の作品(おばけ提灯・metopon・emmichy・game-llm 等)に新しい気づきなし。非公開の MOD・企画書・自動更新にも全体向けなし。素材の追加なし | — |
+| 2026-10-10 | (スプシ) | 値の 4 タブはコメント・☑ ともに記入なし。TIPS 3 件・用語 1 件(Claude Motion) | `tables/tips.csv`・`tables/glossary.csv` |
 
 ## 会議室の資料の使われ方
 
@@ -57,6 +62,7 @@
 | 2026-10-08 | kutsuzure | tables/assets.csv | 役立った(Kenney・OGA を先に当たれた)。古かった: 効果音ラボ等はクラウドから通らない → assets.csv・env-gotchas に注記 |
 
 | 2026-10-09 | obake-chochin | knowledge/platforms.md, tables/procedures.csv | 食い違い(itch.io の「全自動」。platforms.md を直した) |
+| 2026-10-10 | (非公開の作品) | tables/assets.csv, genres.csv | 役立った(画像生成の推奨、パズルは素の canvas + 自作ロジックが向く) |
 
 ## 格上げの保留
 
@@ -69,3 +75,4 @@
 | 2026-10-08 | obake-chochin | 雛形の tools/sim.mjs に「面ごと・やり方ごと」の bot 比較 | 雛形に sim.mjs がまだ無い。probe.ts の上に作るか要検討 |
 | 2026-10-09 | obake-chochin | 雛形 AGENTS.md の「終わったら HANDOFF を更新」を「push のたびに HANDOFF の現状を 1 行直す(該当行だけ)」に。十数回分ずれた実例あり | 指示の文の変更。今日の格上げ枠は OGP に使った。週の見直しで判断 |
 | 2026-10-09 | obake-chochin | 雛形の sim に「指の遅れる bot」を既定で並べる(10/8 の「面ごと・やり方ごとの比較」と同じ道具の話) | 雛形に sim.mjs がまだ無い。probe.ts の上に作る時に合わせて |
+| 2026-10-10 | 3 作品 | 「やり方の違う bot を並べて比べる道具」を雛形に(おばけ提灯・くつずれ・非公開 1 本で同じ結論。10/8・10/9 の保留と同じ話) | **条件は満たした**(複数の作品で同じ結論)。ただし雛形の見本シーンは中身と描画が分かれておらず、作るには見本の作り直しが要る。週の見直しで「作るか」を決める |
