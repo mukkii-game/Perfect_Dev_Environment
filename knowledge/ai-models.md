@@ -45,6 +45,10 @@
 | **Sonnet 5.5** | **$2 / $10** | 集める・要約する。**毎朝の収集はこれ**(2026-10-01 に Opus 5 から切替) |
 | Haiku 4.5 | $1 / $5 | 単純な分類。**世代が古く**、長い指示や「中身があるか」の判断は苦手。収集には勧めない |
 
+**2026-10-12 確認**: **Claude Haiku 5.5 が 2026-10-07 に出た**(model ID `claude-haiku-5-5`)。$0.10 / $0.50(10 万トークンまで。それ以上は $0.50 / $2.50)で Haiku 4.5 より約 75% 安い。Haiku で初めて effort を変えられる。上の表の Haiku 4.5 はもう選ぶ理由がない。Claude Code では v2.1.293 以降。
+Fable 5.1 は Max に含まれる(週の利用枠の半分まで。超えたら追加クレジット)。Gemini 4 Argon は今も限定公開で、AI Pro は提供の順番に入っていない。
+出典: [Let's Data Science](https://letsdatascience.com/news/anthropic-releases-claude-haiku-55-with-lower-prices-and-eff-f698c663) / [Claude ヘルプ(Fable)](https://support.claude.com/articles/15424964-claude-fable-models-on-your-plan)
+
 ## 3. 出たけど、まだ使えないもの(契約を変える判断材料)
 
 | もの | 何か | 誰が使えるか | あなたは | 出典 |
@@ -77,6 +81,9 @@
 Astra(最上位)/ **Sol**(中位・コーディング向け)/ Luna(小型)。GPT-6 Sol・Luna は 2026-09-22、**GPT-6.1 Sol は DevDay 2026 で公開**
 (Astra 級を 1/5 の単価で)。**GPT-6.1 Astra は安全性評価の退行で公開中止**(CNN 2026-09-28)。Plus でどこまで使えるかは要確認。
 出典: [TechCrunch 2026-09-22](https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/) / [OpenAI DevDay 2026](https://openai.com/index/devday-2026-recap/)
+
+**2026-10-12 確認**: GPT-6.1 Sol と GPT-6 Astra は **Plus でも使える。ただし ChatGPT Work と Codex だけ**で、普通のチャットには出ない(チャットで Astra を使えるのは Pro 以上)。GPT-6 Luna も Plus の Codex で使える。
+出典: [OpenAI ヘルプ](https://help.openai.com/en/articles/11909943-gpt-6-1-sol-in-chatgpt-work-and-codex) / [Notebookcheck](https://www.notebookcheck.net/GPT-6-Astra-is-on-ChatGPT-Plus-but-only-in-Work-and-Codex.1391574.0.html)
 
 ## 4. 使って分かったこと(日付つき。新しい発見は上に足す)
 

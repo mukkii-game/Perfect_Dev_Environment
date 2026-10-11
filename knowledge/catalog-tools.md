@@ -26,6 +26,7 @@
 | 生成(雰囲気優先・量が要る) | ChatGPT / Gemini の画像 | Adobe Firefly(契約済み) | **「使えない絵を大量に作る」のが最大の浪費**。1 枚試してから量産 |
 | 手書き風・ヘタウマ | **人間が描く**(`assets/mine/`) | — | AI に伝わらない領域。自分で描いた方が速くて良い |
 | 手入れ(文字入れ・色替え・切り抜き) | Pillow / ImageMagick | — | AI に自分でやらせる。素材を探し直すより速い |
+| 補正・文字入れを MCP で(候補) | Crafting Apps(PhotoCraft 等、OSS) | — | **未検証**。Codex から MCP で補正・文字入れまで動いた報告(610birth 10/6、Windows) |
 
 ## 3D
 
@@ -36,6 +37,7 @@
 | テクスチャ | **ambientCG**(CC0) | |
 | 人型キャラ | VRoid Studio(自作) | VRM。規約は配布元ごとに違う |
 | **AI で 3D モデル生成 + 骨入れ** | **Tripo**(生成)+ **Mixamo**(骨) | **使った実績あり**(ImoteControllDandy の怪鳥トコロス。GLB 約 2000 三角形)。罠: three.js の GLTFLoader は骨名の `:` を落とす(`mixamorig:Hips` → `mixamorigHips`)ので両方の名前で探す。アニメは手続きで付けた |
+| 4 面図からキャラ 3D(候補) | Hunyuan3D-2mv(ローカル) | **未検証**。脇役なら使える、主役は手直し要の報告(yomoram 10/9)。Hunyuan 系は EU・英国・韓国で利用不可とされる |
 
 ## 動画・公開物
 
