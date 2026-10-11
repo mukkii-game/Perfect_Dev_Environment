@@ -1,0 +1,72 @@
+大カテゴリ,中カテゴリ,項目,何をしているか,状態,担当,詳細
+1 開発環境,新作の雛形,雛形 web-app-template,新作はここからコピーして生まれる。Phaser 4 + Vite + TypeScript,稼働,会議室(2代目),https://github.com/mukkii-game/web-app-template
+1 開発環境,新作の雛形,共通の部品(src/core),セーブ・音・入力・日英切替・乱数・調整値・リプレイ・自動プレイ・AIの目と手(probe),稼働,会議室(2代目),https://github.com/mukkii-game/web-app-template/tree/main/src/core
+1 開発環境,新作の雛形,企画メモ SPEC.md,人間が数行書くだけでAIが作り切る。ひねり・任せ方(おまかせ/聞く)の欄つき,稼働,作品セッション,https://github.com/mukkii-game/web-app-template/blob/main/SPEC.md
+1 開発環境,新作の雛形,AIの作法 AGENTS.md(66行),作品を作るAIが毎回読む決まり。短く保つ(毎回読まれて重くなるため),稼働,会議室(月1点検),https://github.com/mukkii-game/web-app-template/blob/main/AGENTS.md
+1 開発環境,新作の雛形,実機ノウハウ(docs/knowledge),スマホ・タッチ・音・itch.io などでハマった知見。作品が生まれた時から持っている,稼働,毎晩の気づき回収,https://github.com/mukkii-game/web-app-template/tree/main/docs/knowledge
+1 開発環境,新作の立ち上げ,新作repoの自動作成,名前と一言を渡すと雛形からrepoを作り、公開設定まで済ませる,稼働,GitHub Actions(ai-ops),knowledge/tables/automations.csv
+1 開発環境,新作の立ち上げ,元ネタから始める手順,「◯◯みたいな」は元ネタと公開コードを先に調べる。芯を3〜5個の仕組みに分け、ひねりを足す,稼働,作品セッション,knowledge/start-from-reference.md
+1 開発環境,新作の立ち上げ,ジャンル別の作法,ジャンルごとの相性の良いエンジン・素材・自動検証のしやすさ,稼働,会議室,knowledge/tables/genres.csv
+1 開発環境,品質を上げる仕組み,自動プレイ確認,勝手に遊ばせてエラーやスコアを確かめる。トークンを使わない,稼働,GitHub Actions(作品),https://github.com/mukkii-game/web-app-template/blob/main/tools/check.mjs
+1 開発環境,品質を上げる仕組み,リプレイ(seed+入力記録),バグを ?replay= のURLで一発再現できる,稼働,作品セッション,https://github.com/mukkii-game/web-app-template/blob/main/src/core/replay.ts
+1 開発環境,品質を上げる仕組み,面白さの確認,作る前に芯と手触り案を人間が選び、作った後に「遊んで確かめる点」を書かせる。おばけ提灯の失敗から,試験中(くつずれ),作品セッション+Mukkii,progress/2026-10-06-postmortem-obake-chochin.md
+1 開発環境,品質を上げる仕組み,作品の気づき回収,毎晩、各作品のHANDOFFの気づきを集めて雛形と表に取り込む,稼働,Claude定期実行(会議室),knowledge/harvest-log.md
+1 開発環境,品質を上げる仕組み,踏んだ地雷の一覧,同じ失敗を繰り返さないための記録,稼働,会議室,knowledge/env-gotchas.md
+1 開発環境,品質を上げる仕組み,仕事の進め方のパターン,候補を複数出して選ぶ・確認済みと書けない仕組み・ハマりの記録の型など,稼働,会議室,knowledge/process-patterns.md
+1 開発環境,素材と道具,道具の総合表,絵・音・3D・映像・文字・コード・公開の道具と素材をランク付きで,稼働,会議室(週次で更新),knowledge/tables/assets.csv
+1 開発環境,素材と道具,使った素材の記録と素材庫,作品で使った素材を集め、★はドライブの素材庫に規約の写しと一緒に保存,稼働,毎晩の気づき回収,knowledge/tables/used-assets.csv
+1 開発環境,素材と道具,エンジン選び,既定はWeb。3Dで作り込むならGodot,稼働,会議室,knowledge/engines.md
+1 開発環境,素材と道具,手元PCのAI(ComfyUI・VOICEVOX・Colab),画像・音声を手元で作る。ComfyUIはネットに公開しない,一部(VOICEVOXは導入済み),Mukkii+手元のClaude,knowledge/local-ai.md
+1 開発環境,ゲームの中のAI,AI会話の中継 game-llm,全作品共通。ブラウザゲームからAIと話すためのサーバー(Cloudflare)。鍵はここだけに置く,稼働,GitHub Actions+Codex,topics/15-game-llm-base.md
+1 開発環境,ゲームの中のAI,ゲームでのAIの使い方,会話・判定(Clef)など、ゲームにAIを入れる時の型,稼働,会議室,knowledge/ai-in-games.md
+1 開発環境,公開,GitHub Pagesへの自動公開,pushすると遊べる最新版が出る,稼働,GitHub Actions(作品),topics/05-publishing.md
+1 開発環境,公開,公開キット,配布用ZIP・スクショ・動画・日英の文面を、スマホで開ける1ページに,稼働,GitHub Actions(作品),topics/05-publishing.md
+1 開発環境,公開,itch.io への公開,ボタン1つでアップロード。鍵(BUTLER_API_KEY)待ち,待ち(Mukkii),GitHub Actions(作品),knowledge/platforms.md
+1 開発環境,公開,公開・販売の手続き,itch.io・Steam・BOOTH・ストアなどの順番と要るもの,稼働,会議室(週次で確認),knowledge/tables/procedures.csv
+1 開発環境,発信・広報,宣伝のしかた,プレスリリースのコツ・SNS・OGP(リンクを貼った時の絵),稼働,会議室,knowledge/promotion.md
+1 開発環境,発信・広報,発信の種の下書き,週次レビューが投稿の下書きを作る。投稿ボタンは人間,稼働,Claude定期実行(会議室),progress/weekly
+1 開発環境,発信・広報,公開用のAI知見日報,毎朝の収集から「ゲーム開発のためのAI知見」を公開用に作る,稼働,Claude定期実行(収集),https://drive.google.com/drive/folders/199f1wPF5NWyb0Wcmer2vTgpiivBD1JDN
+1 開発環境,発信・広報,勝ち筋(競合との比較),星野創吉さんを基準に、真似る所と上回る所。公開ノウハウも含む,検討中,会議室,topics/17-compete-and-publish.md
+1 開発環境,作品の管理,作品台帳,全作品の状態・未回答の質問・赤いActionsを毎朝機械で集める,稼働,GitHub Actions(ai-ops),https://docs.google.com/spreadsheets/d/1L3i02WVyMPxC-_wEiy1zSnyVFsCBHfRrrD25sXJVQAg/edit#gid=1969901297
+1 開発環境,作品の管理,追いかける係(秘書),台帳を見て「今日決めること」を最大5件だけスマホに送る,稼働,Claude定期実行(会議室),progress/chase-log.md
+1 開発環境,AIの決まりと安全,全作品共通の憲法,どのAIにも効く最上位の決まり。PCの ~/.claude に入れる,稼働,会議室,global/constitution.md
+1 開発環境,AIの決まりと安全,権限のゾーン(A自由・B確認・C禁止),AIがどこまで勝手に触ってよいか,稼働,会議室,decisions/2026-09-13-permission-zones.md
+1 開発環境,AIの決まりと安全,鍵と権限の台帳,何にどの鍵を渡しているか。期限のある鍵の表,稼働,会議室,knowledge/permissions-ledger.md
+1 開発環境,AIの決まりと安全,AIへの指示の一覧,どのファイルが毎回読まれ、何行か,稼働,Claude定期実行(月1点検),knowledge/tables/rules.csv
+1 開発環境,複数のAIの使い分け,Claudeの上限時はCodexへ,HANDOFF.md で引き継ぐ。貼るだけの指示文あり,稼働,Mukkii(貼る)+Codex,knowledge/codex-handoff.md
+1 開発環境,複数のAIの使い分け,他社AIの使い方,GPTのセカンドオピニオン・ChatGPTでの画像など,稼働,会議室,topics/14-other-ai-routes.md
+1 開発環境,複数のAIの使い分け,AI同士の自動往復の知見,Emmichyの実験(終了)で分かったこと,完了,会議室,knowledge/multi-ai-relay.md
+2 情報収集,AI事情,毎朝のAI知見収集,X・技術記事・指名サイトから集めてドライブに日報。スマホにニュースレター,稼働,Claude定期実行(収集),https://drive.google.com/drive/folders/199f1wPF5NWyb0Wcmer2vTgpiivBD1JDN
+2 情報収集,AI事情,読む相手の名簿,毎日読む人・サイトの一覧。常設・試用・競合ウォッチ,稼働,会議室,knowledge/sources.md
+2 情報収集,AI事情,週1の取捨,1週間分から会議室に入れるものを最大5件。人間が番号で選ぶ,稼働,Claude定期実行(会議室),knowledge/tables/automations.csv
+2 情報収集,AI事情,AIの表,どのAIをどの場面で使うか。契約で使えるか,稼働,週次レビュー(Web検索で最新化),knowledge/tables/ai.csv
+2 情報収集,AI事情,TIPS,日々増える小さな知見(約100件)。わかった☑つき,稼働,毎晩の気づき回収+週次で整理,knowledge/tables/tips.csv
+2 情報収集,AI事情,用語集,AI・道具・仕組みの名前(約40語),稼働,毎晩の気づき回収,knowledge/tables/glossary.csv
+2 情報収集,AI事情,Xの読み取り(Mucky Reader),X・Webを読む自作の道具(Netlify)。収集が使う,稼働(一覧読みは10/5〜7停止),Mukkii,knowledge/env-gotchas.md
+2 情報収集,AI事情,ページのRSS化 my-rss,RSSの無いページをRSSにする(毎時),稼働,GitHub Actions(my-rss),https://github.com/mukkii-game/my-rss
+2 情報収集,ゲームデザイン,ゲームデザイン知識の収集 gd-knowledge,RSS・CEDiL・YouTube字幕を集めて日次ダイジェスト(非公開),稼働,GitHub Actions(gd-knowledge),knowledge/game-design.md
+2 情報収集,ゲームデザイン,ゲームデザインのノウハウ,企画・面白さ・調整で効く知見,稼働,毎晩の気づき回収,knowledge/game-design.md
+2 情報収集,世の中の動き,AIゲーム工場の調査,同じような仕組みを作っている人の調査。盗める所,完了(取り込み待ち),会議室,research/2026-10-07-ai-game-factories.md
+2 情報収集,世の中の動き,ノウハウをまとめる人の調査,知見を集めて公開している人たちの調査,完了,会議室,research/2026-10-07-knowhow-curators.md
+2 情報収集,世の中の動き,公開先の今,Web・Steam・Switch 2 の条件,稼働,会議室,knowledge/platforms.md
+3 学習カリキュラム,全体,Mukkii育成プログラム(スプシ),カリキュラム・教科書・テスト・修了チェック,稼働,会議室+週次レビュー,https://docs.google.com/spreadsheets/d/11Dn_SjUjqVBs8fdtdJk2dHQ0RO7S35ieKWE-T6_n2Sg/edit
+3 学習カリキュラム,全体,学習の段階(マイルストーン),Lv1〜7。月1で昇級判定,稼働(判定はまだ0回),会議室+Mukkii,topics/10-learning-milestones.md
+3 学習カリキュラム,AIマスター,AI運用(AI-1〜7),任せ方・止める判断・複数AI・Claudeアプリの道具など。全部につながる最重要,稼働,会議室,knowledge/tables/learning/curriculum.csv
+3 学習カリキュラム,AIマスター,心構えチェックリスト,頼み方・確認・安全・記録の型(約40項目)。わかった☑つき,稼働,会議室,knowledge/tables/mindset.csv
+3 学習カリキュラム,プログラム,プログラム(PRG-1〜3),作品の中で読む・直す・設計する,稼働,会議室,knowledge/tables/learning/curriculum.csv
+3 学習カリキュラム,画像・映像,画像(IMG-1〜4),AI画像・揃え方・加工,稼働,会議室,knowledge/tables/learning/curriculum.csv
+3 学習カリキュラム,画像・映像,映像(動画),まだ単元が無い。動画を作り始めたら足す,未着手,会議室,topics/13-media-types.md
+3 学習カリキュラム,音,音(SND-1〜2),効果音・BGM・読み上げ,稼働,会議室,knowledge/tables/learning/curriculum.csv
+3 学習カリキュラム,ゲームデザイン,ゲームデザイン(GD-1〜2),面白さの芯・調整,稼働,会議室,knowledge/tables/learning/curriculum.csv
+3 学習カリキュラム,公開・ビジネス・発信,サーバー・公開(OPS)/手続き(BIZ)/発信(PUB),公開のしくみ・販売の手続き・発信,稼働,会議室,knowledge/tables/learning/curriculum.csv
+3 学習カリキュラム,教材とテスト,教科書(階層つき),読む順に並べた教材(約35項目)。わかった☑つき,稼働,会議室,knowledge/tables/learning/textbook.csv
+3 学習カリキュラム,教材とテスト,AIが出すテスト,週1でAIが出題して理解を確かめる,稼働,週次レビュー,knowledge/tables/learning/tests.csv
+4 作るものと作品,作るものの種類,ゲーム・アプリ・漫画・動画,ゲーム以外にも広げる。着手順は アプリ→動画→漫画,方針のみ,会議室,topics/13-media-types.md
+4 作るものと作品,試運転,おばけ提灯(1本目),全自動で作れたが「つまらない」で作り直し。面白さを確かめる仕組みが要ると分かった,完了(教訓あり),作品セッション,progress/2026-10-06-postmortem-obake-chochin.md
+4 作るものと作品,試運転,くつずれ(2本目),詩をテーマに。作る前に芯と手触りを人間が選ぶやり方を試す,進行中,作品セッション,https://github.com/mukkii-game/kutsuzure
+5 会議室の運営,記録のしかた,決定・検討・日誌・調査・資料の置き分け,decisions(書き換えない)/topics/progress/research/knowledge,稼働,会議室,README.md
+5 会議室の運営,記録のしかた,置き場所の一覧,GitHub・ドライブ・Claude・PCのどこに何があるか,稼働,会議室,knowledge/tables/storage.csv
+5 会議室の運営,記録のしかた,自動で動いているものの一覧,定期実行・Actions・スクリプトの詳しい表,稼働,会議室,knowledge/tables/automations.csv
+5 会議室の運営,振り返り,週次レビュー,1週間の進捗・学習の証拠・AIの反省・質問3つ,稼働,Claude定期実行(会議室),progress/weekly
+5 会議室の運営,振り返り,AIへの指示の月1点検,指示が増えすぎていないかを第三者役が点検,稼働,Claude定期実行(会議室),knowledge/tables/rules.csv
+5 会議室の運営,セッションの引き継ぎ,セッションの引き継ぎと「先輩に聞く」,会話が長くなったら新しいセッションへ。古いセッションは消さず質問役に,稼働,会議室(1代目・2代目),progress/2026-10-08-session-handoff.md

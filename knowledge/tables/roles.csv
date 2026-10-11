@@ -1,0 +1,27 @@
+名前,種類,いつ動く(日本時間),何を担当しているか,結果の届き先,状態,詳細
+会議室 2代目「個人開発環境の整備(2代目)」,Claude Codeのセッション,Mukkiiが話しかけた時と定期実行が届いた時,会議室の本務。調べる・土台を直す・育てる。定期実行6本の届き先,スマホ・会議室repo,稼働,progress/2026-10-08-session-handoff.md
+会議室 1代目「個人開発環境の整備」,Claude Codeのセッション,Mukkiiが話しかけた時,先輩役。記録に無いことの質問に答える。大きなまとめ作業も引き受ける,progress/senpai-answers.md,稼働(残してある),progress/2026-10-08-session-handoff.md
+作品ごとのセッション(例: くつずれ),Claude Codeのセッション,Mukkiiが話しかけた時,1作品を作る。SPECを頼りに公開まで。気づきをHANDOFFに残す,作品repo・GitHub Pages,作品ごと,https://github.com/mukkii-game/kutsuzure
+AI知見の毎日収集,Claude定期実行(毎回新しいセッション・Sonnet),毎朝 7:00頃,AIの最新情報を集めて日報にする,ドライブの日報・スマホ,稼働,knowledge/tables/automations.csv
+追いかける係(秘書),Claude定期実行(会議室),毎朝 7:41,作品台帳を見て「今日決めること」を最大5件。0件なら送らない,スマホ,稼働,progress/chase-log.md
+作品の気づき回収,Claude定期実行(会議室),毎晩 23:52,作品の気づき・素材を集めて雛形・表・素材庫へ。TIPS・用語集を足す,harvest-log・スマホ,稼働,knowledge/harvest-log.md
+AI情報の週1取捨,Claude定期実行(会議室),木曜 8:00,1週間分から入れるもの最大5件を選んでもらう,スマホ→Mukkiiが番号で返事,稼働,knowledge/sources.md
+週次レビュー,Claude定期実行(会議室),月曜 8:00,振り返り・一覧表の更新・発信の種・学習のテスト,progress/weekly・スマホ,稼働,progress/weekly
+AIへの指示の月1点検,Claude定期実行(会議室),毎月1日 9:00,AGENTS.md・スキルの量と中身を点検,research・スマホ,稼働,knowledge/tables/rules.csv
+読む相手の毎日見直し,Claude定期実行(会議室),止めてある,情報源の名簿の見直し(週1取捨に戻した),—,停止(10/9),knowledge/sources.md
+作品台帳,GitHub Actions(ai-ops),毎朝 6:50,全作品の状態を機械で集める。利用枠を使わない,ai-opsの台帳ファイル・スプシ作品タブ,稼働,https://docs.google.com/spreadsheets/d/1L3i02WVyMPxC-_wEiy1zSnyVFsCBHfRrrD25sXJVQAg/edit#gid=1969901297
+新作repoの自動作成,GitHub Actions(ai-ops),頼んだ時,雛形から作品repoを作り、公開設定まで,新しい作品repo,稼働,knowledge/tables/automations.csv
+作品のビルドと公開,GitHub Actions(各作品),作品にpushした時,ビルド→検証→GitHub Pages→公開キット,GitHub Pages,稼働,topics/05-publishing.md
+itch.io への公開,GitHub Actions(各作品),人間がボタンを押した時,itch.io にアップロード,itch.io,鍵待ち,knowledge/platforms.md
+ゲームデザイン知識の収集,GitHub Actions(gd-knowledge),毎朝 6:00(月曜 7:00 に講演資料と動画字幕も),RSS・CEDiL・YouTube字幕を集めて日次ダイジェスト,gd-knowledge(非公開),稼働,knowledge/game-design.md
+ページのRSS化,GitHub Actions(my-rss),毎時17分,RSSの無いページをRSSにする,RSSリーダー,稼働,https://github.com/mukkii-game/my-rss
+AI会話の中継の公開,GitHub Actions(game-llm),pushした時,テストしてCloudflareに公開,Cloudflare Workers,稼働,topics/15-game-llm-base.md
+ai-opsの自己点検,GitHub Actions(ai-ops),pushした時,運用スクリプトが改ざんされていないか確かめる,Actionsの結果,稼働,knowledge/tables/automations.csv
+投稿先サイトの下調べ,GitHub Actions(dev-tools),人間がボタンを押した時,投稿先の画面構造を調べる,Actionsの成果物,待機(休眠),topics/05-publishing.md
+スプシの自動表示(IMPORTDATA),Googleスプレッドシート,開いた時,会議室のCSVをそのまま表示する(一部のタブ),開発ノウハウ一覧,稼働,knowledge/tables/README.md
+企画用スプシのGAS,GAS(Google Apps Script),人間が使う時,スプシを方眼紙・Markdown対応の企画キャンバスにする。自動では動かない,企画用スプシ,手動の道具,research/2026-09-13-existing-infra-inventory.md
+Codex(OpenAI),他のAI,Claudeの上限が来た時,HANDOFF.mdで作業を引き継ぐ。game-llmにもpushしている,作品repo,控え,knowledge/codex-handoff.md
+ChatGPT,他のAI,Mukkiiが聞いた時,セカンドオピニオン・画像を作る会話,Mukkii,稼働,topics/14-other-ai-routes.md
+Perplexity,他のAI,Mukkiiが聞いた時,出典つきの調べもの,Mukkii,稼働,knowledge/ai-models.md
+Gemini,他のAI,場面による,量の多い単純作業・別の意見。ColabのA100(まとめて回す時だけ),Mukkii,条件付き,knowledge/local-ai.md
+Mucky Reader,自作の道具(Netlify),収集が呼んだ時,XとWebのページを読んでAIに渡す,毎朝の収集,稼働,knowledge/env-gotchas.md
