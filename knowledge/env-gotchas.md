@@ -37,3 +37,8 @@
 - URL の直後に日本語や括弧を続けない(「公開済みです(https://…/)。」は「)。」まで URL と読まれて壊れる)。URL は単独の行に置くか `<URL>` で囲む。
 - 素材サイト: 効果音ラボ・OtoLogic・freesound・itch.io・pixabay・archive.org は通らない。魔王魂・DOVA・Kenney・OpenGameArt・GitHub(VSCO-2-CE 等)は通る。生成 AI の API は鍵が無い(topics/06 の 2026-10-08)。
 - GitHub の検索 API は 403。SVG → PNG は ImageMagick に rsvg が無いので、Playwright の Chromium に executablePath を渡して描く。
+
+## my-rss のファミ通が 0 件になり、失敗メールが毎日来た(2026-10-11)
+- 原因: ファミ通がページの部品名を `ArticleList_list` から `ArticleList-module-scss-module__aEPNzW__…`(ハッシュ付き)に変えた。目印が合わず 0 件 → 3 回連続失敗で実行が「失敗」になり、毎回メール。
+- 直したこと(my-rss dd872ee・5e33edb): 目印を `[class*='PrimaryCard-module'] a[aria-label]` のような**ハッシュに頼らない部分一致**に変更(50 件取れるのを確認)。通知は **3 回目の 1 度だけ**にした。0 件の時はページ本文ではなく**構造の手がかりだけ**を `debug/<サイト>.txt` に残す(クラウドからファミ通に届かなくても、それを読めば目印を直せる)。
+- 教訓: 他人のサイトから取る仕組みは、部品名のハッシュが変わると必ず壊れる。目印は部分一致で、壊れた時に構造が見える仕組みを最初から入れる。
