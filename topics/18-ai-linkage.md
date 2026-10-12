@@ -35,3 +35,8 @@ Mukkii の環境は `knowledge/tables/my-env.csv`(スプシ「個人開発環境
 2. ~~Emmy を GitHub に上げるか~~ → Emmy は既に GitHub の emmichy(公開・Pages)だった。公開のままにするかは Mukkii(非公開にするなら公開先は Cloudflare Pages)。
 3. **①の最小形を作った(10/12)**: 雛形と emmichy に `.github/workflows/claude.yml`。Issue に label `claude` を付けるか `@claude` と書くと、Claude Code が Max の枠で動き、結果をブランチと PR にして Issue にコメントする。書き込み権限のある人だけが起動できる(公開 repo でも他人は動かせない)。動かすには Mukkii が secret `CLAUDE_CODE_OAUTH_TOKEN` を入れる。label は repo ごとに要る(雛形から作った repo には付かないので、ai-ops の新作作成で作るよう後で直す)。動いたら Codex(@codex)と Gemini の入口を足す
 4. ComfyUI のセットアップが進んだら、②(ゲーミングノートを常時起動)を検討する
+
+## 動作確認(2026-10-12)
+- Mukkii が PC の Claude Code で `/install-github-app`(Claude の GitHub アプリを mukkii-game に導入・鍵は「Claude の契約で長期トークン」)→ emmichy に secret `CLAUDE_CODE_OAUTH_TOKEN` が入った。workflow は会議室が入れたものを残した。
+- emmichy Issue #33 に `@claude` で依頼 → 約 1 分で Actions が成功し、Issue にコメントで回答(Max の枠)。①の最小形は動く。
+- 他の repo で使うには、その repo に同じ secret が要る(`/install-github-app` を repo ごとに回すか、組織の secret にする)。
