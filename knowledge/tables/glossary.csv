@@ -41,3 +41,7 @@ GDScript,ゲームエンジン,Godot 専用の書きやすい言語,Godot で AI
 Phaser,ゲームエンジン,ブラウザ用 2D ゲームの道具,1日1本の Web ゲーム,雛形の標準(Phaser 4),https://github.com/mukkii-game/Perfect_Dev_Environment/blob/main/knowledge/engines.md,
 Claude Haiku 5.5,AIモデル,Haiku の新世代。Haiku 4.5 の約 1/10 の単価,結果を決まった形に写すだけの作業(テスト実行・ログ要約),サブエージェントの検証役の候補(実装役は Sonnet / Opus のまま),https://zenn.dev/genda_jp/articles/haiku-5-5-subagent-roles,
 Claude Motion,Claude機能,資料やアイデアを短いアニメの説明動画にする(β),宣伝動画・説明動画の下書き,未使用(β公開 2026-10-09)。ゲームの紹介動画に使えるか試す候補,https://news.mynavi.jp/techplus/article/20261009-5099252/,
+repo(リポジトリ),GitHub,1 作品ぶんのフォルダ。ファイルと変更の履歴が全部入る,作品・道具・会議室を 1 つずつ置く,作品は 1 本 1 repo,https://github.com/mukkii-game,
+Issue,GitHub,repo に付いている掲示板の 1 枚。頼みごと・バグ・相談を書き、コメントで話す,AI への依頼書・やることの記録,AI 同士の頼みごとの置き場の候補(topics/18),https://github.com/mukkii-game/Perfect_Dev_Environment/blob/main/topics/18-ai-linkage.md,
+commit / push,GitHub,commit=変更を 1 回分として記録する。push=手元の記録を GitHub に送る,AI が作業の区切りごとに行う,push すると自動公開が動く,https://github.com/mukkii-game/Perfect_Dev_Environment/blob/main/topics/05-publishing.md,
+PR(プルリクエスト),GitHub,「この変更を本流に入れてよいか」の確認ページ。差分とコメントが並ぶ,大きな変更を確かめてから入れる時,Codex は PR に @codex と書くと動く,https://github.com/mukkii-game/Perfect_Dev_Environment/blob/main/topics/18-ai-linkage.md,
