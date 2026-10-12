@@ -15,6 +15,19 @@
 | PLiCy / ふりーむ! / Newgrounds | **半自動**(公開キットで素材と文面を揃え、人間が上げる) | 運用中 | クラウドからの自動投稿は不成立と確定(topics/05) |
 | X | 公式 API か itch.io RSS 連携(予定) | 未着手 | ブラウザ自動操作は規約違反 |
 
+## 非公開 repo の作品をどこで見せるか(2026-10-12 検討。GPT の提案を実測で確認)
+GitHub Pages は**無料プランでは公開 repo しか**出せない。repo を非公開にしたい作品の公開先の比較:
+
+| 候補 | 無料で | 合う所 | 気をつける所 |
+|---|---|---|---|
+| **Cloudflare Workers + Static Assets**(推し) | 静的ファイルの配信は回数無制限・無料。1 版 20,000 ファイル、1 ファイル 25MiB まで(公式の制限表) | 非公開 repo から Actions で出せる。版ごとに試遊用 URL が出る。game-llm で既に Cloudflare を使っている(アカウントあり) | Worker のコードを毎回走らせる設定(run_worker_first)にすると 1 日 10 万回の上限に掛かる。静的のまま使う。25MiB を超える動画・音は分ける |
+| GitHub Pro(月 4 ドル) | — | 非公開 repo のまま今の Pages の仕組みがそのまま動く(移行ゼロ)。公開されるサイトは誰でも見られる | 有料。サイト自体を限定公開にするのは組織 + Enterprise が要る |
+| Netlify | 月 300 クレジット。本番デプロイ 1 回 15 クレジット、帯域 1GB 10〜20 クレジット(2026-04 からのクレジット制。第三者の解説で一致、公式表は未確認) | 手で 1 回出すだけの物 | **本番デプロイ約 20 回で月の枠が尽き、尽きると全サイトが止まる**。push のたびに公開するうちのやり方に合わない |
+| itch.io | 無料 | 正式公開の置き場(既に使っている) | 開発中の確認用 URL には向かない |
+
+結論(仮): 新しい作品で repo を非公開にするものは Cloudflare Workers + Static Assets を標準にする。公開 repo の作品と既存作品は Pages のまま(URL・保存データ(localStorage はドメインごと)が変わるので、移すなら 1 本ずつ)。Netlify は標準にしない。
+出典: Cloudflare Workers の制限 https://developers.cloudflare.com/workers/platform/limits/ / Netlify の無料枠の解説 https://netli.fyi/blog/netlify-free-plan-limits-2026 / GitHub のプラン https://docs.github.com/en/get-started/learning-about-github/githubs-plans
+
 ## まだ先: Steam
 
 | 項目 | 中身 |
