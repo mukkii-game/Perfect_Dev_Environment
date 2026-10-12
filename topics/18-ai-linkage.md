@@ -31,7 +31,7 @@ Mukkii の環境は `knowledge/tables/my-env.csv`(スプシ「個人開発環境
 - 調べ物の下ごしらえ(集める・並べる)は余っている Gemini に、判断は Claude に
 
 ## 次にやること
-1. Mukkii: Antigravity で Claude Sonnet/Opus 5.5 が選べるか、枠の表示を見る(選べれば「Claude の予備」が月額の追加なしで手に入る)
-2. Mukkii: Emmy を GitHub(非公開)に上げるか決める
-3. 会議室: ①の最小形を 1 本作る(ai-ops に「Issue に label を付けると Claude が依頼書を読んで結果を push する」ワークフロー。Max のトークンは Mukkii が secret に入れる)。動いたら Codex(@codex)と Gemini の入口を足す
+1. ~~Antigravity で Claude 5.5 が選べるか~~ → **済(10/12)**: Claude Sonnet 5.5・Opus 5.5・GPT-OSS 120B・Gemini 3.8 Flash・3.1 Pro が選べる。Claude の枠が尽きた時は Antigravity の Claude で続ける。
+2. ~~Emmy を GitHub に上げるか~~ → Emmy は既に GitHub の emmichy(公開・Pages)だった。公開のままにするかは Mukkii(非公開にするなら公開先は Cloudflare Pages)。
+3. **①の最小形を作った(10/12)**: 雛形と emmichy に `.github/workflows/claude.yml`。Issue に label `claude` を付けるか `@claude` と書くと、Claude Code が Max の枠で動き、結果をブランチと PR にして Issue にコメントする。書き込み権限のある人だけが起動できる(公開 repo でも他人は動かせない)。動かすには Mukkii が secret `CLAUDE_CODE_OAUTH_TOKEN` を入れる。label は repo ごとに要る(雛形から作った repo には付かないので、ai-ops の新作作成で作るよう後で直す)。動いたら Codex(@codex)と Gemini の入口を足す
 4. ComfyUI のセットアップが進んだら、②(ゲーミングノートを常時起動)を検討する

@@ -5,15 +5,15 @@
 機械,スマホ・タブレット,iPhone / iPad / Galaxy Z Fold6,各 AI のスマホアプリとブラウザ。クラウドの作品を進める・確認する・遊んで確かめる,稼働,—,—
 AI契約,Claude Max(月 100 ドル),Claude Code(デスクトップ・クラウド・スマホ)・定期実行(Routine),仕事と個人開発の主力。これより下げない,稼働,枠が尽きた時の逃げ道(topics/18),knowledge/ai-models.md
 AI契約,ChatGPT Plus(月 3000 円),Codex(デスクトップ・クラウド)・ChatGPT,作品の開発(Codex 側の作品)・セカンドオピニオン・Claude の上限時の引き継ぎ,稼働,Pro(月 100 ドル)は Dots 目当てで保留。開発効率が大きく上がると分かれば検討,knowledge/codex-handoff.md
-AI契約,Google AI(年契約),Gemini・Antigravity・Colab の特典,あまり使っておらず枠が余っている。Claude・GPT の手下として使いたい,稼働(余り),Antigravity で Claude 5.5 が使えるか確かめる(使えれば Claude の予備の枠),topics/18-ai-linkage.md
+AI契約,Google AI(年契約),Gemini・Antigravity・Colab の特典,あまり使っておらず枠が余っている。Claude・GPT の手下として使いたい,稼働(余り),確認済み(10/12): Antigravity で Claude Sonnet 5.5・Opus 5.5・GPT-OSS 120B・Gemini 3.8 Flash・3.1 Pro が選べる。Claude の枠が尽きた時の予備に使う,topics/18-ai-linkage.md
 AI契約,ComfyUI・GitHub ほか,無料,—,稼働(無料),ComfyUI のクラウド版は便利なら契約も検討,—
 アプリ,Claude デスクトップアプリ,ローカルとクラウドのセッション・セッション間のメッセージ・リモート接続,家での主力(ローカルで始めたものもクラウドで始めたものも),稼働,—,—
 アプリ,Codex デスクトップアプリ,ローカルとクラウドの作業,家での主力(Codex 側の作品),稼働,—,knowledge/codex-handoff.md
-アプリ,Antigravity,Google のエージェント開発アプリ(Gemini のデスクトップとして使う),Gemini を使う時,稼働,Claude 5.5 の枠の確認・手下として使う形,topics/18-ai-linkage.md
+アプリ,Antigravity,Google のエージェント開発アプリ(Gemini のデスクトップとして使う),Gemini を使う時,稼働,Claude の予備として使う(10/12 確認: Claude Sonnet/Opus 5.5 が選べる),topics/18-ai-linkage.md
 アプリ,ブラウザ,各 AI のチャット,チャット用途,稼働,—,—
 アプリ,ComfyUI,ローカルの画像・映像・LLM,入れてみた段階,セットアップ前,何を入れるか(ComfyUI だけで足りるかも含めて),knowledge/local-ai.md
 アプリ,Cursor・Kimi・Manus,入れてあるだけ,未使用,未使用,使い道が出るまで使わない(topics/18 の比較),topics/18-ai-linkage.md
 アプリ,リモートデスクトップ(Moonlight 等),未導入,—,未導入,ローカルの作業を外からやる機会が増えたら検討,topics/18-ai-linkage.md
 使い方の決まり,家にいる時,デスクトップ+各 AI のデスクトップアプリが主体。チャットはブラウザも,—,稼働,—,—
 使い方の決まり,外にいる時,クラウドの作品が主。ローカルの作品はデスクトップを付けっぱなしにして AI アプリのリモート接続,—,稼働,家の機械が消えていても AI 同士をつなげる仕組み(topics/18),topics/18-ai-linkage.md
-使い方の決まり,作品の置き場所,作品は GitHub に置く(非公開でよい)。PC の中だけの作品は作品台帳にもクラウドの AI にも見えない,—,稼働,Emmy は PC の中だけ(GitHub に上げるか検討),topics/18-ai-linkage.md
+使い方の決まり,作品の置き場所,作品は GitHub に置く(非公開でよい)。PC の中だけの作品は作品台帳にもクラウドの AI にも見えない,—,稼働,Emmy は GitHub の emmichy(公開・Pages)に既にある。ブランチで Codex が開発中,topics/18-ai-linkage.md
