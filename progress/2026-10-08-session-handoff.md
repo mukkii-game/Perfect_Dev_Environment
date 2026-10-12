@@ -65,3 +65,6 @@
 - 定期実行の指示文を書き換えられるのは 2 代目だけなので、次の 2 つを 2 代目が update_trigger で足す(他は変えない):
   1. 作品の気づき回収(trig_01YPF6LcmAswnpmrHS1HkCfT)の 7.「コメント欄」の対象スプシに、このスプシを足す。
   2. 週次レビュー(trig_01CmG3KkyfJXfeC4nGspSRPV)の「一覧表の更新」に、map.csv・roles.csv を実物(list_triggers・Actions)と照合し、変えたらスプシの 2 タブを書き直す、を足す。
+
+## 1 代目からの追加(10/12)
+- 10/11〜12 に Mukkii が 1 代目で話した分は **progress/2026-10-12-senpai-to-2nd.md**。以後は 2 代目が担当(止まっていること 5 件あり)。
