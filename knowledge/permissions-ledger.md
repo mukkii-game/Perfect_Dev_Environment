@@ -42,6 +42,7 @@
 | 対象 | 期限 | 警告を出す日 | 切れると止まるもの |
 |---|---|---|---|
 | Groq API キー `game-llm-worker`(game-llm の GitHub secret `GROQ_API_KEY`) | 2027-10-01 | 2027-09-17 | ゲームの AI 会話の 1 番手(切れても次の予備に落ちる) |
+| Claude の長期トークン `CLAUDE_CODE_OAUTH_TOKEN`(Max の契約で作る。emmichy の secret、ai-ops の secret から作品 repo へ配る) | 2027-10-12 ごろ(作成から 1 年。要確認) | 2027-09-28 | Issue から Claude を呼ぶ仕組み(各作品の claude.yml)。作り直しは PC の Claude Code で `/install-github-app` → ai-ops に入れ直し → Actions「Enable Claude」 |
 
 `AI_OPS_TOKEN`(期限 2026-09-28)は GitHub App に置き換えて不要になった(2026-09-21)。
 期限のある鍵を新たに作ったら、必ずこの表に足すこと。週次レビューは毎週この表を見て、

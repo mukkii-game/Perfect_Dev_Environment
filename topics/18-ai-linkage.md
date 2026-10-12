@@ -40,3 +40,8 @@ Mukkii の環境は `knowledge/tables/my-env.csv`(スプシ「個人開発環境
 - Mukkii が PC の Claude Code で `/install-github-app`(Claude の GitHub アプリを mukkii-game に導入・鍵は「Claude の契約で長期トークン」)→ emmichy に secret `CLAUDE_CODE_OAUTH_TOKEN` が入った。workflow は会議室が入れたものを残した。
 - emmichy Issue #33 に `@claude` で依頼 → 約 1 分で Actions が成功し、Issue にコメントで回答(Max の枠)。①の最小形は動く。
 - 他の repo で使うには、その repo に同じ secret が要る(`/install-github-app` を repo ごとに回すか、組織の secret にする)。
+
+## 全自動化(2026-10-12 Mukkii が「A: 鍵の配布まで自動」を選択)
+- ai-ops に Actions「Enable Claude」(scripts/enable-claude.sh)。repo 名か `active`(7 日以内に更新の作品)を渡すと、label・claude.yml・secret をまとめて入れる。新作の作成(bootstrap)も最後にこれを呼ぶ。
+- 一度だけ Mukkii がやること: ① ai-ops に secret `CLAUDE_CODE_OAUTH_TOKEN` を入れる ② ai-ops の GitHub App に Secrets・Workflows の書き込み権限を足して承認する。
+- 鍵の期限は permissions-ledger.md の表に入れた(1 年)。
