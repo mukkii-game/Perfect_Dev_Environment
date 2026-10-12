@@ -62,3 +62,8 @@
 - 直し方: `/logout` → 作業フォルダ(E:\dev)で `claude` を起動 → ログイン方法で「Claude account with subscription」を選ぶ。起動画面に「Claude Max」と出れば正しい。
 - 確かめ方: 起動画面の左下の小さい文字(モデル名・契約名)を見る。「API Usage Billing」なら従量課金。Console の請求画面で使った額も確認する。
 - ついでに: ホームフォルダ(C:\Users\<名前>)で起動すると「このフォルダを信頼するか」を聞かれる。信頼すると PC の個人ファイル全体に手が届くので、作業フォルダで起動する。既定のモデルが Fable(一番重い)になっていたら `/model` で Opus 5.5 か Sonnet 5.5 に下げる。
+
+## Issue から呼ぶ Claude(Actions)は、許可しないと Web を読めない(2026-10-12 emmichy)
+- `.github/workflows/claude.yml` で動く Claude は、`--allowedTools` に書いた道具しか使えない。調べ物の Issue を出しても GitHub やサイトを開けず、手元の知識で埋めてしまう。
+- 「迷ったら仮決めして進め」の決まりが、調べ物では「事実を推測で埋める」になる。調べ物の事実は「不明・保留」と書かせる。
+- 雛形の claude.yml に `WebFetch(domain:github.com)` と `raw.githubusercontent.com` を許し、指示文に上の一文を入れた(1f81f0a)。作品で他のサイトが要る時は、その作品の claude.yml にドメインを足す。
