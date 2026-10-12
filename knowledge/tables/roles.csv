@@ -9,7 +9,7 @@ AI情報の週1取捨,Claude定期実行(会議室),木曜 8:00,1週間分から
 週次レビュー,Claude定期実行(会議室),月曜 8:00,振り返り・一覧表の更新・発信の種・学習のテスト,progress/weekly・スマホ,稼働,progress/weekly
 AIへの指示の月1点検,Claude定期実行(会議室),毎月1日 9:00,AGENTS.md・スキルの量と中身を点検,research・スマホ,稼働,knowledge/tables/rules.csv
 読む相手の毎日見直し,Claude定期実行(会議室),止めてある,情報源の名簿の見直し(週1取捨に戻した),—,停止(10/9),knowledge/sources.md
-作品台帳,GitHub Actions(ai-ops),毎朝 6:50,全作品の状態を機械で集める。利用枠を使わない,ai-opsの台帳ファイル・スプシ作品タブ,稼働,https://docs.google.com/spreadsheets/d/1L3i02WVyMPxC-_wEiy1zSnyVFsCBHfRrrD25sXJVQAg/edit#gid=1969901297
+作品台帳,GitHub Actions(ai-ops),毎朝 3:50(実際は数時間遅れることあり),全作品の状態を機械で集める。利用枠を使わない,ai-opsの台帳ファイル・スプシ作品タブ,稼働,https://docs.google.com/spreadsheets/d/1L3i02WVyMPxC-_wEiy1zSnyVFsCBHfRrrD25sXJVQAg/edit#gid=1969901297
 新作repoの自動作成,GitHub Actions(ai-ops),頼んだ時,雛形から作品repoを作り、公開設定まで,新しい作品repo,稼働,knowledge/tables/automations.csv
 作品のビルドと公開,GitHub Actions(各作品),作品にpushした時,ビルド→検証→GitHub Pages→公開キット,GitHub Pages,稼働,topics/05-publishing.md
 itch.io への公開,GitHub Actions(各作品),人間がボタンを押した時,itch.io にアップロード,itch.io,鍵待ち,knowledge/platforms.md
