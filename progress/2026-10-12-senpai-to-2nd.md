@@ -38,3 +38,7 @@ Mukkii が間違えて 1 代目に話した分。**ここから先は 2 代目�
 - 2(@codex): **Mukkii 待ち**。#35 は 10/12 時点でも返事なし。旧 Codex Cloud の環境とコードレビュー設定が済んだら、2 代目が #35 に再コメント(だめなら PR で)。※ 2 代目のセッションは emmichy への書き込みの追加が審査で止まったので、再コメントは Mukkii が書くか、追加の許可が要る。
 - 3(Gemini の入口): 急がない。保留のまま。
 - 4(emmichy の公開範囲): Mukkii の判断待ち。
+
+## 10/13 の進み(2 代目)
+- 1(Enable Claude): Mukkii が「今やる」と返事。あわせて Cloudflare の鍵も ai-ops に入れてもらい、Enable Claude が作品へ配るようにした(ai-ops b07de29)。手順は会話で日本語で渡した。終わったら emmichy・kutsuzure で Enable Claude を回す。
+- 4(emmichy の公開範囲): **非公開にする**と決定。Cloudflare で遊べるようにした(emmichy #39、game-llm #17)。鍵が配られて Cloudflare に出たのを確かめてから、Mukkii が repo を非公開に切り替える(先に切り替えると Pages が止まって見られない時間ができる)。

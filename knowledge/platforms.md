@@ -25,7 +25,8 @@ GitHub Pages は**無料プランでは公開 repo しか**出せない。repo �
 | Netlify | 月 300 クレジット。本番デプロイ 1 回 15 クレジット、帯域 1GB 10〜20 クレジット(2026-04 からのクレジット制。第三者の解説で一致、公式表は未確認) | 手で 1 回出すだけの物 | **本番デプロイ約 20 回で月の枠が尽き、尽きると全サイトが止まる**。push のたびに公開するうちのやり方に合わない |
 | itch.io | 無料 | 正式公開の置き場(既に使っている) | 開発中の確認用 URL には向かない |
 
-結論(仮): 新しい作品で repo を非公開にするものは Cloudflare Workers + Static Assets を標準にする。公開 repo の作品と既存作品は Pages のまま(URL・保存データ(localStorage はドメインごと)が変わるので、移すなら 1 本ずつ)。Netlify は標準にしない。
+**決定(Mukkii 2026-10-13)**: Cloudflare Workers + Static Assets を標準にする。URL は `https://<作品>.mucky-totoro.workers.dev`。最初は emmichy(repo を非公開にするため。emmichy #39 で deploy-cloudflare.yml と wrangler.jsonc を入れた)。鍵(CLOUDFLARE_API_TOKEN・CLOUDFLARE_ACCOUNT_ID)は ai-ops の Enable Claude が作品へ配る(ai-ops b07de29)。AI 会話の中継 game-llm は `*.mucky-totoro.workers.dev` からの呼び出しを許す(game-llm #17)。
+以前の仮の結論: 新しい作品で repo を非公開にするものは Cloudflare Workers + Static Assets を標準にする。公開 repo の作品と既存作品は Pages のまま(URL・保存データ(localStorage はドメインごと)が変わるので、移すなら 1 本ずつ)。Netlify は標準にしない。
 出典: Cloudflare Workers の制限 https://developers.cloudflare.com/workers/platform/limits/ / Netlify の無料枠の解説 https://netli.fyi/blog/netlify-free-plan-limits-2026 / GitHub のプラン https://docs.github.com/en/get-started/learning-about-github/githubs-plans
 
 ## まだ先: Steam
