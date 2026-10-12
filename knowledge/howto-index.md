@@ -10,7 +10,7 @@
 | データ構造 | `genres/` の 3 | 雛形 `src/game/logic.ts`(中身と描画の分離・1/60 秒刻み)、`src/core/`(乱数・記録と再生・調整つまみ) |
 | ゲームバランスの指針 | `genres/` の 4 | `game-design.md`(手応えと難しさ・近い目標・何もしないで勝てる穴)、雛形 `src/tuning.ts` と `npm run sim`(ボット比較) |
 | 攻略パターン・敵の組み合わせ・レベルデザイン | `genres/` の 5 | `game-design.md` |
-| 元ネタから作り始める | `genres/` の 8(参考 URL) | `start-from-reference.md`(下調べ 15 分の手順・ライセンス・逆解析) |
+| 元ネタから作り始める・**参考になる公開コード** | `genres/` の 8(参考 URL)、`tables/refs.csv`(全ジャンルの参考コード 185 本。見るファイルつき) | `start-from-reference.md`(下調べ 15 分の手順・ライセンス・逆解析) |
 | 進め方・AI への頼み方 | — | `process-patterns.md`、`codex-handoff.md` |
 | 実機で踏んだ罠 | `genres/` の 9 | 雛形 `docs/knowledge/web-game-rules.md` の §8(症状→原因の逆引き)・§9、`env-gotchas.md` |
 | うちの作品の振り返り | `genres/` の 9 | `progress/*postmortem*`、`harvest-log.md`(作品から回収した気づきの台帳) |
