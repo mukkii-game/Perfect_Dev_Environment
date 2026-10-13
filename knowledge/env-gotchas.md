@@ -72,3 +72,8 @@
 - AI セッションが「main は触らず試作ブランチから公開」と決めて進め、Pages の配信元が試作ブランチになっていた。main の中身は 1 週間前で止まっていた。
 - Cloudflare への公開を main から設定したら、古い版が出た。
 - **作品は main 1 本に集める。** 試作は短い作業ブランチ → main へ PR。公開先は main から出す。HANDOFF の先頭に「どのブランチが本番か」を 1 行書く。
+
+## SNS のリンクはアプリ内ブラウザで開く(2026-10-13 雛形に対策)
+- LINE・Instagram・Facebook・X・TikTok から来た人は、アプリの中のブラウザで遊ぶ。音・全画面・横向き・保存が効かないことがある。
+- 雛形の `src/core/inapp.ts` が自動で上に「ブラウザで開く」を出す。LINE は公式の `openExternalBrowser=1` で自動的に外部ブラウザへ。Android は `intent://`、iPhone は `x-safari-https://`(iOS 17 以降で動くという報告。iOS 16 は不可)と URL のコピー。
+- 未確認: 各アプリでの実機の動き(特に iPhone の Instagram・X)。遊んだ人の報告で【実測】に上げる。
