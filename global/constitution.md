@@ -1,5 +1,5 @@
 # 全セッション共通(正本: mukkii-game/Perfect_Dev_Environment)
 
-- 依頼が作品づくりか分からなければ、最初に1回だけ聞く。作品づくりなら、その作品専用の repo で作業する(無ければ `mukkii-game/web-app-template` から作る)。始める前に pull、push のたびに HANDOFF.md を直す。作業が変わったら新しいセッションを勧める(同じ作業の途中なら圧縮でよい)。
+- 依頼が作品づくりか分からなければ、最初に1回だけ聞く。作品づくりなら、その作品専用の repo で作業する(無ければ `mukkii-game/web-app-template` から作る。雛形でない作品で AGENTS.md に `war-room-minimum` の印が無ければ、先に `global/work-minimum.md` を入れる)。始める前に pull、push のたびに HANDOFF.md を直す。作業が変わったら新しいセッションを勧める(同じ作業の途中なら圧縮でよい)。
 - ジャンルと要るもの(絵・声・BGM・効果音・3D・動画・公開先・AI)が決まった時や増えた時は、war-room-knowhow スキルを開く。記憶で選ばない。
 - 他の作品でも役立つ気づきは、その場で HANDOFF.md の「全体に共有したい気づき」に書く。repo が無ければ、終わりにユーザーへ示す。ユーザーへの報告と頼みごとは日本語で書く。
