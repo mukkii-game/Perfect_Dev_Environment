@@ -109,3 +109,6 @@
 2026-10-12,ゲーム開発テク,速さは「1秒あたり」で決める,1フレーム何pxだと120Hzの画面で倍速になる。雛形は1/60秒刻みで固定済み,https://note.com/ukyousan/n/n7f10bf449a58,
 2026-10-12,AIに任せる,「いい感じ」は数字にして頼む,当たったら0.06秒止める・4px 0.12秒揺らす。数字で頼むとAIが外さない,https://note.com/ukyousan/n/n7f10bf449a58,
 2026-10-12,AIに任せる,データの階層は人間が決める,敵→編隊→編隊の管理、の形を先に決めるとAIの実装がぶれない,https://x.com/snapwith/status/2108773268195025384,
+2026-10-13,AIに任せる,検証スキルは fork で背景実行,context: fork のスキルは背景で動く。bot 検証を回しながら実装を続けられる,https://releasebot.io/updates/anthropic/claude-code,
+2026-10-13,AIに任せる,サブエージェントごとに考える量を分ける,Agent に effort 指定が付いた。量産は low、設計判断は high で枠を節約,https://releasebot.io/updates/anthropic/claude-code,
+2026-10-13,AIに任せる,/code-review は件数を絞って速く,--max-findings で出す件数を決められる。小さな差分は少なめで早く終わる,https://releasebot.io/updates/anthropic/claude-code,

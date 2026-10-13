@@ -77,3 +77,7 @@
 - LINE・Instagram・Facebook・X・TikTok から来た人は、アプリの中のブラウザで遊ぶ。音・全画面・横向き・保存が効かないことがある。
 - 雛形の `src/core/inapp.ts` が自動で上に「ブラウザで開く」を出す。LINE は公式の `openExternalBrowser=1` で自動的に外部ブラウザへ。Android は `intent://`、iPhone は `x-safari-https://`(iOS 17 以降で動くという報告。iOS 16 は不可)と URL のコピー。
 - 未確認: 各アプリでの実機の動き(特に iPhone の Instagram・X)。遊んだ人の報告で【実測】に上げる。
+
+## SNS の話題集めは、公開の検索ではほぼ取れない(2026-10-13 emmichy)
+- X の元投稿はクラウドから 403。Threads・Instagram は公開の検索では本文も反応数も取れず、話題は実測 0 件だった。
+- 話題を集めたい時は、Mucky Reader(X)を使うか、人間が見つけた投稿の URL を渡す。
