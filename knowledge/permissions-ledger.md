@@ -12,8 +12,8 @@
 | Studio-Shimazu の repo が一覧に出る件 | **連携は入っていない**。3 本(Iwanna4Udemy / SteamLeaderboard / SoundGameOchiru)がいずれも public のため、上記の「公開リポジトリは読み取り専用」条項で見えているだけ。書き換えは不可 | — | **対応不要(2026-09-16 調査)** |
 | GitHub App `mukkii-ai-ops`(App ID 5019353) | ai-ops のワークフローが使う。実行時に **1 時間で失効する**トークンを発行 | 秘密鍵が ai-ops の Actions secret(`AI_OPS_APP_ID` / `AI_OPS_APP_PRIVATE_KEY`) | **稼働中(2026-09-21 実証)**。秘密鍵に期限は無い |
 | `AI_OPS_TOKEN` | 旧。全 repo の Administration ほか | — | **役目を終えた。削除する**(2026-09-21) |
-| `BUTLER_API_KEY` | itch.io へのアップロード | tetrishoot の Actions secret | 有効。将来はアカウント単位に集約 |
-| `CLOUDFLARE_API_TOKEN` | Pages のデプロイ | 未設定 | 未 |
+| `BUTLER_API_KEY` | itch.io へのアップロード | tetrishoot の Actions secret | 有効。**ai-ops に置いて Enable Claude で配る形に集約する予定**(Cloudflare の鍵と同じやり方) |
+| `CLOUDFLARE_API_TOKEN`・`CLOUDFLARE_ACCOUNT_ID` | 作品を Cloudflare Workers で公開(2026-10-13 決定) | **ai-ops の secret が正本**(Mukkii 10/13 登録)。Enable Claude が作品 repo へ配る | 10/13 の初回は TOKEN が空で配れず(名前か値の入れ直しが要る)。**game-llm には 10/4 に作った別の Cloudflare の鍵が入っている** → ai-ops から配る形にそろえて、古い鍵は Cloudflare 側で消す |
 
 ## ローカル PC(3 ゾーン方式 → decisions/2026-09-13-permission-zones.md)
 
