@@ -45,3 +45,19 @@ Mukkii の環境は `knowledge/tables/my-env.csv`(スプシ「個人開発環境
 - ai-ops に Actions「Enable Claude」(scripts/enable-claude.sh)。repo 名か `active`(7 日以内に更新の作品)を渡すと、label・claude.yml・secret をまとめて入れる。新作の作成(bootstrap)も最後にこれを呼ぶ。
 - 一度だけ Mukkii がやること: ① ai-ops に secret `CLAUDE_CODE_OAUTH_TOKEN` を入れる ② ai-ops の GitHub App に Secrets・Workflows の書き込み権限を足して承認する。
 - 鍵の期限は permissions-ledger.md の表に入れた(1 年)。
+
+## 2026-10-13 調査: 3 者(Claude・Codex・Gemini)が呼び合う既製の仕組み
+Mukkii の依頼「既に公式か誰かが作っていないか」。結論: **PC の上なら既製品で 3 者が呼び合える**。クラウド(PC が消えていても)は今の GitHub 方式(①)のまま。
+
+| 呼ぶ側 → 呼ばれる側 | 既製の道 | 出どころ |
+|---|---|---|
+| Claude → Codex | OpenAI 公式プラグイン codex-plugin-cc(`/codex:review` 等) | 公式(topics/14) |
+| Codex → Claude | Claude Code 自身が MCP サーバーになる `claude mcp serve` を、Codex の MCP 設定に登録 | Claude Code の機能(第三者の解説で確認。公式文書は未確認) |
+| Claude・Codex → Gemini | **Gemini CLI は 2026-06-18 に個人アカウントで終了**(複数の記事で一致)。後継は Antigravity CLI `agy`。`agy -p "…"` で 1 回だけ答えさせられる(端末でないと何も出ない報告あり → 疑似端末で包む) | 第三者の記事複数 |
+| Gemini(agy) → 他 | `agy mcp add` で MCP サーバーを足せる → `claude mcp serve` や Codex を登録 | Antigravity CLI の早見表 |
+| **3 者まとめて** | **PAL MCP Server(旧 Zen MCP)の `clink`**: どの CLI からでも他の CLI を子として呼べる(Claude → Codex、Codex → Gemini …)。結論だけ返るので本体の会話が太らない | 有志(BeehiveInnovations)。agy 対応は未確認 |
+| 規格 | ACP(エディタ ⇔ エージェント。Claude・Codex・Gemini 登録済み)、A2A(エージェント同士。Codex は 2026-05 時点で未対応)。橋渡しに a2acode | 規格団体・有志 |
+
+- 費用: どれも PC でログインした月額の枠で動く(API キー不要)。ただし**枠を回避する目的の多重起動はしない**(topics/14)。
+- 試す順(PC、【実測待ち】): ① codex-plugin-cc(Claude → Codex)② Codex に `claude mcp serve` を登録(Codex → Claude)③ agy を入れて `agy -p` が Claude から呼べるか ④ うまくいけば PAL MCP の clink で 3 者を 1 つにまとめる。
+- 出典: https://github.com/kanywst/a2acode / https://www.philschmid.de/acp-overview / https://codex.danielvaughan.com/2026/05/01/codex-cli-agent-interoperability-protocols-mcp-acp-a2a/ / https://mcpservers.org/ja/servers/BeehiveInnovations/zen-mcp-server / https://www.ksred.com/claude-code-as-an-mcp-server-an-interesting-capability-worth-understanding/ / https://botmonster.com/coding/gemini-cli-dead-migrate-antigravity-cli-2026/ / https://computingforgeeks.com/wp-content/uploads/2026/09/antigravity-cli-cheat-sheet.pdf
