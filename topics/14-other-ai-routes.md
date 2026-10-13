@@ -75,3 +75,12 @@
 - 判断: **Claude の上限が来て Codex に引き継ぐ時(decisions/2026-10-06-claude-limit-handoff)は入れておく**。貼る文に「まだなら入れて」を入れたので、Mukkii が先に入れる必要はない(knowledge/codex-handoff.md)。ぶつかる所(HUD を DOM で作る・フォルダ構成)は作品 repo の AGENTS.md を優先させる。
 - うちに取り込めそうなもの: `sprite-pipeline`(承認済みの 1 枚を起点に、アニメ全体を 1 回で生成して正規化 → 絵のズレが減る。画像生成の鍵が入ったら雛形の gen-image に)、`game-playtest` の確認項目(主操作が分かるか・HUD が遊ぶ場所を塞いでいないか・失敗とリトライ・画面サイズの変化)。
 - 出典: npaka「Codex の Game Studio プラグイン の概要」https://note.com/npaka/n/ne31af6df7392 (2026-05-25、確認 2026-10-10)。OpenAI の公式文書は未確認。
+
+## 2026-10-13 追記: OpenAI 公式「Codex plugin for Claude Code」(codex-plugin-cc)
+- Claude Code の中から Codex を呼ぶ公式プラグイン(2026-03-31 公開、Apache 2.0)。手元の Codex CLI を包むだけなので、ChatGPT のログイン(Plus 枠)がそのまま使える。API キー不要。
+- コマンド: `/codex:review`(変更を読むだけで点検)、`/codex:adversarial-review`(反対意見を出させる点検)、`/codex:rescue`(調べ物・修正を Codex に任せる)、ほか状態・結果・取消。
+- うちでの位置づけ: 上の「独立セカンドオピニオン」と「公開前の点検」を、Claude から 1 コマンドで呼べる形。`codex exec` を手で打つ手順の置き換え候補。
+- 使える所: **PC が先**(Codex CLI のログインは人間)。クラウドのセッションは Codex のログインが無いので、そのままでは使えない。
+- 地雷: 公開当日にブランチ名経由のコマンド注入が報告され、すぐ直った。古い版を使わない。
+- 状態: 【実測待ち】PC で 1 回入れて `/codex:review` を試してから正式ルートにする。
+- 出典: https://community.openai.com/t/introducing-codex-plugin-for-claude-code/1378186 / https://www.gigazine.net/gsc_news/en/20260331-claude-code-codex-plugin
