@@ -63,3 +63,6 @@
   - 宣伝動画の生成
   - ゲームに入れる LLM(game-llm)の大きめのモデルの試験
 - 注意: 生成物の商用利用はモデルごとのライセンス次第(§4 と同じ)。Colab はブラウザで人が開くもので、クラウドのセッションから直接は動かせない(未確認)。使う日は Mukkii の手元から。
+
+## 7. ComfyUI の「API」付きテンプレートは有料(2026-10-14 ImoteControllDandy)
+- Tripo・Meshy・Rodin・Hunyuan の「API」版テンプレートは有料クレジットを使う。無料で 3D にするならローカルの Hunyuan3D-2。人型の主役は VRoid → Mixamo → VRM の道が安定。

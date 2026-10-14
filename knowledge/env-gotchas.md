@@ -81,3 +81,10 @@
 ## SNS の話題集めは、公開の検索ではほぼ取れない(2026-10-13 emmichy)
 - X の元投稿はクラウドから 403。Threads・Instagram は公開の検索では本文も反応数も取れず、話題は実測 0 件だった。
 - 話題を集めたい時は、Mucky Reader(X)を使うか、人間が見つけた投稿の URL を渡す。
+
+## Cloudflare に出した直後は一部のファイルが古い(2026-10-14 emmichy)
+- 公開の成功直後に開くと、一部のファイルだけ前の版のことがある。少し待ってから、配信中のファイルと repo の中身を照合する。
+
+## 既存ゲームの MOD(Slay the Spire / BaseMod)の罠(2026-10-14 非公開の作品)
+- 画面写真: `CardCrawlGame.render` の後ろで `getFrameBufferPixels(...,true)` を取り、アルファを 255 にする。マウスは `InputHelper.updateFirst` の後ろで画面外へ出す。
+- BaseMod の `receiveRender` は重ねた画面やカットインより後に呼ばれる。戦場に立つ物は部屋の描画の中で描く。同梱の Gson は古く `parseString` が無い。
