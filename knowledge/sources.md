@@ -46,26 +46,27 @@
 - 有料記事・セミナー・LINE 登録への誘導が多い
 - 数字や手順がなく、断言だけ
 
-## 名簿(2026-10-12 時点)
+## 名簿(2026-10-15 時点)
 
 ### 常設
 | アカウント | 分野 | 入った理由 |
 |---|---|---|
 | snapwith(岩崎啓眞) | AI × ゲーム運用 | ユーザー指名(9/22) |
-| fladdict(深津貴之) | AI 運用・ハーネス | ユーザー指名(9/22)。中身の薄い日が多い。要観察 |
+| fladdict(深津貴之) | AI 運用・ハーネス | ユーザー指名(9/22)。中身の薄い日が多い。要観察。**収穫は 10/2 の 1 件だけ → 10/23 までに収穫が無ければ試用へ**(10/14 は Codex に Blender の猫を作らせた話・AIDB の「AI のテストプレイはスクリプトで」をメモ引用) |
 | erukiti | AI でゲームを作る設計 | ユーザーが投稿を持ち込み(10/1) |
 | Sokichi_Hoshino(星野創吉、CoreGen) | AI 社員の運用(Claude Code で 46 体)・X で伸ばすやり方 | ユーザー指名(10/7)。**競合として観察**: 中身に加えて、伸びた投稿の型(題・冒頭・章立て・数字・締めの誘導)も記録する。オプチャ・顧問サービスへの誘導は宣伝なので拾わない。ゲームは作っていない(確認した範囲) |
 | OKtamajun(玉置絢) | ゲームデザイナー目線の AI プロトタイピング(skills・HTML で計画を出させる・面白さの見極め) | ユーザー指名(10/9)。元バンダイナムコ(サマーレッスン開発 D/P、テイルズ オブ アライズ P)。直近は AI × ゲーム作りの一次の実践が中心、雑談・ニュースへの一言も混ざる |
 | ai_jitan(えーたん) | **新着の早見用**。他人の X 記事を毎時 1〜3 行で紹介(仕事効率化: Gemini・Copilot・dots) | ユーザー指名(10/9)。本人が試した話は少なく、紹介先の記事の本文を読んで中身があるものだけ拾う。ゲームの話は少ない。自分の講座(Brain・サロン)の宣伝あり。星野創吉さんと同じ「AI 発信者の輪」(星野さんがえーたんの講座を引用) |
 | studio_yebisu(StudioYebisu) | AI ツール・ローカル AI・ゲーム制作の解説(海外情報の日本語化が速い) | ユーザー指名(10/12)。元ゲーム会社ディレクター。10/8 は「解説中心」で候補止まりだったが、10/10〜11 は自分で試した話(Colab A100 の実演・YuE2 で作曲・Hark で Gmail 整理)が出ている。煽り口調の意見投稿(言語論争など)は拾わない |
+| ukyoP_san(うきょう、X)/ note.com/ukyousan | AI ゲームの面白さの調整(狙い→型→つまみ・「やさしいウソ」・手触りの補助) | 試用(10/6)から昇格(10/15)。収穫 6 件以上(tips 10/4・10/9・10/12×2・10/14、ピース ACT-084/085・SH-022)。2 週は 10/20 だが条件は明らかなので前倒し。note の有料部分は読まない。チョコットランド等の思い出話・業界の雑談は拾わない |
 | ai.freelance-job.com/engineer(AI Professionals) | AI 実装・エージェントのニュースとハウツー(日本語) | ユーザー指名(10/3)。毎朝 `read_web` でトップを読む。ハウツー欄と Claude Code 関連を優先 |
 
 ### 試用
 | アカウント / 媒体 | 分野 | 入った日 | 理由 |
 |---|---|---|---|
-| ukyoP_san(うきょう、X)/ note.com/ukyousan | AI ゲームの面白さの調整(狙い→型→つまみ) | 10/6 | 10/4(X 検索)と 10/6(X 検索→note)に別経路で中身ありで出現。業界 26 年。note の有料部分は読まない |
-| miyatti(生成AIエバンジェリスト / CPO) | AI 運用・新機能の実使用レポート | 10/3 | ユーザー持ち込み。Dots を実際に触った一次の感想(認知負荷の話)。ただし直近 30 件中、本人の投稿は 2 件で残りはリポスト。2 週で中身のある投稿が 2 件以上なら常設 |
+| miyatti(生成AIエバンジェリスト / CPO) | AI 運用・新機能の実使用レポート | 10/3 | ユーザー持ち込み。Dots を実際に触った一次の感想(認知負荷の話)。ただし直近 30 件中、本人の投稿は 2 件で残りはリポスト。2 週で中身のある投稿が 2 件以上なら常設。**10/15 時点の収穫は 1 件**(mindset.csv「細かい作業の実況は読まない」)。2 週は 10/17 なので 10/22 に判定。10/14 は GrokBot → Cursor Cloud にハーネスを回させる運用の一次の話が数件(収穫になれば常設) |
 | sengpt(X、トルコ語) | AI 道具の発掘(GitHub の新しい OSS)・使ってみた話 | 10/12 | ユーザー指名。ただし**トルコ語で、直近 20 件のうち AI・開発の話は約 5 件**(REA・Jev の文字起こし分類・Cloudflare の 1 万ドル請求の警告・Dots の中身)。残りは時事・雑談。2 週で中身のある投稿が 2 件以上なら常設。読む時は AI・道具の投稿だけ拾い、日本語にして書く |
+| tapehead_Lab(tapehead.lab、X) | AI で MV(Suno・minimax h3 でプレビズ → Depth → Seedance・Opus 5.5 で VFX)。**動画の輪の入口** | 10/15 | 常設 2 人がリポスト(erukiti 10/9、OKtamajun 10/12)。直近 15 件は自作 MV の手順・使った道具・費用の工夫と VGT2026 登壇で、宣伝の誘導なし。拾うのは制作手順と道具の比較。他の作家の作品を褒める引用・MV 告知だけの投稿は拾わない。ゲームの話はない |
 
 ### 候補(毎朝の収集が挙げたもの)
 | 名前 | 分野 | 挙がった日 | メモ |
@@ -109,7 +110,9 @@
 | yugiriworks(UKIUKI、X) | Codex・Claude で個人ゲーム(Godot・three.js) | 10/9 | 投稿は 7〜8 月。直近未確認。初回 |
 | zenn.dev/zaki383 | 子どもと遊ぶゲームを Godot × Codex で | 10/9 | 見出しのみ |
 | u1(Yuichi Uemura、X) | dots・Codex・Claude の運用の一次の感想 | 10/9 | **仲間の輪で 2 本**(miyatti と erukiti がリポスト)。直近 15 件は dots の実使用(VM のブラウザ・権限の不具合)と企業 IT・セキュリティの雑談が半々。ゲームの話なし。宣伝ではないが分野が外れるため昇格見送り |
-| tapehead_Lab(X) | AI で作った MV(Suno・Seedance・Opus 5.5 で VFX) | 10/9 | 仲間の輪で 1 本(erukiti がリポスト)。動画の入口 |
+| hayashimon1(ハヤシモン、X) | Opus 5.5 への指示だけで Blender の 3DCG(コインランドリー) | 10/15 | 仲間の輪で 1 本(OKtamajun が引用、ブックマーク 1700 超)。**3D の入口**。手順はリプ欄 |
+| Saccc_c(Sac、X、中国語) | Opus 5.5 + Tripo + Blender で『星の王子さま』の 3D ゲーム(16 日) | 10/15 | 仲間の輪で 1 本(studio_yebisu が引用)。制作工程を後で OSS 公開と予告。公開されたら中身を読む |
+| daifukujinji(たか田)・love_janai_ai(ナオ)・dan_pro_man(だん) | 事務・Gemini Notebook・ハーネスの入門記事 | 10/15 | 2 本(Sokichi_Hoshino と ai_jitan がリポスト)。ただし**互いにリポストし合う宣伝型の輪**(記事紹介の相互引用・セミナー告知)で、ゲームの話なし。昇格させない |
 
 ### 外した
 | アカウント | 外した日 | 理由 |
@@ -135,3 +138,11 @@
   - read_x_user は 1 回目「投稿なし」→ 再試行で読める人が多い(snapwith・fladdict・erukiti)。ukyoP_san は 2 回とも読めず(search_x の from: で代替できる)。1 回 20 件まで。
 - 10/9(ユーザー): + 常設 OKtamajun(玉置絢)。ユーザー指名なので即常設。毎朝の収集の①に足した。紹介された投稿(おすすめ skills 5 つ)と関連の 2 投稿は育成の教科書に 3 項目で入れた。
 - 10/9(ユーザー): + 常設 ai_jitan(えーたん)。ユーザー指名。紹介中心なので「新着の早見用」として、紹介先の本文に中身がある時だけ拾う形で毎朝の収集に足した。
+- 10/15(週 1 取捨): ↑常設 ukyoP_san(収穫 6 件以上、前倒し)。+試用 tapehead_Lab(常設 2 人のリポスト・動画の入口)。外した・降格なし。
+  - 降格の判定: snapwith(10/1・10/4・10/12)・erukiti(10/4・10/6・10/8)は 3 週以内に収穫あり。fladdict は 10/2 の 1 件だけ(10/23 が期限)。miyatti は収穫 1 件、10/22 に判定。sengpt は 10/26 で 2 週。
+  - read_x_user: snapwith は 2 回とも「投稿なし」で読めず。OKtamajun・tapehead_Lab・daifukujinji は 1 回目失敗 → 再試行で読めた。1 回 20 件前後まで、ほぼ 10/14 の 1 日分(sengpt だけ 9/19 まで遡れた)。ai_jitan・miyatti・OKtamajun の profile 欄は今回もリポスト元の人(sachiAi_comp・cursorvers・fladdict)になっていた。
+  - 輪の様子 2026-10-15(AI・ゲーム・作品づくりの投稿だけ数えた):
+    - 常設どうし: OKtamajun → fladdict(リポスト 2)、Sokichi_Hoshino ⇄ ai_jitan(引用・リポスト)。erukiti → fladdict は今週は無し。
+    - 2 人以上から: tapehead_Lab(erukiti 10/9・OKtamajun 10/12)→ 試用。AnthropicAI(fladdict・erukiti)と KAI_YOU_ed(fladdict・OKtamajun)は会社・媒体なので数えない。daifukujinji・love_janai_ai(Sokichi・ai_jitan)は宣伝型の輪で見送り。
+    - 話題の重なり: AI 人生シミュレーター「80億分の1」(1in8b.life)に fladdict・studio_yebisu・erukiti(リポスト)の 3 人が反応。作者の X は未確認。AIDB(ai_database)の「AI のテストプレイはスクリプトを書かせて何十回も」を fladdict がメモ引用(要約媒体なので候補にしない)。
+    - 輪ごとの性格: Sokichi・ai_jitan は事務効率化の発信者の相互引用の輪(daifukujinji・love_janai_ai・nano_pc_tips_ai・kaitoclaude)。studio_yebisu は海外 OSS・モデル発表の引用が中心(rna4219 と往復)。ukyoP_san はゲーム会社・インディー(電猫遊戯)と KGNINJA。miyatti は AI 運用の実務家(masahirochaen・tetumemo・nztm_tw)。OKtamajun は Blender・3D(hayashimon1)と業界の発表(Tim Sweeney)。
