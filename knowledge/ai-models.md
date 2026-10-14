@@ -101,3 +101,10 @@ Astra(最上位)/ **Sol**(中位・コーディング向け)/ Luna(小型)。GPT
 - 3 つとも今は使えない・使わない(dots は Pro から、Muse は米国の Mac だけ、Grok Bot は月 120 ドルで xAI は外している)。
 - 欲しかった中身は「始めたことを最後まで追いかけ、決めることだけ届ける係」(星野創吉さんの dots 記事の「社長室長」)。これは Claude の定期実行で作れるので作った: Routine「追いかける係」(毎朝 7:41。作品の未回答の質問・止まった作品・赤い Actions を見て、決めることを最大 5 つ届ける。見張るだけで自分では直さない)。
 - dots の記事から借りた決まり: 判断が要らないものは書かない / 最大 5 つに絞る / 見せる範囲・私用と仕事の境目・操作ごとの権限(自動・承認・本人)を先に決める。Gmail はつながない方針(仕事と私用が混ざるため)なので、メールの見張りはやらない。
+
+## 2026-10-14 常駐エージェントの見直し(Mukkii「すぐにでも入れたい」)
+- **Grok Bot**: 10/12 の「The X Subscription」で、月 120 ドルの単独契約から **Premium 月 30 ドル**(SuperGrok + Cursor Pro + X Premium+ 相当、Grok Bot は Premium 以上という記事)に変わった。Grok のモデルの枠は Grok・Cursor で共有。Cursor で Claude など他社モデルを使う分は別料金(API 価格)。https://x.ai/news/x-subscription
+- **ChatGPT Dots**: 今も Pro(月 100〜200 ドル)と Business Premium だけ。Plus への提供日は未発表。https://www.tomsguide.com/ai/openai-just-launched-dots-heres-why-most-chatgpt-users-cant-try-them-yet
+- **Cue(Manus)**: 9/28 公開、招待制で試用中は無料。エージェントごとにメール・電話番号・財布・PC を持つ。支払いと大事なアカウントはつながない方がよいという評。https://myclaw.ai/blog/manus-ai-agent-cue-review
+- **Claude の Dispatch(Cowork)**: Max に含まれる研究プレビュー。スマホから頼めて離席中も続くが、PC を点けたままにする必要がある。https://tessl.io/blog/how-anthropic-is-turning-claude-into-an-always-on-agent-and-what-it-learned-from-openclaw
+- 会議室の提案: **試すなら Grok Bot(X Premium 30 ドル)を 1 か月**。X の宣伝の道具(Premium+)と Cursor(Claude 切れの時の予備)も付く。決まり: 秘密のある repo につながない / 支払い・本アカウントのログインを渡さない / SNS は下書きまで(投稿は人間)。
