@@ -61,3 +61,6 @@ Mukkii の依頼「既に公式か誰かが作っていないか」。結論: **
 - 費用: どれも PC でログインした月額の枠で動く(API キー不要)。ただし**枠を回避する目的の多重起動はしない**(topics/14)。
 - 試す順(PC、【実測待ち】): ① codex-plugin-cc(Claude → Codex)② Codex に `claude mcp serve` を登録(Codex → Claude)③ agy を入れて `agy -p` が Claude から呼べるか ④ うまくいけば PAL MCP の clink で 3 者を 1 つにまとめる。
 - 出典: https://github.com/kanywst/a2acode / https://www.philschmid.de/acp-overview / https://codex.danielvaughan.com/2026/05/01/codex-cli-agent-interoperability-protocols-mcp-acp-a2a/ / https://mcpservers.org/ja/servers/BeehiveInnovations/zen-mcp-server / https://www.ksred.com/claude-code-as-an-mcp-server-an-interesting-capability-worth-understanding/ / https://botmonster.com/coding/gemini-cli-dead-migrate-antigravity-cli-2026/ / https://computingforgeeks.com/wp-content/uploads/2026/09/antigravity-cli-cheat-sheet.pdf
+
+## 2026-10-14 追調査: 枠切れ時の乗り換え(Grok を含む 4 社)
+- 詳細は research/2026-10-14-multi-ai-failover.md。要点: 止まった後は **Codex の `/import`**(Claude の会話・設定を取り込む)か Grok の `/resume-claude`。普段は公式プラグインで Codex / Grok に仕事を回して Claude の枠を減らす。サブスクを API 化する道具は規約違反の恐れ。
