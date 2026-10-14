@@ -108,3 +108,4 @@ Astra(最上位)/ **Sol**(中位・コーディング向け)/ Luna(小型)。GPT
 - **Cue(Manus)**: 9/28 公開、招待制で試用中は無料。エージェントごとにメール・電話番号・財布・PC を持つ。支払いと大事なアカウントはつながない方がよいという評。https://myclaw.ai/blog/manus-ai-agent-cue-review
 - **Claude の Dispatch(Cowork)**: Max に含まれる研究プレビュー。スマホから頼めて離席中も続くが、PC を点けたままにする必要がある。https://tessl.io/blog/how-anthropic-is-turning-claude-into-an-always-on-agent-and-what-it-learned-from-openclaw
 - 会議室の提案: **試すなら Grok Bot(X Premium 30 ドル)を 1 か月**。X の宣伝の道具(Premium+)と Cursor(Claude 切れの時の予備)も付く。決まり: 秘密のある repo につながない / 支払い・本アカウントのログインを渡さない / SNS は下書きまで(投稿は人間)。
+- 追記(10/14): **Cursor の料金ページ自体が X Subscription に置き換わった**。新規で月 20 ドルの Cursor Pro は買えない(既存の契約者だけ継続)。Plus 8 ドル = Cursor + Grok(Grok のモデルだけ、Grok Bot なし)。Premium 30 ドル = + Grok Bot・Cursor のクラウドエージェントと自動実行・コード点検。どの段も Claude・GPT など他社モデルは使った分だけ API 価格。週ごとに枠が戻る。https://cursor.com/pricing
