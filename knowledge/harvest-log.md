@@ -75,6 +75,16 @@
 | 2026-10-14 | (非公開の作品) | 既存ゲームの MOD の画面写真と描画順の罠 | `env-gotchas.md` |
 | 2026-10-14 | (AI知見) | ピース候補 10 → 8 個(手触り補助・放置の転生と新通貨・デッキ構築の演出と地図・AI テストプレイ)。TIPS 3・用語 2。Gemini 4 Argon の一般公開で ai.csv を直した。格上げ 0 件(出典 1 本) | `tables/` 各所 |
 | 2026-10-14 | (スプシ) | コメント・わかったチェックとも 0 件 | — |
+| 2026-10-15 | game-creator-life | 小ネタは 1 人生 2 回まで、イベントに時代の鍵、並走する他人は bot で | `tables/pieces.csv` MNG-015〜017(実測) |
+| 2026-10-15 | game-creator-life | ファイルを分けたサブエージェント並列、bot のログを文字で通読、司令塔を 2 つ立てない、数値の置き場は 1 本 | `process-patterns.md` §10 |
+| 2026-10-15 | game-creator-life | 実名を笑いに出す前に後年の不祥事まで調べる | `tables/mindset.csv` |
+| 2026-10-15 | game-creator-life | 魔王魂の効果音は説明で選べる(古い記述を直した)、ぴぽや・効果音ラボはクラウドから 403、AUTOMATON は読めない | `tables/assets.csv`・`env-gotchas.md` |
+| 2026-10-15 | game-creator-life | 和文の Web フォントは描く前に使う字を読ませる、iOS の音量は GainNode、日本語の折り返しで 1〜2 字だけ残さない | 雛形 `web-game-rules.md` §9-9・§9-17・§9-18 |
+| 2026-10-15 | game-creator-life | 雛形の Cloudflare の公開が Pages 前提で初回に落ちる | 10/15 昼に雛形を Workers 方式へ直し済み |
+| 2026-10-15 | (非公開の作品) | 紙芝居はデータで、見せるだけの分かれ道、Sheets は必要な列だけ読む | `pieces.csv` STO-025・`process-patterns.md`・`env-gotchas.md` |
+| 2026-10-15 | game-creator-life | 使った素材: 魔王魂の BGM 8・効果音 19、DotGothic16 | `tables/used-assets.csv` |
+| 2026-10-15 | (AI知見) | TIPS 3・用語 1。ピース候補は既出 3・取り込み済み 2。格上げ 0 件 | `tables/` |
+| 2026-10-15 | (スプシ) | コメント・チェック 0 件。育成プログラム「関連リンク」A1 は #REF! のまま(Mukkii の手作業待ち) | — |
 
 ## 会議室の資料の使われ方
 
@@ -93,6 +103,13 @@
 | 2026-10-10 | (非公開の作品) | tables/assets.csv, genres.csv | 役立った(画像生成の推奨、パズルは素の canvas + 自作ロジックが向く) |
 | 2026-10-13 | obake-chochin | genres/shmup.md(§4) | 役立った(速さより数と並びで難しくする) |
 | 2026-10-13 | obake-chochin | tables/pieces.csv | 無かった(まとめ倒し専用のピース → ACT-082 を足した) |
+| 2026-10-15 | game-creator-life | start-from-reference.md | 役立った(芯を仕組みに分けて合体、を PLAN の骨に) |
+| 2026-10-15 | game-creator-life | game-design.md §6・§8 | 役立った(原理でひねりの狙いを書けた。bot で同じ小ネタの連発などを数字で発見) |
+| 2026-10-15 | game-creator-life | process-patterns.md §1・§6・§10 | 役立った(3 案から絞る、つなぎ口を先に固定して 4 パート同時) |
+| 2026-10-15 | game-creator-life | genres/README.md | 役立った(層の考え方)。人生シミュの 1 枚は無かった |
+| 2026-10-15 | game-creator-life | tables/pieces.csv | 一部役立った。人生シミュ・ランダムイベントのピースが薄い → MNG-015〜017 を足した |
+| 2026-10-15 | game-creator-life | tables/refs.csv | 無かった(人生シミュの参考コード。ink / inkjs が候補) |
+| 2026-10-15 | game-creator-life | tables/assets.csv | 役立った(魔王魂の取り方)。古かった: 魔王魂の効果音の記述、ぴぽやの 403 → 直した |
 
 ## 格上げの保留
 
@@ -109,6 +126,8 @@
 | 2026-10-12 | 会議室 | shmup.md の 5 節(攻略パターン・敵の組み合わせ)を pieces.csv に `SH-` で 15〜25 個起こす | 夜の回収で 1 日 10 個まで(10/15 に SH-027 まで済み。§5 は出し切った) |
 | 2026-10-12 | 会議室 | `_families.md`・game-design §8 の記憶だけで書いた数値(Celeste のコヨーテタイム、ヒットストップのフレーム数)と講演 2 本(Into the Breach の振り返り、Pecorella の放置ゲームの数学)の実在を Web で確かめる | 週次レビューで |
 | 2026-10-14 | AI知見(note 1 本) | 雛形の依頼に「手触りの補助」(コヨーテ・先行入力・判定の大小・最初の一発・最後の一撃)の一覧を入れる | 出典 1 本。genres/platformer・shmup にはある。作品で効いたら入れる |
+| 2026-10-15 | game-creator-life | genres/人生シミュ(ランダムイベント型)を起こす。refs.csv に同じ型の参考コード(ink / inkjs など)を足す | 週次レビューで(1 週 1 枚) |
+| 2026-10-15 | game-creator-life | 雛形 AGENTS に「始める前に同じ repo で動いているセッションが無いか確かめる」 | 1 件のみ。会議室側の手順(前のセッションを止めてから立てる)で先に防ぐ |
 
 週の見直し 2026-10-12 の判断: bot 比較(10/8・10/9・10/10 の 3 行)は**作る**(見本シーンを中身と描画に分けてから `tools/sim.mjs`)。HANDOFF を push ごと(10/9)は**格上げ済み**(雛形 1106276)。CI の軽重分け・絵の差し替えの道は保留のまま。
 

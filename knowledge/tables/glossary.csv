@@ -48,3 +48,4 @@ PR(プルリクエスト),GitHub,「この変更を本流に入れてよいか�
 CLAUDE_CODE_WORKFLOW_SUBAGENT_MODEL,Claude Code の設定,サブエージェントのモデルを別に決める環境変数,作業員役を安いモデルで回したい時,知識 repo の量産で使える候補,https://releasebot.io/updates/anthropic/claude-code,
 Blender 公式 MCP,道具,Claude Code から Blender を Python で動かす公式の口(Blender 5.1 以上),3D 素材の量産・整形,保護なしで実行されるので、毎回承認にする,https://x.com/dansyu_callenge/status/2109775437610266879,
 Unity CLI / Pipeline,道具,Unity のエディタをコマンドと MCP で動かす,Unity の作品を AI に作らせる時,今は Web(Phaser)が主なので候補,https://gamemakers.jp/article/2026_10_09_146809/,
+FastH3-Omni,AIモデル,映像と音声を同時に作るモデル,告知動画の素材,API は 1 分 0.75 ドル。重みは 10/20 公開予定(監視),https://x.com/studio_yebisu/status/2110238871170449482,

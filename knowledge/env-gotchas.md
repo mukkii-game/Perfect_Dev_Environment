@@ -88,3 +88,11 @@
 ## 既存ゲームの MOD(Slay the Spire / BaseMod)の罠(2026-10-14 非公開の作品)
 - 画面写真: `CardCrawlGame.render` の後ろで `getFrameBufferPixels(...,true)` を取り、アルファを 255 にする。マウスは `InputHelper.updateFirst` の後ろで画面外へ出す。
 - BaseMod の `receiveRender` は重ねた画面やカットインより後に呼ばれる。戦場に立つ物は部屋の描画の中で描く。同梱の Gson は古く `parseString` が無い。
+
+## クラウドから読めないサイト(2026-10-15)
+- AUTOMATON の記事本文: WebFetch は名前解決できず、Mucky Reader の read_web は本文が空(JS で描く)、curl はプロキシが拒否。転載・はてブ・note・個人ブログで代わりを取る。
+- ぴぽや・効果音ラボ: クラウドの既定のネットワークでは 403。魔王魂は配布ページを Referer にすれば取れる。
+
+## Google Sheets の表まるごとの読み込みが落ちる(2026-10-15 非公開の作品)
+- 大きなタブを全部読むと失敗する。必要な列だけ(例: ID とコメントの 2 列)読む。書き込みが時間切れになった時に、書式だけやり直す手段を用意しておく。
+
