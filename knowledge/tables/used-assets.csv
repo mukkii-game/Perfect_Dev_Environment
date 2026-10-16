@@ -1,6 +1,6 @@
 評価,種類,素材,出典URL,ライセンス,クレジット文,使った作品,使った回数,素材庫に保存,初回,最終
 ,絵,Twemoji(絵文字),https://github.com/jdecked/twemoji,CC-BY 4.0,絵文字：Twemoji（CC-BY 4.0）,metopon,1,,2026-10-03,2026-10-03
-,音,魔王魂 ファミコン風効果音・8bit BGM,https://maou.audio/,魔王魂の規約(商用可・曲単体の再配布不可),音楽・効果音：魔王魂,metopon / game-creator-life,2,,2026-10-03,2026-10-15
+,音,魔王魂 ファミコン風効果音・8bit BGM,https://maou.audio/,魔王魂の規約(商用可・曲単体の再配布不可),音楽・効果音：魔王魂,metopon / game-creator-life / (非公開の作品),3,,2026-10-03,2026-10-16
 ,声,VOICEVOX:春日部つむぎ,https://voicevox.hiroshiba.jp/,VOICEVOX・キャラごとの規約,声：VOICEVOX:春日部つむぎ,metopon,1,,2026-10-03,2026-10-03
 ,音,魔王魂 BGM サイバー16,https://maou.audio/bgm_cyber16/,CC BY 4.0(魔王魂の規約も可),音楽：魔王魂,obake-chochin,1,,2026-10-08,2026-10-08
 ,声,Open JTalk(pyopenjtalk)+ HTS Voice「Mei」,http://www.mmdagent.jp/,Mei: CC BY 3.0 / Open JTalk: 修正 BSD,"HTS Voice ""Mei"" (c) Nagoya Institute of Technology, CC BY 3.0",obake-chochin,1,,2026-10-08,2026-10-08
@@ -19,3 +19,5 @@
 ,3D,Tripo(生成)+ Mixamo(リグ),https://www.tripo3d.ai/,無料枠の規約は未確認(公開前に要確認),要確認,ImoteControllDandy,1,,2026-10-14,2026-10-14
 ,フォント,Dela Gothic One,https://fonts.google.com/specimen/Dela+Gothic+One,OFL,不要,ImoteControllDandy,1,,2026-10-14,2026-10-14
 ,フォント,DotGothic16,https://fonts.google.com/specimen/DotGothic16,OFL 1.1,不要,game-creator-life,1,,2026-10-15,2026-10-15
+,絵,ぴぽや 32×32 人物(ぴぽや32シンプル・現代衣装),https://pipoya.net/sozai/assets/charachip/character-chip-2/,ぴぽや無料素材規約(商用可・加工可・表記不要・素材の販売禁止),任意「絵:ぴぽや」,game-creator-life,1,,2026-10-15,2026-10-16
+,絵,ぴぽや プチエモートアイコン(12×12),https://pipoya.net/sozai/assets/icon/icon-image/,ぴぽや無料素材規約(同上),任意「絵:ぴぽや」,game-creator-life,1,,2026-10-15,2026-10-16
