@@ -31,6 +31,7 @@ AI への注意: winget の ID は入れる前に `winget search <名前>` で�
 
 ## 1. 道具
 - **解凍してそのまま動き、中身が書き換わらない道具**(VOICEVOX エンジン等)は G: の `ai\tools\` に置いて 2 台で共有してよい(フォルダはオフライン指定)。
+- **開発の道具(ffmpeg・JDK 8・Maven)は各 PC のローカル**: ノート `C:\Dev\tools\`、デスクトップ `E:\Dev\tools\`(zip を展開するだけ。2026-10-16 非公開の作品のセッションで決定)。ゲームの自動録画は `knowledge/catalog-tools.md`。
 - **インストーラで入れる道具・Python 環境を抱える道具**(ComfyUI 等)は各 PC の E: / D: に入れる。
 
 | 道具 | 入れ方の目安 | 確かめ方 |

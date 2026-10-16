@@ -22,3 +22,4 @@ AI契約,ComfyUI・GitHub ほか,無料,—,稼働(無料),ComfyUI のクラウ�
 実行場所,Claude in Chrome,自分の Chrome,自分のログイン状態のままブラウザを操作。Chrome が動いている間だけ,稼働,—,—
 実行場所,Claude Code(ローカル),その PC(E:\dev など),PC の repo が本体。スマホからは続けられない,稼働,—,—
 実行場所,Claude Code(クラウド),クラウド + GitHub,PC 不要で repo 開発。会議室・作品のクラウドセッション・定期実行はここ,稼働,—,knowledge/multi-ai-relay.md
+道具,PC の開発道具の置き場,ノート C:\Dev\tools / デスクトップ E:\Dev\tools(ffmpeg・JDK 8 Temurin・Maven 3.9.9。zip を展開するだけ),Windows のゲームの自動録画・MOD のビルド,稼働(2026-10-16),—,knowledge/catalog-tools.md「ゲームの自動録画」

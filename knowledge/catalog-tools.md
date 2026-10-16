@@ -46,7 +46,16 @@
 | プレイ動画の自動収録 | Playwright の録画(`test/record.mjs` が実装例) | 実キー入力を送って遊ばせる。撮り直さず全配布先に流用する |
 | スクショ | Playwright(`test/promo.mjs` が実装例) | タイトルより「プレイ中」「ボス戦」が強い |
 | 編集・合成 | ffmpeg | 字幕・BGM 合成まで定型処理でできる |
+| ゲームの自動録画(Windows のネイティブゲーム・MOD) | ffmpeg の gdigrab(下の「ゲームの自動録画」) | Game Bar は使わない。自動テストと一緒に開始・停止できる |
 | 配布ページの素材一式 | 公開キット(`tools/build-kit.mjs`) | ZIP・画像・日英文面を 1 ページに |
+
+### ゲームの自動録画(Windows、2026-10-16 非公開の作品より・Mukkii 了承)
+- 道具は **ffmpeg**(gyan.dev の Windows 版 `ffmpeg-release-essentials.zip`、約 90MB、管理者権限なしで展開するだけ)。置き場所はノート `C:\Dev\tools\ffmpeg\bin\ffmpeg.exe`、デスクトップ `E:\Dev\tools\…`(PC の道具はここにまとめる。JDK 8 = Temurin の zip、Maven 3.9.9 も同じ所)。
+- **Game Bar(Win+Alt+R)をやめた理由**: 外から開始・停止を命令できない(キーを送るしかなく、ゲームの窓が前に無いと効かない)・長さの上限で長い通しが切れる・ファイル名と保存先を決められない。人が手で撮るだけなら Game Bar で足りる。
+- ffmpeg なら自動テストがゲームを起動するのと一緒に始めて止められ、ゲームの窓だけを撮れる。ゲーム側の「この場面に入った」記録の時刻と合わせれば、動画の目次やチェック用のスクショも自動で作れる。
+- 骨組み(窓だけ・音なし): `ffmpeg -f gdigrab -framerate 30 -i title="<窓のタイトル>" -c:v libx264 -preset veryfast -crf 23 -pix_fmt yuv420p out.mp4`
+- **止める時は標準入力に `q` を送る**(強制終了すると mp4 が壊れる)。
+- 実機で確かめたコマンドとつまずき(窓のタイトル・解像度・音)は、届いたら追記する。ブラウザのゲームは引き続き Playwright の録画。
 
 ## 使わないと決めたもの
 
