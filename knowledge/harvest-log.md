@@ -136,3 +136,4 @@
 
 知識カードのピース化: 40 枚目まで(ファイル名順。2026-10-12 の初回はジャンル別に約 450 枚を読んで 304 個にした。夜の回収は重複を飛ばしながら先頭から進める)
 - 2026-10-16: X(iritec_jp 経由の Sac 氏の記事)AI で 3D ゲームを作る流れ → process-patterns §12、assets に Auto-Rig Pro・Unity 公式 MCP を監視で追加。翌週の GitHub 公開を見て、コードが出たら refs.csv に足すか判断
+- 2026-10-16: 仕事の案件(デッキ構築の MOD・仕様書)を初回まとめて回収(Mukkii 指示で以後も毎晩対象)→ env-gotchas に MOD の罠 15 項目と Windows パスの罠、process-patterns §13(大きな仕様書を AI とまとめる)と §9・§10 の追記、sheet-style に仕様書の色と書き方、genres/roguelike に B 型の設計 6 項目、start-from-reference に jar 解析の実測。固有名は伏せた。非公開 3 repo は手元に無く未読
