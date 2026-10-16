@@ -122,6 +122,8 @@ export const CARDS: Card[] = [
 
 ---
 
+- 【実測】(B 型、2026-10-16 仕事の案件)**ルールの中身はエンジンに依存しない純粋なコード**(Unity なら UnityEngine を参照しない C#)で書き、机上検証で見つけた修正をそのまま自動テストで固定する(6 回分・21 件)。乱数は用途ごとの系統に分けてハッシュで撹拌し決定論に。IP の表現は CSV の層に分け、エンジンは役割語だけを知る。
+
 ## 4. よく使うゲームバランスの指針
 
 | 項目 | 初期値(つまみ候補) | 根拠・印 |
@@ -234,6 +236,9 @@ export const CARDS: Card[] = [
 - https://github.com/DesirePathGames/Slay-The-Robot — ★289 / 2026-10 / MIT。Godot のデッキ構築の枠組み。
 - https://github.com/BigJk/end_of_eden — ★205 / 2024-09 / MIT。端末で動く StS 風(Go + Lua でカードを書く)。データで札を書く例。
 - https://github.com/KeJunMao/emoji-survival-game — ★18 / 2022-01 / なし。Phaser 3 + TS の VS 風(絵文字)。小さい。読むだけ。
+- https://github.com/Arefnue/NueDeck — MIT。Unity の StS 風デッキ構築の雛形(約 120 本のスクリプト)。カード効果を「アクションの列」で処理・戦闘の状態遷移・手札と山札の移動・報酬 3 択 UI。2 キャラ制に広げる時は味方と敵の基底の分け方(2026-10-16 仕事の案件の調べ)。
+- https://github.com/silverua/slay-the-spire-map-in-unity — MIT。StS 型の分岐マップ生成一式(ノード配置・道・交差・到達可否)。自前で作るより改造が速い。
+- https://github.com/Sanxom/Slay-the-Spire-Clone — **ライセンス表記なし = 読むだけ、コピー禁止**。行動を GameAction として列に積む設計は学ぶ価値あり。有料アセット同梱なので二重に流用不可。
 - サバイバー系は JS の公開実装でスターの多いものが見つからなかった(Unity・Godot が中心)。
 
 ### 解説・設計
