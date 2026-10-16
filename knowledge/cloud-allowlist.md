@@ -4,9 +4,11 @@
 足し方: セッションの題名欄の環境メニュー → 編集 → ネットワーク → Allowed domains(「パッケージマネージャを許可」は付けたまま)。手順: https://code.claude.com/docs/en/cloud-environments#network-access
 素材を新しく使う時に拒否されたら(curl が 000 / connect_rejected)、ここに足して Mukkii に頼む。
 
-## 実測(2026-10-16、会議室のセッションから curl)
-- 通る: pipoya.net / maou.audio / dova-s.jp / kenney.nl / opengameart.org / github.com / raw.githubusercontent.com / fonts.gstatic.com
-- 拒否(足す候補): 下の貼り付け用リスト
+## 実測(2026-10-16、Mukkii が下のリストを貼った後)
+- 通る: ぴぽや・効果音ラボ・ポケットサウンド・On-Jin・甘茶・MusMus・H/MIX・魔王魂・DOVA・ユーフルカ・いらすとや・イラストAC・Kenney・OpenGameArt・itch.io(作者ページ・img.itch.zone)・game-icons・Quaternius・Poly Haven・ambientCG・Sketchfab・3D屋さん・Freesound・Google Fonts・Google Drive・AUTOMATON・電ファミ・4Gamer・Game Developer
+- サイト側が拒否(403。プロキシではなく相手のボット対策): OtoLogic・Pixabay。ページは Mucky Reader の read_web で読めることがある。ファイルは人間が PC で落として assets/mine/ へ
+- つながらない(許可済みだが相手に届かない 502): 小森平(taira-komori.jp)・くらげ工匠(kurage-kosho.info)。クラウドからは使えない前提で、PC で落とす
+- 400/404 はトップページが無いだけ(画像・ファイルの置き場)で、通っている
 
 ## なぜ拒否されるか(2026-10-16 公式文書で確認)
 - 環境のネットワークは「Trusted(既定: パッケージ置き場だけ)/ Custom(自分のリスト)/ Full(どこでも)/ None」の 4 段階。今の環境は Custom で、ぴぽや・魔王魂など足した分だけ通る。
