@@ -135,3 +135,4 @@
 2026-10-12 追記: bot 比較の道具は**入れた**(雛形 55f4c2b。`src/game/logic.ts`・`bots.ts`・`npm run sim`。あわせて 1/60 秒刻みにして、60Hz と 120Hz で結果が同じになることを test:replay で確かめる)。
 
 知識カードのピース化: 40 枚目まで(ファイル名順。2026-10-12 の初回はジャンル別に約 450 枚を読んで 304 個にした。夜の回収は重複を飛ばしながら先頭から進める)
+- 2026-10-16: X(iritec_jp 経由の Sac 氏の記事)AI で 3D ゲームを作る流れ → process-patterns §12、assets に Auto-Rig Pro・Unity 公式 MCP を監視で追加。翌週の GitHub 公開を見て、コードが出たら refs.csv に足すか判断
