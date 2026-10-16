@@ -138,3 +138,4 @@
 - 2026-10-16: X(iritec_jp 経由の Sac 氏の記事)AI で 3D ゲームを作る流れ → process-patterns §12、assets に Auto-Rig Pro・Unity 公式 MCP を監視で追加。翌週の GitHub 公開を見て、コードが出たら refs.csv に足すか判断
 - 2026-10-16: 仕事の案件(デッキ構築の MOD・仕様書)を初回まとめて回収(Mukkii 指示で以後も毎晩対象)→ env-gotchas に MOD の罠 15 項目と Windows パスの罠、process-patterns §13(大きな仕様書を AI とまとめる)と §9・§10 の追記、sheet-style に仕様書の色と書き方、genres/roguelike に B 型の設計 6 項目、start-from-reference に jar 解析の実測。固有名は伏せた。非公開 3 repo は手元に無く未読
 - 2026-10-16: X(my_syumi_game、欧米ゲームデザイン理論の用語が AI 動画で広まる話)→ 照合: 緩急・手応え・ゲームフローは既にあり。コアループ・視線誘導・タメツメフォロースルーを game-design.md §8 の原理に追加、英語名の対応を付けた
+- 2026-10-16: my_syumi_game を試用に(ユーザー持ち込み、リポスト中心なので include_reposts で読む)。リポスト先の neko up note「むずかしいの解像度」→ game-design.md §9。torunodev を候補に
