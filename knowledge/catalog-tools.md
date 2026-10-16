@@ -53,9 +53,14 @@
 - 道具は **ffmpeg**(gyan.dev の Windows 版 `ffmpeg-release-essentials.zip`、約 90MB、管理者権限なしで展開するだけ)。置き場所はノート `C:\Dev\tools\ffmpeg\bin\ffmpeg.exe`、デスクトップ `E:\Dev\tools\…`(PC の道具はここにまとめる。JDK 8 = Temurin の zip、Maven 3.9.9 も同じ所)。
 - **Game Bar(Win+Alt+R)をやめた理由**: 外から開始・停止を命令できない(キーを送るしかなく、ゲームの窓が前に無いと効かない)・長さの上限で長い通しが切れる・ファイル名と保存先を決められない。人が手で撮るだけなら Game Bar で足りる。
 - ffmpeg なら自動テストがゲームを起動するのと一緒に始めて止められ、ゲームの窓だけを撮れる。ゲーム側の「この場面に入った」記録の時刻と合わせれば、動画の目次やチェック用のスクショも自動で作れる。
-- 骨組み(窓だけ・音なし): `ffmpeg -f gdigrab -framerate 30 -i title="<窓のタイトル>" -c:v libx264 -preset veryfast -crf 23 -pix_fmt yuv420p out.mp4`
-- **止める時は標準入力に `q` を送る**(強制終了すると mp4 が壊れる)。
-- 実機で確かめたコマンドとつまずき(窓のタイトル・解像度・音)は、届いたら追記する。ブラウザのゲームは引き続き Playwright の録画。
+- 骨組み(窓だけ・音なし。**2026-10-16 実機で確認、LWJGL / OpenGL の窓も撮れた**):
+  `ffmpeg -f gdigrab -framerate 30 -i hwnd=0x<取っ手> -c:v libx264 -preset veryfast -crf 23 -pix_fmt yuv420p raw.mkv`
+- **窓は題名でなく取っ手(hwnd)で指す**(題名は途中で変わる・日本語になる。ffmpeg 9 で確認)。取っ手は PowerShell の `(Get-Process java | ? MainWindowTitle -ne '' | sort StartTime -desc | select -first 1).MainWindowHandle` で取り、16 進にして渡す。起動画面(ModTheSpire など)の窓は除く。
+- **mkv で撮って後で mp4 に**(mkv は途中で止まっても壊れない)。章をつける時は `ffmpeg -i raw.mkv -i ffmetadata.txt -map_metadata 1 -c copy -movflags +faststart out.mp4`。ゲーム側で場面ごとの「印」と時刻を記録しておけば、章とチェック用のガイドを自動で作れる。
+- **止める時は標準入力に `q` を送る**(強制終了は避ける)。
+- **窓の上に重なった物も映る**(gdigrab は画面の見えている所を撮る)。常に手前に出るアプリ(付箋・ウィジェット)は録画前に閉じる。スクショはゲーム側でフレームバッファから撮る方が確実。
+- **動いている bash の台本を書き換えない**(bash は台本を少しずつ読むので、途中で書き換えると壊れる)。写しから動かす。
+- ブラウザのゲームは引き続き Playwright の録画。
 
 ## 使わないと決めたもの
 
