@@ -82,5 +82,6 @@
 - **作品の司令塔セッション = 監督**: 企画(PLAN.md)どおり公開まで作り切る。並列は自分のサブエージェント。main に push するのは司令塔だけ。Mukkii への報告は公開時と人の判断が要る時だけ。
 - Mukkii は「新作を始めたい」を会議室に言うだけ。続きの指示は作品のセッションに直接でも会議室経由でもよい。
 - 実例: game-creator-life(2026-10-15)。企画は Fable、司令塔は Opus。
+- **公開 URL(2026-10-17 Mukkii)**: `https://<作品>.mucky-totoro.workers.dev` のまま(workers.dev の名前を変えると配った URL が全部変わるため)。自分のドメインは必要になったら検討。
 - **手を止める作品(2026-10-17 Mukkii)**: 公開済みの game-creator-life・obake-chochin・kutsuzure・metopon は一旦休止。続けるのは emmichy・ImoteControllDandy・marshmallow-build(と demo)。台帳の状態は「公開済み(休止)」、ai-ops の集計(PAUSED)も判断の催促から外した。再開と言われたら両方から戻す。
 - **仕事の案件(2026-10-16 Mukkii と決定)**: 仕事の repo には書き込まないが、**進行は毎朝見て、ノウハウは毎晩回収する**(個人制作と同時進行でノウハウが共通するため。特に既存ゲームの MOD づくりと、大きな仕様書を AI とまとめる方法)。会議室(公開)に書く時は案件・IP・固有の仕様を伏せて一般化する。ローカルのセッションは順次クラウドへ移す予定(topics/19-local-to-cloud.md)。
