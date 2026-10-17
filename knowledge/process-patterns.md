@@ -178,3 +178,8 @@ erukiti の 4 つの型(決定論・表示とロジックの分離・bot・リ�
 - 長い記録・大きな出力は司令塔が自分で読まず、サブエージェントに読ませて結論だけ受け取る。大きなツール出力は head / grep で絞る。
 - 決まった直しの繰り返しは、司令塔のモデルを Sonnet に落とす(仕組みの大改造の時だけ Opus)。
 - 2 つのセッションが同じ記録を読むと二重払い。片方は機械の点検とコード、もう片方は「平板な行の書き直し」だけ、のように読む物を分ける。
+
+## 15. 単発の HTML を公開する(会議室が引き受ける、2026-10-17)
+- どのセッション(claude.ai のチャット含む)で作っても、**公開は会議室に「これを公開して」と HTML と og 画像を渡す**。会議室の決まりを知らないセッションは Netlify などを勝手に選ぶ(10/16 に実例)。
+- 会議室の手順(人の手なし、約 5 分): ai-ops「Bootstrap Web Repository」で repo → 「Enable Claude」で鍵 → `site/index.html`・`site/ogp.png` を置き、og:url / og:image を `https://<repo>.mucky-totoro.workers.dev/` に書き換え → `wrangler.jsonc` の assets を `./site`、deploy-cloudflare.yml のビルドを外す、Pages の build-and-deploy は手動だけに → push。
+- 会議室のセッションからは *.workers.dev に curl が届かない(許可リスト外)。公開の確かめは Mucky Reader の read_web で読む。

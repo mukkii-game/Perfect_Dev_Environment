@@ -156,3 +156,4 @@
 - 2026-10-16: my_syumi_game を試用に(ユーザー持ち込み、リポスト中心なので include_reposts で読む)。リポスト先の neko up note「むずかしいの解像度」→ game-design.md §9。torunodev を候補に
 - 2026-10-16: dbs_curry(上杉真人、ボードゲームデザイナー)を常設に(ユーザー指名)。直近投稿からピース THK-045〜048(時期で強さが変わる物への逆性質の抱き合わせ・取った物が次の欲しい物・すぐ消える何でも札・覚え方が生まれる記憶ゲーム)
 - 2026-10-16: 作品の司令塔からトークン節約の実測(セッション間の直通で届いた)→ process-patterns §14。格上げ: 雛形に `npm run audit`(src/game/audit.ts の規則を bots × seed で当てる、AI 不使用)と AGENTS.md の 1 行(build・replay・check 緑)
+- 2026-10-17: 単発 HTML の公開を会議室が引き受ける手順 → process-patterns §15(一文字の夜で実施)。雛形 AGENTS の「Pages に出る」を Workers に直した
