@@ -51,3 +51,5 @@ Unity CLI / Pipeline,道具,Unity のエディタをコマンドと MCP で動�
 FastH3-Omni,AIモデル,映像と音声を同時に作るモデル,告知動画の素材,API は 1 分 0.75 ドル。重みは 10/20 公開予定(監視),https://x.com/studio_yebisu/status/2110238871170449482,
 Flux 3 Klein,AIモデル,Black Forest Labs の画像生成。重みが公開,手元の GPU で絵を作る・直す(4K・部分編集),候補(8GB VRAM でも動くという見立て。未確認),https://x.com/bfl_ai/status/2110751201105256925,
 drama3-small,AIモデル,声の生成 Fish Audio Drama 3 を約 10GB に縮めた版,手元で声のクローン・笑い声などのタグつき読み上げ,候補(VOICEVOX の次の選択肢。未確認),https://x.com/pentacoxian_dev/status/2110755123748340030,
+Hy-Memory,AIモデル,Tencent の長期記憶専用の小型モデル(30B MoE・重み公開・Apache 2.0),会話や作業ログから覚える価値のあることだけ選んで記憶に整理する,監視(紹介者も評価保留。量子化で約 17GB〜),https://github.com/Tencent-Hunyuan/Hy-Memory,
+ATAS,AIツール,場所と出来事の記憶を持たせて長い動画の一貫性を保つ動画生成エージェント(MIT),PV・ムービーで同じ部屋を別アングルで何度も映す,監視(NVIDIA GPU 約 20GB と動画生成 API が要る),https://github.com/ziplab/ATAS,

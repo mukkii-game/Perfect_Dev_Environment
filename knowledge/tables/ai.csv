@@ -18,3 +18,4 @@ Clef / Clef-flash,Cloudflare,A,優先,ゲームの判断(NPC の行動・bot の
 Gemini 画像・音楽(Flash Image / Imagen / Lyria),Google,未評価,候補,クラウドの作品セッションから絵・BGM を直接作る,generativelanguage.googleapis.com はクラウドの通信制限を通る(2026-10-08 実測),人の仲介なしで生成できる見込み,鍵がまだ無く未検証。商用規約は要確認,GEMINI_API_KEY を環境に入れれば試せる(topics/06),2026-10-08,
 Cue(Manus),Manus,—,監視(今は不要),—,常駐エージェント(AI ごとにメール・電話・財布・PC),放っておいても動く,招待制・試用中は無料。支払いや大事なアカウントはつながない。招待が来たら試す程度,未契約,2026-10-15,
 Manus,Manus,—,監視(今は不要),ブラウザ操作の調べ物・スライド,汎用の自動エージェント,作らずに済む,自分の料金と枠(手持ちの契約を使わない)。今の 3 契約で枠が余っているうちは不要,未契約,2026-10-15,
+Llama Guard 3 8B(Workers AI の @cf/meta/llama-guard-3-8b),Meta / Cloudflare,B,候補,プレイヤーが入れる名前・文の安全判定(他の人に見えるもの),危ない・危なくないを返す判定用モデル。Workers AI の無料枠で動く,NG 語の一覧で拾えない言い換えを拾える,遅い・失敗する時がある → 2.5 秒で打ち切って通す作りにする(game-creator-life),使える(Cloudflare 無料枠),2026-10-17,
